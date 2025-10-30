@@ -1,0 +1,54 @@
+# Git Upload Commands for ile_exam Repository
+# Run these commands in PowerShell or Command Prompt
+# Navigate to your project directory first
+
+# Step 1: Navigate to project directory
+cd C:\Projects\studyguide
+
+# Step 2: Initialize Git repository
+git init
+
+# Step 3: Add all files to staging
+git add .
+
+# Step 4: Create initial commit
+git commit -m "Initial commit - ILE Study Guide with interactive practice exams and Texas content"
+
+# Step 5: Rename branch to main (if needed)
+git branch -M main
+
+# Step 6: Add remote repository
+git remote add origin https://github.com/sk408/ile_exam.git
+
+# Step 7: Push to GitHub
+git push -u origin main
+
+# ============================================
+# AUTHENTICATION NOTE:
+# ============================================
+# When prompted for credentials:
+# - Username: sk408
+# - Password: Use a Personal Access Token (NOT your GitHub password)
+#
+# To create a token:
+# 1. Go to: https://github.com/settings/tokens
+# 2. Click "Generate new token (classic)"
+# 3. Give it a name like "ILE Exam Upload"
+# 4. Select scope: "repo" (check all repo permissions)
+# 5. Click "Generate token"
+# 6. Copy the token and use it as your password
+#
+# ============================================
+# TROUBLESHOOTING:
+# ============================================
+# If you get "remote origin already exists":
+#   git remote remove origin
+#   git remote add origin https://github.com/sk408/ile_exam.git
+#
+# If you need to force push (use carefully):
+#   git push -u origin main --force
+#
+# If you already have files in GitHub repo:
+#   git pull origin main --allow-unrelated-histories
+#   git push -u origin main
+

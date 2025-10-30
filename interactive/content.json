@@ -1,0 +1,94 @@
+{
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Section 1: Conduct Patient/Client Assessment",
+      "bullets": [
+        "Consent, privacy, scope awareness, and infection control at all times.",
+        "Case history: onset, laterality, fluctuation, noise/trauma, otalgia/otorrhea, tinnitus, dizziness, surgeries, ototoxic meds, systemic disease, communication goals.",
+        "Otoscopy: identify normal landmarks; recognize perforation, effusion, exostoses, foreign body, fungal signs.",
+        "Pure-tone: 250–8000 Hz; interoctaves when gaps ≥20 dB; 5-down/10-up; deep inserts.",
+        "Masking: IA typical inserts ~55 dB, supra-aural ~40 dB, bone 0 dB; plateau method; avoid overmasking.",
+        "Speech: SRT ≈ PTA ±5–10 dB; WRS at 30–40 dB SL re: SRT or at MCL; watch for rollover.",
+        "Immittance: Jerger A/As/Ad/B/C; reflexes 70–100 dB HL typical; decay suggests retrocochlear.",
+        "Referral red flags: sudden or asymmetric loss, unilateral tinnitus, otorrhea/otalgia, acute vertigo, trauma, suspected perforation/cholesteatoma."
+      ],
+      "keyNumbers": [
+        "Tymp peak −100 to +50 daPa; compliance 0.3–1.5 mL; ECV ~0.9–2.0 mL.",
+        "Occlusion effect ≈ 20/15/10/0 dB at 250/500/1k/≥2k Hz.",
+        "Mask AC when AC(te) − IA ≥ BC(nte); mask BC when ABG > 10 dB."
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Section 2: Interpret and Apply Assessment Results",
+      "bullets": [
+        "Degree (adults): Normal ≤25, Mild 26–40, Moderate 41–55, Mod-Sev 56–70, Severe 71–90, Profound >90 dB HL.",
+        "Type: Conductive (ABG, normal BC), Sensorineural (AC≈BC elevated), Mixed (AC & BC elevated with ABG).",
+        "Configurations: flat, sloping, precipitous, cookie-bite, reverse-slope, noise notch (3–6 kHz), Carhart’s notch (~2 kHz).",
+        "Cross-check: PTA vs SRT; WRS consistent with degree; tymps/reflexes match type.",
+        "Referral triggers: asymmetry, sudden/rapid loss, unilateral tinnitus, persistent otalgia/otorrhea, acute vertigo, retrocochlear signs."
+      ],
+      "keyNumbers": [
+        "PTA (0.5/1/2 kHz); SRT ≈ PTA ±5–10 dB."
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Section 3: Select Hearing Devices",
+      "bullets": [
+        "Drivers: audiogram, MPO needs, anatomy, cerumen, dexterity/vision, cosmetics, connectivity, budget.",
+        "Styles: RIC/BTE (versatile, serviceable, power) vs customs (cosmetics, retention).",
+        "Coupling: domes (open/vented) vs custom molds; vent size = occlusion vs LF gain/feedback trade-off.",
+        "Features: compression, directionality, noise reduction, feedback cancellation, frequency lowering, tinnitus, telecoil, Bluetooth/LE Audio.",
+        "Special: SSD → CROS; unaidable + better ear → BiCROS; severe–profound → power BTE + custom mold; pediatrics → DSL v5, RECD, DM, tamperproof."
+      ],
+      "keyNumbers": [
+        "Battery colors: 10 yellow, 312 brown, 13 orange, 675 blue."
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Section 4: Fit and Dispense Hearing Devices",
+      "bullets": [
+        "Prescription: Adults NAL-NL2; Pediatrics DSL v5.",
+        "Programming: thresholds and UCL/LDL; set MPO < UCL; adaptation as needed.",
+        "REM: REUG, REAR/REAG, REIG; probe within ~5 mm of TM; match soft/medium/loud targets; verify MPO.",
+        "Test box: OSPL90, HFA OSPL90, FOG, EIN, THD vs specs.",
+        "Validation: COSI, APHAB, HHIE/HHIA, SSQ, IOI-HA; orientation and counseling.",
+        "Ear impressions: pre/post-otoscopy; otoblock; stop if pain/dizziness; contraindications include suspected perf/tubes."
+      ],
+      "keyNumbers": [
+        "Soft speech ~55 dB SPL; verify MPO with 85–90 dB SPL inputs."
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Section 5: Provide Continuing Care",
+      "bullets": [
+        "Follow-up: 1–2 weeks, 4–6 weeks, then periodic 6–12 months; annual hearing recheck.",
+        "Troubleshooting: feedback (seal/vent/gain/manager), weak (wax/receiver), distortion (moisture/receiver), boomy own voice (occlusion/vent).",
+        "Maintenance: cleaning, desiccation, tubing/receiver changes, firmware, loaners/RMA.",
+        "Documentation: SOAP notes, serials/settings saved, outcomes, referrals.",
+        "Counseling: expectations, consistent wear, communication strategies, family involvement, resources."
+      ],
+      "keyNumbers": [
+        "General noise concept: ~85 dBA for 8h as a reference exposure concept."
+      ]
+    }
+  ],
+  "flashcards": [
+    { "front": "IA (typical) for inserts?", "back": "≈55 dB (supra-aural ≈40 dB; bone 0 dB)." },
+    { "front": "Adult tymp normal peak range?", "back": "≈ −100 to +50 daPa; compliance ≈ 0.3–1.5 mL; ECV ≈ 0.9–2.0 mL." },
+    { "front": "SRT should agree with?", "back": "PTA within about ±5–10 dB." },
+    { "front": "When do you mask BC?", "back": "When ABG > 10 dB in the test ear." },
+    { "front": "SSD recommended solution?", "back": "CROS; unaidable + better ear → BiCROS." },
+    { "front": "Adult default prescription?", "back": "NAL-NL2 (DSL v5 for pediatrics)." },
+    { "front": "What is REIG?", "back": "REAR − REUG (aided minus unaided gain)." },
+    { "front": "Color for size 312 battery?", "back": "Brown (10 yellow, 13 orange, 675 blue)." },
+    { "front": "Jerger Type B with large ECV?", "back": "TM perforation or patent PE tube likely." },
+    { "front": "Rollover suggests?", "back": "Possible retrocochlear involvement; consider medical referral." }
+  ]
+}
+
+

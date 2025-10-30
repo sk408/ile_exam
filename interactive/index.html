@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ILE Interactive Study Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ILE Interactive Study Guide</h1>
+      <nav>
+        <button class="tab-btn" data-tab="guide">Study Guide</button>
+        <button class="tab-btn" data-tab="flashcards">Flashcards</button>
+        <button class="tab-btn" data-tab="exam">Practice Exam</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="guide" class="tab active">
+        <div id="guide-sections" class="sections"></div>
+      </section>
+
+      <section id="flashcards" class="tab">
+        <div class="flashcard-controls">
+          <button id="prev-card">Prev</button>
+          <button id="flip-card">Flip</button>
+          <button id="next-card">Next</button>
+        </div>
+        <div id="flashcard" class="flashcard">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+        <div id="flashcard-progress" class="progress"></div>
+      </section>
+
+      <section id="exam" class="tab">
+        <div class="exam-controls">
+          <label>Number of Questions:
+            <select id="exam-length">
+              <option value="25">25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+              <option value="200" selected>200</option>
+            </select>
+          </label>
+          <button id="start-exam">Start Exam</button>
+          <button id="review-exam" disabled>Review</button>
+          <button id="reset-exam">Reset</button>
+        </div>
+
+        <div id="exam-panel" class="exam-panel hidden">
+          <div id="exam-status" class="exam-status"></div>
+          <div id="exam-question" class="exam-question"></div>
+          <div id="exam-choices" class="exam-choices"></div>
+          <div class="exam-nav">
+            <button id="prev-q">Prev</button>
+            <button id="next-q">Next</button>
+            <button id="submit-exam">Submit Exam</button>
+          </div>
+        </div>
+
+        <div id="exam-results" class="exam-results hidden"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Built for ILE preparation. Use responsibly within your scope; always follow
+        your jurisdiction’s regulations and current IHS guidance.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+  </html>
+
+
