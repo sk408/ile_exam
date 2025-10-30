@@ -11,7 +11,6 @@
       <h1>ILE Interactive Study Guide</h1>
       <nav>
         <button class="tab-btn" data-tab="guide">Study Guide</button>
-        <button class="tab-btn" data-tab="flashcards">Flashcards</button>
         <button class="tab-btn" data-tab="exam">Practice Exam</button>
       </nav>
     </header>
@@ -21,27 +20,21 @@
         <div id="guide-sections" class="sections"></div>
       </section>
 
-      <section id="flashcards" class="tab">
-        <div class="flashcard-controls">
-          <button id="prev-card">Prev</button>
-          <button id="flip-card">Flip</button>
-          <button id="next-card">Next</button>
-        </div>
-        <div id="flashcard" class="flashcard">
-          <div class="front"></div>
-          <div class="back"></div>
-        </div>
-        <div id="flashcard-progress" class="progress"></div>
-      </section>
-
       <section id="exam" class="tab">
+        <div class="exam-info">
+          <h3>Practice Exam</h3>
+          <p><strong>Full ILE Exam:</strong> 105 questions in 120 minutes (~68 seconds per question)</p>
+          <p>The question bank now contains <strong>300 questions</strong> (60 per section). Each practice exam randomly selects from this pool for varied practice.</p>
+          <p><em>Tip: Start with shorter exams to learn content, then take full 105-question timed exams to practice pacing.</em></p>
+        </div>
+        
         <div class="exam-controls">
           <label>Number of Questions:
             <select id="exam-length">
-              <option value="25">25</option>
-              <option value="50">50</option>
-              <option value="100">100</option>
-              <option value="200" selected>200</option>
+              <option value="25">25 questions</option>
+              <option value="50">50 questions</option>
+              <option value="105">105 questions (Full ILE Exam)</option>
+              <option value="200">200 questions</option>
             </select>
           </label>
           <button id="start-exam">Start Exam</button>
@@ -50,6 +43,7 @@
         </div>
 
         <div id="exam-panel" class="exam-panel hidden">
+          <div id="timer-display" class="timer-display"></div>
           <div id="exam-status" class="exam-status"></div>
           <div id="exam-question" class="exam-question"></div>
           <div id="exam-choices" class="exam-choices"></div>

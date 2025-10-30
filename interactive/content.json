@@ -3,92 +3,427 @@
     {
       "id": "s1",
       "title": "Section 1: Conduct Patient/Client Assessment",
-      "bullets": [
-        "Consent, privacy, scope awareness, and infection control at all times.",
-        "Case history: onset, laterality, fluctuation, noise/trauma, otalgia/otorrhea, tinnitus, dizziness, surgeries, ototoxic meds, systemic disease, communication goals.",
-        "Otoscopy: identify normal landmarks; recognize perforation, effusion, exostoses, foreign body, fungal signs.",
-        "Pure-tone: 250–8000 Hz; interoctaves when gaps ≥20 dB; 5-down/10-up; deep inserts.",
-        "Masking: IA typical inserts ~55 dB, supra-aural ~40 dB, bone 0 dB; plateau method; avoid overmasking.",
-        "Speech: SRT ≈ PTA ±5–10 dB; WRS at 30–40 dB SL re: SRT or at MCL; watch for rollover.",
-        "Immittance: Jerger A/As/Ad/B/C; reflexes 70–100 dB HL typical; decay suggests retrocochlear.",
-        "Referral red flags: sudden or asymmetric loss, unilateral tinnitus, otorrhea/otalgia, acute vertigo, trauma, suspected perforation/cholesteatoma."
-      ],
-      "keyNumbers": [
-        "Tymp peak −100 to +50 daPa; compliance 0.3–1.5 mL; ECV ~0.9–2.0 mL.",
-        "Occlusion effect ≈ 20/15/10/0 dB at 250/500/1k/≥2k Hz.",
-        "Mask AC when AC(te) − IA ≥ BC(nte); mask BC when ABG > 10 dB."
+      "subsections": [
+        {
+          "heading": "Professional Standards & Safety",
+          "content": [
+            "**Informed Consent**: Obtain written consent before testing; explain procedures, risks, and purpose. Ensure patient understands their rights.",
+            "**Privacy (HIPAA)**: Protect patient information; secure records; discuss results in private; obtain consent for any information sharing.",
+            "**Scope of Practice**: Know your limitations. Hearing instrument fitters/dispensers conduct hearing evaluations for hearing aid purposes, but cannot diagnose medical conditions or practice audiology beyond fitting scope.",
+            "**Infection Control**: Hand hygiene before/after each patient; use fresh gloves; high-level disinfection for semi-critical items (specula, impression syringes); proper PPE when indicated."
+          ]
+        },
+        {
+          "heading": "Case History Essentials",
+          "content": [
+            "**Onset & Duration**: When did hearing loss begin? Gradual vs sudden? Stable vs progressive?",
+            "**Laterality**: Unilateral, bilateral, or asymmetric? (Asymmetry is a red flag)",
+            "**Fluctuation**: Does hearing change day-to-day? (Consider Meniere's, autoimmune conditions)",
+            "**Noise Exposure**: Occupational or recreational? Duration and intensity? (NIHL typically shows 3-6 kHz notch)",
+            "**Otalgia/Otorrhea**: Ear pain or drainage requires medical referral; suggests infection or perforation",
+            "**Tinnitus**: Unilateral or pulsatile tinnitus are red flags; bilateral tinnitus common with SNHL",
+            "**Vertigo/Dizziness**: Acute vertigo with hearing loss suggests Meniere's or labyrinthitis; requires referral",
+            "**Medical History**: Prior ear surgeries, chronic ear infections, ototoxic medications (aminoglycosides, cisplatin, loop diuretics), head trauma, autoimmune disease, diabetes",
+            "**Functional Impact**: Communication difficulties at work, home, groups; phone use; TV listening; safety concerns",
+            "**Patient Goals**: What situations are most important? Realistic expectations critical for success"
+          ]
+        },
+        {
+          "heading": "Otoscopy",
+          "content": [
+            "**Normal TM**: Pearly gray, translucent; visible landmarks (handle of malleus, umbo, cone of light at 5 o'clock right ear, 7 o'clock left ear); intact canal skin",
+            "**Abnormal Findings**: Erythema (redness—infection), bulging (effusion), retraction (negative pressure), fluid line/air bubbles (OME), perforation (opening in TM), exostoses (bony growths), cerumen impaction, foreign body, fungal debris (fluffy white/black)",
+            "**When to Refer**: Active infection, suspected perforation, significant cerumen you cannot safely remove, trauma, deformity, tumors, drainage with pain"
+          ]
+        },
+        {
+          "heading": "Pure-Tone Audiometry",
+          "content": [
+            "**Equipment**: Calibrated annually (ANSI standards); daily biological check; inserts preferred (55 dB IA, better hygiene)",
+            "**Frequencies**: 250, 500, 1000, 2000, 3000, 4000, 6000, 8000 Hz minimum; add interoctaves (750, 1500, 3000, 6000) for ≥20 dB gaps or fitting needs",
+            "**Threshold Method**: Modified Hughson-Westlake: 5 dB down / 10 dB up; threshold = lowest level with ≥50% response on ascending trials",
+            "**Air Conduction**: Supra-aural or insert phones; start at 1000 Hz (30 dB or audible level), then test higher frequencies, then lower",
+            "**Bone Conduction**: Mastoid placement; avoid pinna contact; test 250-4000 Hz; watch for vibrotactile responses at low frequencies (≤250 Hz)"
+          ]
+        },
+        {
+          "heading": "Masking Rules (Critical!)",
+          "content": [
+            "**Interaural Attenuation (IA)**: Inserts ~55 dB | Supra-aural ~40 dB | Bone ~0 dB",
+            "**When to Mask Air Conduction**: When AC(test ear) − IA ≥ BC(non-test ear). Example: If testing right AC at 70 dB with inserts (IA=55), and left BC is 20 dB, then 70-55=15. Is 15≥20? No, so no masking needed. But if AC were 80: 80-55=25≥20, so MASK.",
+            "**When to Mask Bone Conduction**: When air-bone gap in test ear >10 dB (crossover to opposite cochlea)",
+            "**When to Mask Speech**: When presentation level (PL) − IA ≥ best BC or SRT of non-test ear",
+            "**Initial Masking Levels**: AC: start at AC(non-test) + 10 dB | BC: AC(non-test) + Occlusion Effect + 10 dB | Speech: SRT(non-test) + 10 dB",
+            "**Occlusion Effect**: ~20 dB at 250 Hz | ~15 dB at 500 Hz | ~10 dB at 1000 Hz | ~0 dB at ≥2000 Hz",
+            "**Plateau Method**: Increase masker in 5 dB steps; threshold plateaus when 3 consecutive 5 dB increases don't shift threshold",
+            "**Overmasking**: Occurs when masker crosses back to test ear. Check: Masker(non-test) + IA ≥ BC(test ear)? If yes, you're overmasking."
+          ]
+        },
+        {
+          "heading": "Speech Audiometry",
+          "content": [
+            "**Speech Reception Threshold (SRT)**: Lowest level patient can repeat spondees (2-syllable equal-stress words like 'baseball', 'hotdog') 50% of the time",
+            "**SRT vs PTA Agreement**: Should agree within ±5-10 dB. If not, question test validity, check for configuration effects, or consider nonorganic hearing loss",
+            "**Word Recognition Score (WRS)**: Percentage of phonetically balanced (PB) monosyllabic words correctly repeated",
+            "**WRS Presentation Level**: Typically 30-40 dB SL re: SRT, or at MCL (most comfortable loudness)",
+            "**WRS Interpretation**: 90-100% = excellent | 80-89% = good | 70-79% = fair | 60-69% = poor | <60% = very poor",
+            "**Rollover**: Decrease in WRS at higher presentation levels; suggests retrocochlear pathology (e.g., acoustic neuroma)",
+            "**MCL/UCL**: Most comfortable level and uncomfortable loudness level; used to set compression parameters and MPO"
+          ]
+        },
+        {
+          "heading": "Immittance (Tympanometry & Reflexes)",
+          "content": [
+            "**Adult Norms**: Peak pressure −100 to +50 daPa | Static compliance 0.3-1.5 mL | ECV (ear canal volume) 0.9-2.0 mL",
+            "**Jerger Type A**: Normal peak at 0 daPa; normal compliance; normal middle ear",
+            "**Jerger Type As**: Shallow/reduced compliance; stiff system; suggests otosclerosis, scarring, or fixation",
+            "**Jerger Type Ad**: Deep/excessive compliance; flaccid system; suggests ossicular discontinuity or thin TM",
+            "**Jerger Type B**: Flat (no peak); if normal ECV = middle ear effusion; if large ECV (>2.5 mL) = perforation or PE tube",
+            "**Jerger Type C**: Peak at negative pressure (<−100 daPa); Eustachian tube dysfunction; may progress to effusion",
+            "**Acoustic Reflexes**: Stapedial reflex at 70-100 dB HL in normal ears; absent in significant CHL; may be absent/elevated in severe SNHL",
+            "**Reflex Decay**: >50% amplitude reduction over 10 seconds at 500 or 1000 Hz suggests retrocochlear pathology; requires medical referral"
+          ]
+        },
+        {
+          "heading": "Medical Referral Red Flags",
+          "content": [
+            "✗ Sudden hearing loss (especially unilateral) — URGENT within 72 hours",
+            "✗ Asymmetric hearing loss ≥15 dB at 2+ adjacent frequencies",
+            "✗ Unilateral or pulsatile tinnitus",
+            "✗ Persistent otalgia (ear pain) or otorrhea (drainage)",
+            "✗ Acute vertigo or significant balance problems",
+            "✗ Visible deformity, trauma, or suspected cholesteatoma",
+            "✗ Suspected TM perforation or PE tubes (without authorization)",
+            "✗ Positive acoustic reflex decay",
+            "✗ Disproportionately poor WRS (rollover, asymmetry)",
+            "✗ Fluctuating hearing loss with vertigo (Meniere's pattern)",
+            "✗ Conductive hearing loss requiring medical evaluation",
+            "✗ Any condition requiring medical diagnosis or treatment"
+          ]
+        }
       ]
     },
     {
       "id": "s2",
       "title": "Section 2: Interpret and Apply Assessment Results",
-      "bullets": [
-        "Degree (adults): Normal ≤25, Mild 26–40, Moderate 41–55, Mod-Sev 56–70, Severe 71–90, Profound >90 dB HL.",
-        "Type: Conductive (ABG, normal BC), Sensorineural (AC≈BC elevated), Mixed (AC & BC elevated with ABG).",
-        "Configurations: flat, sloping, precipitous, cookie-bite, reverse-slope, noise notch (3–6 kHz), Carhart’s notch (~2 kHz).",
-        "Cross-check: PTA vs SRT; WRS consistent with degree; tymps/reflexes match type.",
-        "Referral triggers: asymmetry, sudden/rapid loss, unilateral tinnitus, persistent otalgia/otorrhea, acute vertigo, retrocochlear signs."
-      ],
-      "keyNumbers": [
-        "PTA (0.5/1/2 kHz); SRT ≈ PTA ±5–10 dB."
+      "subsections": [
+        {
+          "heading": "Degree of Hearing Loss (Adults)",
+          "content": [
+            "**Normal**: ≤25 dB HL (children: ≤15 dB HL)",
+            "**Mild**: 26-40 dB HL — Difficulty with soft speech, background noise",
+            "**Moderate**: 41-55 dB HL — Difficulty with normal conversational speech",
+            "**Moderately Severe**: 56-70 dB HL — Loud speech needed; significant communication difficulty",
+            "**Severe**: 71-90 dB HL — Only very loud speech heard; strong amplification needed",
+            "**Profound**: >90 dB HL — May not hear even loud speech; consider cochlear implant evaluation",
+            "**Note**: PTA (Pure Tone Average) = average of 500, 1000, 2000 Hz thresholds"
+          ]
+        },
+        {
+          "heading": "Type of Hearing Loss",
+          "content": [
+            "**Conductive (CHL)**: Air conduction worse than bone conduction; ABG ≥15 dB; normal or near-normal BC; abnormal tympanometry common; reflexes often absent; causes: OME, otosclerosis, ossicular problems, TM perforation; often medically/surgically treatable",
+            "**Sensorineural (SNHL)**: Air and bone conduction similarly elevated; ABG ≤10 dB; normal tympanometry; reflexes may be absent or elevated; causes: presbycusis, noise exposure, ototoxicity, genetic factors; permanent, managed with amplification",
+            "**Mixed**: Both conductive AND sensorineural components; elevated AC and BC with ABG >15 dB; combination of middle ear and cochlear/neural pathology"
+          ]
+        },
+        {
+          "heading": "Audiometric Configurations",
+          "content": [
+            "**Flat**: Similar loss across frequencies; may be conductive or sensorineural",
+            "**Sloping (High-Frequency)**: Most common; better low frequencies, worse high frequencies; typical of presbycusis and noise exposure",
+            "**Precipitous**: Severe drop (>20 dB/octave) in high frequencies; frequency lowering may help",
+            "**Cookie-Bite (Mid-Frequency)**: Loss at 1000-2000 Hz with better hearing at low and high frequencies; often genetic; affects speech clarity significantly",
+            "**Reverse-Slope (Rising)**: Better high frequencies than low; less common; seen in Meniere's (early), genetic conditions",
+            "**Noise Notch**: Characteristic dip at 3000-6000 Hz (classically 4000 Hz); indicates noise-induced hearing loss; better hearing at 8000 Hz (recovery)",
+            "**Carhart's Notch**: Artifactual BC notch around 2000 Hz in otosclerosis due to middle ear stiffness affecting bone conduction measurement"
+          ]
+        },
+        {
+          "heading": "Cross-Check Principle",
+          "content": [
+            "Use multiple independent measures to validate findings:",
+            "• **SRT vs PTA**: Should agree within ±5-10 dB; large discrepancy suggests test reliability issues or nonorganic loss",
+            "• **WRS vs Degree**: Severe loss should have reduced WRS; mild loss with very poor WRS raises retrocochlear concerns",
+            "• **Type vs Tympanometry**: Conductive loss should show abnormal tymps; normal tymps with large ABG is inconsistent",
+            "• **Reflexes vs Type**: CHL typically has absent reflexes; presence of reflexes with supposed CHL is inconsistent",
+            "• **Configuration vs History**: Noise notch should match noise exposure history; sudden asymmetric loss needs medical correlation"
+          ]
+        },
+        {
+          "heading": "Clinical Patterns & Their Implications",
+          "content": [
+            "**Presbycusis**: Bilateral symmetric sloping high-frequency SNHL; gradual onset; age-related; good hearing aid candidate",
+            "**Noise-Induced Hearing Loss (NIHL)**: Bilateral (usually symmetric) notch at 3-6 kHz; history of noise exposure; permanent; counsel on hearing protection",
+            "**Meniere's Disease**: Fluctuating low-frequency SNHL; episodes of vertigo (hours); tinnitus; aural fullness; requires medical management",
+            "**Otosclerosis**: Conductive loss (may become mixed); Type As tympanogram (stiff); Carhart's notch; often bilateral; may worsen with pregnancy; surgical candidate",
+            "**Acoustic Neuroma (Retrocochlear)**: Asymmetric SNHL; unilateral tinnitus; poor WRS relative to PTA; possible reflex decay; positive rollover; requires MRI",
+            "**Ototoxicity**: Bilateral symmetric high-frequency SNHL; history of aminoglycosides, cisplatin, or loop diuretics; may be progressive",
+            "**Sudden Sensorineural Hearing Loss (SSNHL)**: Rapid onset (≤72 hours); ≥30 dB loss at 3 consecutive frequencies; MEDICAL EMERGENCY for corticosteroid treatment"
+          ]
+        },
+        {
+          "heading": "Hearing Aid Candidacy Determination",
+          "content": [
+            "**Good Candidates**: Mild-moderate SNHL; good WRS (>60%); motivated patient; realistic expectations; bilateral fitting preferred for most",
+            "**Challenging Candidates**: Severe-profound loss with poor WRS (<40%); may need intensive counseling on realistic expectations; consider assistive devices, cochlear implant evaluation",
+            "**Special Considerations**: SSD → CROS system; asymmetric loss with one unaidable ear → BiCROS; severe-profound → power BTE with custom mold",
+            "**Pediatric**: Immediate amplification critical for speech/language development; use DSL v5; measure RECD; tamperproof features; involve family"
+          ]
+        },
+        {
+          "heading": "Documentation & Counseling",
+          "content": [
+            "**Essential Documentation**: Date/time of test; otoscopic findings; complete audiogram (air/bone/speech); tympanometry; acoustic reflexes; interpretation; recommendations; medical referrals",
+            "**Counseling Best Practices**: Explain findings in plain language; show audiogram; discuss type, degree, configuration; realistic expectations about hearing aids; address patient questions; provide written summary",
+            "**Setting Expectations**: Hearing aids improve access to sound but don't restore normal hearing; background noise remains challenging; benefit requires consistent wear (8+ hours/day); adjustment period 2-4 weeks; follow-up essential"
+          ]
+        }
       ]
     },
     {
       "id": "s3",
       "title": "Section 3: Select Hearing Devices",
-      "bullets": [
-        "Drivers: audiogram, MPO needs, anatomy, cerumen, dexterity/vision, cosmetics, connectivity, budget.",
-        "Styles: RIC/BTE (versatile, serviceable, power) vs customs (cosmetics, retention).",
-        "Coupling: domes (open/vented) vs custom molds; vent size = occlusion vs LF gain/feedback trade-off.",
-        "Features: compression, directionality, noise reduction, feedback cancellation, frequency lowering, tinnitus, telecoil, Bluetooth/LE Audio.",
-        "Special: SSD → CROS; unaidable + better ear → BiCROS; severe–profound → power BTE + custom mold; pediatrics → DSL v5, RECD, DM, tamperproof."
-      ],
-      "keyNumbers": [
-        "Battery colors: 10 yellow, 312 brown, 13 orange, 675 blue."
+      "subsections": [
+        {
+          "heading": "Hearing Aid Styles",
+          "content": [
+            "**BTE (Behind-the-Ear)**: Largest power/features; easiest to handle; rechargeable options; suitable for all losses including severe-profound; most serviceable",
+            "**RIC/RITE (Receiver-in-Canal)**: Most popular; cosmetically appealing; versatile (mild-severe); replaceable receivers; open/closed coupling options; rechargeable available",
+            "**ITE (In-the-Ear / Full Shell)**: Fills concha and canal; larger controls; good for dexterity issues; moderate-severe losses; visible but acceptable cosmetics",
+            "**ITC (In-the-Canal)**: Half-shell; less visible; mild-moderate losses; smaller controls require decent dexterity",
+            "**CIC (Completely-in-Canal)**: Deep canal placement; good cosmetics; mild-moderate losses; small battery (10); requires good dexterity; may have occlusion",
+            "**IIC (Invisible-in-Canal)**: Deepest placement; invisible; mild-moderate losses only; excellent cosmetics; very small; may be difficult to handle"
+          ]
+        },
+        {
+          "heading": "Style Selection Decision Factors",
+          "content": [
+            "**Audiogram**: Severe-profound → BTE with custom mold | Mild-moderate sloping → RIC | Flat mild-moderate → custom ITE/ITC/CIC",
+            "**Dexterity**: Poor dexterity (arthritis, tremor) → larger BTE/RIC with rechargeable | Good dexterity → any style",
+            "**Vision**: Poor vision → larger devices with easy controls; tactile markers; rechargeable",
+            "**Cosmetics**: Priority → IIC/CIC/RIC | Less concerned → BTE",
+            "**Cerumen**: Heavy cerumen → BTE/RIC (avoid deep canal) | Minimal cerumen → any style",
+            "**Canal Anatomy**: Small/curved canals → RIC/BTE | Large straight canals → custom options",
+            "**Retention Needs**: Active lifestyle, sports → custom molds or secure domes | Normal activity → any",
+            "**Budget**: Limited → basic BTE | Moderate → mid-level RIC | Premium → advanced RIC/custom with features"
+          ]
+        },
+        {
+          "heading": "Coupling & Earmolds",
+          "content": [
+            "**Open Domes**: Minimal occlusion; natural low-frequency sound; best for mild-moderate sloping HF loss; increased feedback risk",
+            "**Closed/Power Domes**: More LF gain; less feedback; mild-moderate losses; disposable",
+            "**Custom Earmolds**: Best seal; maximum gain without feedback; required for severe-profound; various materials (silicone, acrylic)",
+            "**Venting**: Larger vent = less occlusion, less LF gain, more feedback risk | Smaller vent/no vent = more LF gain, more occlusion, less feedback | Pressure vent (small) = reduces occlusion without sacrificing much gain",
+            "**Materials**: Soft silicone (comfortable, better seal, good for pediatrics) | Hard acrylic (durable, thin walls, power fittings) | Canal-lok for retention"
+          ]
+        },
+        {
+          "heading": "Essential Features & Technologies",
+          "content": [
+            "**Compression (WDRC)**: Makes soft sounds audible, moderate sounds comfortable, loud sounds tolerable; multiple channels (4-20+); ratios (1.5:1 to 3:1 typical)",
+            "**Directional Microphones**: Emphasize front sounds (speech); reduce rear/side sounds (noise); improves SNR by 3-6 dB in optimal conditions; adaptive directional tracks speech location",
+            "**Noise Reduction**: Reduces gain in frequency bands dominated by noise; improves comfort; modest SNR benefit; doesn't eliminate all noise",
+            "**Feedback Cancellation**: Phase-cancellation technology suppresses feedback; allows more gain before whistling; not a substitute for proper fit",
+            "**Frequency Lowering**: Moves high-frequency information to lower frequencies; helps severe HF loss or 'dead regions'; requires verification and adjustment period",
+            "**Tinnitus Features**: Broadband noise, ocean sounds, music; masking/habituation strategy; doesn't cure tinnitus; used as part of comprehensive tinnitus management"
+          ]
+        },
+        {
+          "heading": "Connectivity & Accessories",
+          "content": [
+            "**Bluetooth/LE Audio**: Direct streaming from phones, tablets, computers, TVs; hands-free calling; app control; battery impact varies by use",
+            "**Telecoil (T-coil)**: Couples with loop systems (theaters, churches); compatible with landline phones; no battery drain; useful alternative to Bluetooth",
+            "**Remote Microphones**: Place near talker; dramatically improves SNR in noise, distance, groups; most effective assistive technology for difficult listening",
+            "**TV Streamers**: Direct audio from TV to hearing aids; clear sound without high volume; family-friendly",
+            "**Smartphone Apps**: Volume control; program changes; streaming; bass/treble adjustments; find my hearing aid; data logging"
+          ]
+        },
+        {
+          "heading": "Special Fitting Scenarios",
+          "content": [
+            "**Single-Sided Deafness (SSD)**: CROS (mic on deaf side, receiver on normal side); routes sound from deaf side to hearing ear; improves awareness but not localization",
+            "**Asymmetric Loss (BiCROS)**: One unaidable ear + one aidable ear; BiCROS amplifies better ear AND routes from worse ear",
+            "**Severe-Profound Loss**: Power BTE + thick-walled custom mold; may need 675 battery; high-power receiver; consider earmold material (hard acrylic for thin walls)",
+            "**Pediatric**: DSL v5 targets (more gain than NAL-NL2); measure RECD (critical for accuracy); soft silicone molds; tamperproof battery doors; frequent remolds (growing ears); FM/remote mic for school; involve parents/teachers",
+            "**Chronic Drainage**: Avoid occlusive in-canal devices; open-fit RIC or bone conduction aids; medical clearance required",
+            "**Fluctuating Loss (Meniere's)**: Multiple programs; wide dynamic range; frequent adjustments; patient-controlled volume; manage expectations"
+          ]
+        },
+        {
+          "heading": "Batteries & Power",
+          "content": [
+            "**Zinc-Air Batteries**: Size 10 (yellow, smallest, IIC/CIC); 312 (brown, ITC/small RIC); 13 (orange, ITE/BTE); 675 (blue, largest, power BTE)",
+            "**Battery Life**: Size 10 = 3-7 days | 312 = 7-10 days | 13 = 10-14 days | 675 = 14-21 days (varies with use, features, streaming)",
+            "**Rechargeable Lithium-Ion**: Full-day use (16-24 hours) on one charge; overnight charging; eliminates battery changes; ideal for dexterity issues; slightly larger devices; battery degrades over 3-5 years"
+          ]
+        }
       ]
     },
     {
       "id": "s4",
       "title": "Section 4: Fit and Dispense Hearing Devices",
-      "bullets": [
-        "Prescription: Adults NAL-NL2; Pediatrics DSL v5.",
-        "Programming: thresholds and UCL/LDL; set MPO < UCL; adaptation as needed.",
-        "REM: REUG, REAR/REAG, REIG; probe within ~5 mm of TM; match soft/medium/loud targets; verify MPO.",
-        "Test box: OSPL90, HFA OSPL90, FOG, EIN, THD vs specs.",
-        "Validation: COSI, APHAB, HHIE/HHIA, SSQ, IOI-HA; orientation and counseling.",
-        "Ear impressions: pre/post-otoscopy; otoblock; stop if pain/dizziness; contraindications include suspected perf/tubes."
-      ],
-      "keyNumbers": [
-        "Soft speech ~55 dB SPL; verify MPO with 85–90 dB SPL inputs."
+      "subsections": [
+        {
+          "heading": "Pre-Fitting Requirements",
+          "content": [
+            "**Verify Audiometry**: Confirm recent audiogram (within 6 months); check for medical referral requirements; ensure no contraindications",
+            "**Medical Clearance (varies by state)**: Texas requires physician evaluation within 6 months OR signed waiver (18+ only); children <18 require physician clearance (no waiver)",
+            "**Needs Assessment**: Review listening environments (work, home, groups, phone, TV); prioritize patient goals; set realistic expectations",
+            "**Device Selection**: Choose style, technology level, features based on audiogram, patient factors, budget",
+            "**Financial Counseling**: Discuss pricing, insurance coverage, payment options, warranty terms, trial period, refund policy"
+          ]
+        },
+        {
+          "heading": "Programming & Prescriptive Targets",
+          "content": [
+            "**NAL-NL2 (Adults)**: Focuses on speech intelligibility and comfort; balanced frequency response; generally less gain than DSL; considers binaural summation",
+            "**DSL v5 (Pediatrics)**: Maximizes audibility for speech development; more high-frequency emphasis; uses RECD for accuracy; considers smaller ear canal volumes",
+            "**First Fit**: Enter audiogram accurately; use age-appropriate prescription; set appropriate compression parameters; enable adaptation manager for new users",
+            "**MPO Setting**: Set maximum output below UCL with safety margin (5-10 dB); prevents discomfort; verify with 85-90 dB SPL input during REM",
+            "**Adaptation Strategy**: New users may need reduced gain initially (acclimatization); gradually increase over 2-4 weeks; prevents rejection due to overpowering sound"
+          ]
+        },
+        {
+          "heading": "Real Ear Measurement (REM) - CRITICAL",
+          "content": [
+            "**Why REM?**: Accounts for individual ear acoustics (resonance, canal length, volume); ensures prescribed targets achieved; improves outcomes; objective verification",
+            "**REUG (Real Ear Unaided Gain)**: Natural resonance of open ear canal; typically 15-20 dB peak at 2700 Hz",
+            "**REAR (Real Ear Aided Response)**: SPL in ear canal WITH hearing aid on at specific input levels (soft 55, medium 65, loud 75 dB SPL)",
+            "**REIG (Real Ear Insertion Gain)**: REAR minus REUG; actual gain provided by hearing aid",
+            "**RECD (Real Ear to Coupler Difference)**: Difference between SPL in real ear vs 2cc coupler; CRITICAL for pediatric fittings to convert coupler values to real ear",
+            "**Probe Placement**: Position probe tube within 5-6 mm of tympanic membrane; use otoblocks or earmold to stabilize; verify placement doesn't affect sound delivery",
+            "**Target Matching**: Match prescriptive targets (NAL-NL2/DSL) at soft (55), medium (65), loud (75) input levels; acceptable within ±5 dB at most frequencies; prioritize speech frequencies (500-4000 Hz)",
+            "**MPO Verification**: Use 85-90 dB SPL input; ensure output stays below UCL (uncomfortable loudness level); adjust compression kneepoints and limiters as needed"
+          ]
+        },
+        {
+          "heading": "Test Box (Electroacoustic) Verification",
+          "content": [
+            "**OSPL90**: Output Sound Pressure Level with 90 dB input; maximum output curve; compare to manufacturer specifications",
+            "**HFA OSPL90**: High Frequency Average of OSPL90 at 1000, 1600, 2500 Hz; single-number summary of output",
+            "**Full-On Gain (FOG)**: Gain measured at maximum volume setting with 50 dB input",
+            "**Frequency Response**: Gain across frequency range; should match audiogram needs",
+            "**EIN (Equivalent Input Noise)**: Internal circuit noise of hearing aid; lower is better (typically 20-30 dB)",
+            "**THD (Total Harmonic Distortion)**: Should be <3% for quality; higher distortion degrades sound quality",
+            "**When to Use**: Quality control; verify manufacturer specs; troubleshooting device problems; when REM unavailable (less preferred)"
+          ]
+        },
+        {
+          "heading": "Validation (Measuring Real-World Benefit)",
+          "content": [
+            "**COSI (Client Oriented Scale of Improvement)**: Patient identifies 5 specific listening goals; rates improvement and final ability; excellent for individual outcomes",
+            "**APHAB (Abbreviated Profile of Hearing Aid Benefit)**: Self-report questionnaire; 24 questions in 4 environments (ease of communication, reverberation, background noise, aversiveness); pre/post comparison",
+            "**HHIE/HHIA (Hearing Handicap Inventory)**: Emotional and social/situational impact; 25 questions; pre/post comparison; useful for demonstrating benefit",
+            "**SSQ (Speech, Spatial, Qualities)**: Comprehensive questionnaire on speech hearing, spatial hearing, and sound quality",
+            "**IOI-HA (International Outcome Inventory)**: Brief 7-item questionnaire; use, benefit, satisfaction, participation, impact on others, quality of life",
+            "**Aided Audiometry**: Soundfield testing with hearing aids; demonstrates objective improvement; useful for documentation"
+          ]
+        },
+        {
+          "heading": "Orientation & Patient Education",
+          "content": [
+            "**Insertion/Removal**: Demonstrate technique; have patient practice multiple times until proficient; pull pinna up and back to straighten canal; angle correctly",
+            "**Controls**: Identify volume control, program button, on/off function; demonstrate app use if applicable; practice changes",
+            "**Battery/Charging**: Show battery replacement; proper polarity; disposal; OR demonstrate charging dock and nightly routine",
+            "**Cleaning**: Daily wipe with soft cloth; clean wax guards/receivers; use cleaning tools (brush, wax pick); avoid moisture, heat, chemicals",
+            "**What to Expect**: Adjustment period 2-4 weeks; gradual increase in wear time; new sounds may seem loud initially; consistent wear critical (8+ hours/day)",
+            "**Communication Strategies**: Face the speaker; reduce background noise; move closer; ask for repetition/rephrasing; optimize lighting; involve family",
+            "**Follow-Up Schedule**: 1-2 weeks for fine-tuning; 4-6 weeks for progress check; then periodic (6-12 months); annual hearing recheck",
+            "**Warranty & Trial Period**: Explain coverage; trial period rights (Texas: 30 days from dispensing); return/exchange policy; loss/damage insurance options"
+          ]
+        },
+        {
+          "heading": "Ear Impression Safety",
+          "content": [
+            "**Pre-Otoscopy REQUIRED**: Check for contraindications (perforation, infection, tubes, recent surgery, excessive cerumen)",
+            "**Otoblock Placement**: Position beyond second bend; ensures material doesn't contact TM; verify with otoscope",
+            "**Injection Technique**: Smooth, steady pressure; fill evenly; observe patient continuously for pain/dizziness; immediate extraction if discomfort",
+            "**Post-Otoscopy**: Verify otoblock and material removed completely; check for canal abrasion or bleeding",
+            "**Contraindications**: Suspected TM perforation; PE tubes (unless authorized and trained); recent ear surgery; active infection; patient reports severe pain or dizziness during impression"
+          ]
+        }
       ]
     },
     {
       "id": "s5",
       "title": "Section 5: Provide Continuing Care",
-      "bullets": [
-        "Follow-up: 1–2 weeks, 4–6 weeks, then periodic 6–12 months; annual hearing recheck.",
-        "Troubleshooting: feedback (seal/vent/gain/manager), weak (wax/receiver), distortion (moisture/receiver), boomy own voice (occlusion/vent).",
-        "Maintenance: cleaning, desiccation, tubing/receiver changes, firmware, loaners/RMA.",
-        "Documentation: SOAP notes, serials/settings saved, outcomes, referrals.",
-        "Counseling: expectations, consistent wear, communication strategies, family involvement, resources."
-      ],
-      "keyNumbers": [
-        "General noise concept: ~85 dBA for 8h as a reference exposure concept."
+      "subsections": [
+        {
+          "heading": "Follow-Up Schedule",
+          "content": [
+            "**1-2 Weeks Post-Fitting**: Check physical comfort; adjust fit if needed; fine-tune programming based on real-world experience; reinforce insertion/removal; address initial concerns",
+            "**4-6 Weeks**: Assess adaptation progress; may increase gain if using adaptation manager; complete validation questionnaires (COSI, APHAB); troubleshoot any issues",
+            "**Periodic Check-Ups**: Every 6-12 months; hearing recheck; deep cleaning; firmware updates; outcome measure reassessment; adjust programming as needed",
+            "**Annual Hearing Recheck**: New audiogram to detect changes; reprogram if thresholds changed; assess continued appropriateness of devices",
+            "**As-Needed Visits**: Encourage patients to return anytime for concerns; don't wait for scheduled appointments if problems arise"
+          ]
+        },
+        {
+          "heading": "Common Problems & Solutions",
+          "content": [
+            "**Feedback/Whistling**: Check seal (reinsert, try different dome/mold size); check for cerumen blockage (reduces output, increases feedback); reduce high-frequency gain; increase vent size may worsen feedback—reduce vent instead; rerun feedback manager; remake earmold if chronic issue",
+            "**Weak/No Sound**: Check battery (depleted, incorrect insertion, corroded contacts); check for cerumen blocking receiver/sound bore; check microphone ports for debris; check volume not muted or too low; verify device is on; swap receiver if modular RIC; if all fails → repair",
+            "**Distortion**: Check for moisture damage (use dehumidifier overnight); check receiver for corrosion; may need receiver replacement; check for low battery; verify gain not excessive (clipping); test with different battery",
+            "**Boomy Own Voice (Occlusion)**: Increase vent size; use more open coupling; reduce low-frequency gain (<1000 Hz); lengthen canal portion of earmold; ensure deep canal fit",
+            "**Sounds Too Loud**: Reduce overall gain; lower MPO; adjust compression ratios; verify UCL measurements were accurate; may need adaptation time",
+            "**Not Helping in Noise**: Verify directional mics enabled; recommend remote microphone for most difficult situations; counsel on realistic expectations (hearing aids improve but don't eliminate noise challenges); practice communication strategies"
+          ]
+        },
+        {
+          "heading": "Maintenance & Repairs",
+          "content": [
+            "**Daily Maintenance**: Wipe device with soft dry cloth; clean wax guards (replace if clogged); check for moisture; store in dehumidifier overnight",
+            "**Weekly Maintenance**: Deep clean earmolds/domes; check tubing for cracks/discoloration (BTE); check battery contacts for corrosion",
+            "**Professional Maintenance**: Replace wax guards regularly (monthly or as needed); replace tubing/thin tube (every 3-6 months for BTE); replace receivers (RIC—when weak sound despite cleaning); reprogram/update firmware; deep clean ports and microphones",
+            "**When to Repair**: No sound after troubleshooting; broken switches/battery doors; cracked shell/case; intermittent function; moisture damage not resolved by drying",
+            "**Loaner Policy**: Provide loaners during repairs when possible; improves patient satisfaction; prevents loss of adaptation"
+          ]
+        },
+        {
+          "heading": "Counseling for Long-Term Success",
+          "content": [
+            "**Realistic Expectations**: Hearing aids improve access to sound but don't restore normal hearing; background noise remains challenging; benefit requires consistent use; some situations remain difficult even with aids",
+            "**Consistent Wear**: 8+ hours daily minimum for adaptation and benefit; part-time use reduces effectiveness; brain needs time to adjust; more wear = better outcomes",
+            "**Communication Strategies**: Face speakers directly; reduce distance; control environment (turn off TV, close windows); use visual cues (lipreading, gestures); ask for repetition/rephrasing; inform others of hearing loss",
+            "**Family Involvement**: Educate family on communication strategies; involve them in appointments; address their frustrations; facilitate better understanding",
+            "**Technology Changes**: Hearing aids typically last 5-7 years; technology improves significantly; discuss upgrade paths; newer aids may offer better performance",
+            "**Assistive Devices**: Remote microphones most effective accessory; TV streamers for clear audio; alerting devices for doorbells/alarms; captioned phones"
+          ]
+        },
+        {
+          "heading": "Documentation Best Practices",
+          "content": [
+            "**SOAP Notes**: Subjective (patient report), Objective (measures/observations), Assessment (interpretation), Plan (recommendations/actions)",
+            "**Essential Records**: Date of service; services provided; devices dispensed (make, model, serial numbers); programming settings (save in software); REM results; validation outcomes; patient education provided; follow-up plans",
+            "**Retention Requirements**: Texas: 5 years from date of last visit (16 TAC §112.140(d)); must be available for TDLR inspection",
+            "**Outcome Measures**: Document pre/post questionnaires; demonstrate benefit; support medical necessity if needed for insurance",
+            "**Referral Documentation**: Record all medical referrals made; follow up on referral outcomes; document communication with physicians"
+          ]
+        },
+        {
+          "heading": "Hearing Conservation Counseling",
+          "content": [
+            "**Noise Exposure Risks**: ~85 dBA for 8 hours = damage risk reference; every 3 dB increase halves safe exposure time; cumulative exposure over time; prevent further damage",
+            "**Hearing Protection**: Foam earplugs (NRR 29-33 dB); reusable earplugs (NRR 20-27 dB); custom musicians' earplugs (flat attenuation); earmuffs (NRR 20-30 dB); combination for extreme noise",
+            "**NRR (Noise Reduction Rating)**: Derate by 50% for real-world use (NRR 33 → 16.5 dB actual); proper fit critical; educate on correct insertion",
+            "**Safe Listening**: Limit headphone use; follow 60/60 rule (60% volume, 60 minutes max); avoid prolonged loud exposures; take breaks in quiet; distance from loudspeakers",
+            "**Monitor for Changes**: Annual hearing tests; watch for tinnitus (warning sign); temporary threshold shift after noise exposure; early intervention if progression"
+          ]
+        },
+        {
+          "heading": "When to Reassess or Refer",
+          "content": [
+            "**Hearing Change**: Patient reports worsening; device not providing adequate benefit; new audiogram shows threshold changes → reprogram",
+            "**New Medical Issues**: Sudden change; ear pain; drainage; dizziness; new asymmetry → medical referral",
+            "**Persistent Discomfort**: Physical pain from earmold/dome; chronic irritation; pressure points → adjust or remake",
+            "**Unresolved Technical Issues**: Chronic feedback despite interventions; intermittent function; excessive repairs → consider replacement",
+            "**Changing Needs**: New work environment; lifestyle changes; technology desires; declining dexterity → reassess device appropriateness",
+            "**Poor Outcomes**: Minimal benefit despite optimization; very poor satisfaction; non-use → comprehensive reassessment, consider cochlear implant evaluation if severe-profound with poor WRS"
+          ]
+        }
       ]
     }
-  ],
-  "flashcards": [
-    { "front": "IA (typical) for inserts?", "back": "≈55 dB (supra-aural ≈40 dB; bone 0 dB)." },
-    { "front": "Adult tymp normal peak range?", "back": "≈ −100 to +50 daPa; compliance ≈ 0.3–1.5 mL; ECV ≈ 0.9–2.0 mL." },
-    { "front": "SRT should agree with?", "back": "PTA within about ±5–10 dB." },
-    { "front": "When do you mask BC?", "back": "When ABG > 10 dB in the test ear." },
-    { "front": "SSD recommended solution?", "back": "CROS; unaidable + better ear → BiCROS." },
-    { "front": "Adult default prescription?", "back": "NAL-NL2 (DSL v5 for pediatrics)." },
-    { "front": "What is REIG?", "back": "REAR − REUG (aided minus unaided gain)." },
-    { "front": "Color for size 312 battery?", "back": "Brown (10 yellow, 13 orange, 675 blue)." },
-    { "front": "Jerger Type B with large ECV?", "back": "TM perforation or patent PE tube likely." },
-    { "front": "Rollover suggests?", "back": "Possible retrocochlear involvement; consider medical referral." }
   ]
 }
-
-
