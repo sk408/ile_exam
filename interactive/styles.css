@@ -43,4 +43,17 @@ li { margin: 4px 0; }
 .incorrect { color: #991b1b; font-weight: 600; }
 footer { text-align: center; color: #64748b; padding: 24px; }
 
+.quiz-mode-selector { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; }
+@media (max-width: 768px) { .quiz-mode-selector { grid-template-columns: 1fr; } }
+.quiz-mode-card { background: white; padding: 16px; border-radius: 8px; border: 2px solid #e0e0e0; transition: all 0.3s ease; }
+.quiz-mode-card:hover { border-color: #0066cc; box-shadow: 0 4px 8px rgba(0, 102, 204, 0.1); }
+.quiz-mode-card.alternative { border-color: #4CAF50; }
+.quiz-mode-card.alternative:hover { border-color: #45a049; box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2); }
+.quiz-mode-card h4 { margin: 0 0 12px 0; color: #333; font-size: 16px; }
+.quiz-mode-card p { margin: 8px 0; font-size: 14px; line-height: 1.6; }
+.quiz-mode-card ul { list-style: none; padding: 0; margin: 12px 0; }
+.quiz-mode-card ul li { padding: 6px 0; font-size: 14px; color: #555; }
+.alt-quiz-btn { background: #4CAF50; color: white; border: none; padding: 10px 16px; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; margin-top: 12px; width: 100%; }
+.alt-quiz-btn:hover { background: #45a049; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3); }
+
 

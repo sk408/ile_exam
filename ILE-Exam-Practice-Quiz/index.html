@@ -1,0 +1,2004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILE Practice Exam - 300 Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Home Screen -->
+        <div class="screen active" id="homeScreen">
+            <div class="home-content">
+                <h1>ILE Practice Exam</h1>
+                <h2>300 Questions - Interactive Study Guide</h2>
+                <p class="subtitle">Master all 5 competency areas with detailed explanations</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">300</div>
+                        <div class="stat-label">Total Questions</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Sections</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="completedCount">0</div>
+                        <div class="stat-label">Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="flaggedCount">0</div>
+                        <div class="stat-label">Flagged</div>
+                    </div>
+                </div>
+
+                <div class="mode-selection">
+                    <h3>Choose Your Study Mode</h3>
+                    
+                    <div class="mode-card" onclick="showSectionSelect()">
+                        <div class="mode-icon">📚</div>
+                        <div>
+                            <h4>Study by Section</h4>
+                            <p>Practice all 60 questions in a specific competency area</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mode-card" onclick="showRandomQuiz()">
+                        <div class="mode-icon">🎲</div>
+                        <div>
+                            <h4>Random Quiz</h4>
+                            <p>Mix questions from all sections for comprehensive practice</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mode-card" onclick="reviewFlagged()">
+                        <div class="mode-icon">🚩</div>
+                        <div>
+                            <h4>Review Flagged Questions</h4>
+                            <p>Focus on questions you've marked as difficult</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Selection Screen -->
+        <div class="screen" id="sectionScreen">
+            <div class="screen-content">
+                <button class="back-btn" onclick="showHome()">← Back to Home</button>
+                <h2>Select a Section to Study</h2>
+                <div class="section-cards">
+                    <div class="section-card" onclick="startSection(1)">
+                        <div class="section-num">Section 1</div>
+                        <h3>Conduct Patient/Client Assessment</h3>
+                        <p>Case history, audiometry, infection control, red flags</p>
+                        <div class="section-progress">
+                            <span id="progress-1">0/60</span> completed
+                        </div>
+                    </div>
+                    <div class="section-card" onclick="startSection(2)">
+                        <div class="section-num">Section 2</div>
+                        <h3>Interpret &amp; Apply Assessment Results</h3>
+                        <p>Audiogram interpretation, hearing loss classification</p>
+                        <div class="section-progress">
+                            <span id="progress-2">0/60</span> completed
+                        </div>
+                    </div>
+                    <div class="section-card" onclick="startSection(3)">
+                        <div class="section-num">Section 3</div>
+                        <h3>Select Hearing Devices</h3>
+                        <p>Device styles, technologies, selection criteria</p>
+                        <div class="section-progress">
+                            <span id="progress-3">0/60</span> completed
+                        </div>
+                    </div>
+                    <div class="section-card" onclick="startSection(4)">
+                        <div class="section-num">Section 4</div>
+                        <h3>Fit &amp; Dispense Hearing Devices</h3>
+                        <p>Prescriptive formulas, REM, programming</p>
+                        <div class="section-progress">
+                            <span id="progress-4">0/60</span> completed
+                        </div>
+                    </div>
+                    <div class="section-card" onclick="startSection(5)">
+                        <div class="section-num">Section 5</div>
+                        <h3>Provide Continuing Care</h3>
+                        <p>Follow-up, troubleshooting, outcome measures</p>
+                        <div class="section-progress">
+                            <span id="progress-5">0/60</span> completed
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Random Quiz Setup Screen -->
+        <div class="screen" id="randomScreen">
+            <div class="screen-content">
+                <button class="back-btn" onclick="showHome()">← Back to Home</button>
+                <h2>Random Quiz Setup</h2>
+                <p>Select how many questions you'd like to practice:</p>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="startRandomQuiz(10)">
+                        <div class="quiz-count">10</div>
+                        <div class="quiz-time">~15 minutes</div>
+                    </div>
+                    <div class="quiz-option" onclick="startRandomQuiz(25)">
+                        <div class="quiz-count">25</div>
+                        <div class="quiz-time">~35 minutes</div>
+                    </div>
+                    <div class="quiz-option" onclick="startRandomQuiz(50)">
+                        <div class="quiz-count">50</div>
+                        <div class="quiz-time">~70 minutes</div>
+                    </div>
+                    <div class="quiz-option" onclick="startRandomQuiz(300)">
+                        <div class="quiz-count">300</div>
+                        <div class="quiz-time">~6+ hours</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question Screen -->
+        <div class="screen" id="questionScreen">
+            <div class="question-header">
+                <div class="question-meta">
+                    <span id="questionSection">Section 1</span>
+                    <span id="questionProgress">Question 1 of 60</span>
+                </div>
+                <div class="question-controls">
+                    <button class="icon-btn" id="flagBtn" onclick="toggleFlag()" title="Flag question">
+                        <span id="flagIcon">🏴</span>
+                    </button>
+                    <button class="icon-btn" onclick="showHome()" title="Return to menu">🏠</button>
+                </div>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            
+            <div class="question-content">
+                <div class="score-display" id="scoreDisplay">Score: 0/0 (0%)</div>
+                
+                <div class="question-text" id="questionText"></div>
+                
+                <div class="choices" id="choices"></div>
+                
+                <div class="feedback" id="feedback" style="display: none;"></div>
+                
+                <div class="question-actions">
+                    <button class="btn btn--secondary" id="prevQuestionBtn" onclick="previousQuestion()" style="display: none;">← Previous</button>
+                    <button class="btn btn--primary" id="submitBtn" onclick="submitAnswer()" disabled>Submit Answer</button>
+                    <button class="btn btn--primary" id="nextQuestionBtn" onclick="nextQuestion()" style="display: none;">Next Question →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div class="screen" id="resultsScreen">
+            <div class="screen-content">
+                <div class="results-header">
+                    <h1 id="resultsTitle">Quiz Complete!</h1>
+                    <div class="final-score" id="finalScore"></div>
+                    <div class="performance-label" id="performanceLabel"></div>
+                </div>
+                
+                <div class="results-breakdown" id="resultsBreakdown"></div>
+                
+                <div class="results-actions">
+                    <button class="btn btn--primary" onclick="showHome()">Return to Home</button>
+                    <button class="btn btn--secondary" onclick="reviewMissed()" id="reviewMissedBtn">Review Missed Questions</button>
+                    <button class="btn btn--secondary" onclick="retakeQuiz()" id="retakeBtn">Retake Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+            <div class="slide-content title-slide">
+                <div class="title-content">
+                    <h1>ILE Exam Study Guide</h1>
+                    <h2>International Licensing Examination for Hearing Health Professionals</h2>
+                    <p class="subtitle">105-Question Multiple-Choice Exam | 5 Competency Domains</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Exam Overview -->
+
+            <div class="slide-content">
+                <h2>Exam Overview</h2>
+                <div class="content-box">
+                    <ul class="large-list">
+                        <li><strong>Format:</strong> 105 multiple-choice questions</li>
+                        <li><strong>Developed by:</strong> International Hearing Society (IHS)</li>
+                        <li><strong>Structure:</strong> Five competency sections</li>
+                        <li><strong>Purpose:</strong> Validate competency in hearing healthcare delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Section 1 Overview -->
+        <div class="slide" data-slide="3">
+            <div class="slide-content">
+                <div class="section-header section-1">
+                    <span class="section-number">Section 1</span>
+                    <h2>Conduct Patient/Client Assessment</h2>
+                </div>
+                <div class="content-box">
+                    <p class="section-description">This section evaluates your ability to conduct comprehensive patient assessments through case history, otoscopic examination, and audiometric testing.</p>
+                    <h3>Key Competencies Tested:</h3>
+                    <ul>
+                        <li>Case history and red flag identification</li>
+                        <li>Otoscopic examination techniques</li>
+                        <li>Pure tone audiometry (air &amp; bone conduction)</li>
+                        <li>Speech audiometry (SRT &amp; WRS)</li>
+                        <li>Tympanometry and acoustic reflex testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Case History & Red Flags -->
+        <div class="slide" data-slide="4">
+            <div class="slide-content">
+                <div class="section-indicator section-1">Section 1</div>
+                <h2>Case History &amp; Red Flags</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>Essential Case History Elements</h3>
+                        <ul>
+                            <li>Onset of hearing loss (sudden vs gradual)</li>
+                            <li>Progression pattern</li>
+                            <li>Laterality (unilateral vs bilateral)</li>
+                            <li>Associated symptoms (tinnitus, vertigo, pain)</li>
+                            <li>Medical history and medications</li>
+                            <li>Noise exposure and occupation</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Red Flags Requiring Referral</h3>
+                        <ul class="red-flag-list">
+                            <li>Sudden hearing loss</li>
+                            <li>Asymmetrical hearing loss</li>
+                            <li>Ear drainage or discharge</li>
+                            <li>Ear pain (otalgia)</li>
+                            <li>Unilateral tinnitus</li>
+                            <li>Dizziness or vertigo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Otoscopic Examination -->
+        <div class="slide" data-slide="5">
+            <div class="slide-content">
+                <div class="section-indicator section-1">Section 1</div>
+                <h2>Otoscopic Examination</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>Normal Findings</h3>
+                        <ul>
+                            <li>Pearly gray tympanic membrane</li>
+                            <li>Translucent appearance</li>
+                            <li>Visible landmarks (malleus, cone of light)</li>
+                            <li>Intact membrane with no perforations</li>
+                            <li>Minimal cerumen</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Abnormal Findings → Referral</h3>
+                        <ul class="warning-list">
+                            <li>Red or bulging TM (infection)</li>
+                            <li>Perforations or scarring</li>
+                            <li>Fluid behind TM</li>
+                            <li>Excessive cerumen impaction</li>
+                            <li>Foreign objects</li>
+                            <li>Drainage or blood</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box">
+                    <strong>Infection Control:</strong> Use disposable specula, clean equipment between patients, follow universal precautions
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Pure Tone Audiometry Basics -->
+        <div class="slide" data-slide="6">
+            <div class="slide-content">
+                <div class="section-indicator section-1">Section 1</div>
+                <h2>Pure Tone Audiometry Basics</h2>
+                <div class="content-box">
+                    <h3>Testing Components</h3>
+                    <ul class="large-list">
+                        <li><strong>Air Conduction (AC):</strong> Tests entire auditory pathway via headphones or inserts</li>
+                        <li><strong>Bone Conduction (BC):</strong> Bypasses outer/middle ear, tests inner ear directly</li>
+                        <li><strong>Frequency Range:</strong> 250 Hz to 8000 Hz (standard: 250, 500, 1000, 2000, 3000, 4000, 6000, 8000)</li>
+                        <li><strong>Normal Hearing:</strong> Thresholds at 0-20 dB HL</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <strong>Air-Bone Gap Significance:</strong> A gap ≥15 dB between AC and BC indicates a conductive component
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Hearing Loss Types -->
+        <div class="slide" data-slide="7">
+            <div class="slide-content">
+                <div class="section-indicator section-1">Section 1</div>
+                <h2>Hearing Loss Types</h2>
+                <div class="content-box">
+                    <div class="loss-type">
+                        <h3>Conductive Hearing Loss</h3>
+                        <p>AC worse than BC, air-bone gap &gt;15 dB</p>
+                        <p><em>Audiogram symbols: X (AC left), O (AC right), &lt; or &gt; (BC)</em></p>
+                    </div>
+                    <div class="loss-type">
+                        <h3>Sensorineural Hearing Loss</h3>
+                        <p>AC and BC similarly elevated (no significant air-bone gap)</p>
+                        <p><em>Inner ear or neural pathway involvement</em></p>
+                    </div>
+                    <div class="loss-type">
+                        <h3>Mixed Hearing Loss</h3>
+                        <p>Both conductive and sensorineural components present</p>
+                        <p><em>Air-bone gap exists AND bone conduction is elevated</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Hearing Loss Degrees -->
+        <div class="slide" data-slide="8">
+            <div class="slide-content">
+                <div class="section-indicator section-1">Section 1</div>
+                <h2>Hearing Loss Degrees</h2>
+                <div class="content-box">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>dB HL Range</th>
+                                <th>Impact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Normal</strong></td>
+                                <td>≤20 dB HL</td>
+                                <td>No significant difficulty</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mild</strong></td>
+                                <td>21-40 dB HL</td>
+                                <td>Difficulty with soft speech</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Moderate</strong></td>
+                                <td>41-55 dB HL</td>
+                                <td>Difficulty with normal conversation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Moderately Severe</strong></td>
+                                <td>56-70 dB HL</td>
+                                <td>Loud speech needed</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Severe</strong></td>
+                                <td>71-90 dB HL</td>
+                                <td>Very loud speech or amplification required</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Profound</strong></td>
+                                <td>&gt;90 dB HL</td>
+                                <td>May not hear even amplified speech</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Speech Audiometry -->
+        <div class="slide" data-slide="9">
+            <div class="slide-content">
+                <div class="section-indicator section-1">Section 1</div>
+                <h2>Speech Audiometry</h2>
+                <div class="content-box">
+                    <h3>Speech Reception Threshold (SRT)</h3>
+                    <ul>
+                        <li>Softest level at which spondee words are recognized 50% of the time</li>
+                        <li>Should correlate with PTA (Pure Tone Average) within ±6 dB</li>
+                        <li>Examples: "baseball," "hotdog," "airplane"</li>
+                    </ul>
+                    <h3>Word Recognition Score (WRS)</h3>
+                    <ul>
+                        <li>Percentage of single-syllable words correctly identified</li>
+                        <li>Presented at suprathreshold level (typically 40 dB SL)</li>
+                        <li>Assesses clarity of hearing, not just sensitivity</li>
+                        <li>Poor WRS relative to thresholds may indicate retrocochlear pathology</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Tympanometry & Acoustic Reflexes -->
+        <div class="slide" data-slide="10">
+            <div class="slide-content">
+                <div class="section-indicator section-1">Section 1</div>
+                <h2>Tympanometry &amp; Acoustic Reflexes</h2>
+                <div class="content-box">
+                    <h3>Tympanometry Types</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Description</th>
+                                <th>Interpretation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Type A</strong></td>
+                                <td>Peak at 0 daPa, normal compliance</td>
+                                <td>Normal middle ear function</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Type As</strong></td>
+                                <td>Peak at 0, reduced compliance</td>
+                                <td>Stiff system (otosclerosis)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Type Ad</strong></td>
+                                <td>Peak at 0, excessive compliance</td>
+                                <td>Hypercompliant (ossicular discontinuity)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Type B</strong></td>
+                                <td>Flat, no peak</td>
+                                <td>Fluid, perforation, or blockage</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Type C</strong></td>
+                                <td>Peak at -50 to -100 daPa</td>
+                                <td>Eustachian tube dysfunction</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="highlight-box">
+                        <strong>Acoustic Reflexes:</strong> Normal thresholds at 85-100 dB HL. Absent or elevated reflexes may indicate middle ear pathology or retrocochlear disorder.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Section 2 Overview -->
+        <div class="slide" data-slide="11">
+            <div class="slide-content">
+                <div class="section-header section-2">
+                    <span class="section-number">Section 2</span>
+                    <h2>Interpret &amp; Apply Assessment Results</h2>
+                </div>
+                <div class="content-box">
+                    <p class="section-description">This section focuses on your ability to analyze audiometric data, recognize patterns, identify red flags, and effectively communicate findings to patients.</p>
+                    <h3>Key Competencies Tested:</h3>
+                    <ul>
+                        <li>Audiometric configuration pattern recognition</li>
+                        <li>Red flag identification and appropriate referrals</li>
+                        <li>Speech score interpretation</li>
+                        <li>Patient counseling and communication</li>
+                        <li>Documentation requirements and HIPAA compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Audiometric Pattern Recognition -->
+        <div class="slide" data-slide="12">
+            <div class="slide-content">
+                <div class="section-indicator section-2">Section 2</div>
+                <h2>Audiometric Pattern Recognition</h2>
+                <div class="content-box">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Configuration</th>
+                                <th>Description</th>
+                                <th>Clinical Significance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Flat</strong></td>
+                                <td>Similar loss across frequencies</td>
+                                <td>Often conductive or noise-induced</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sloping</strong></td>
+                                <td>Progressive high-frequency loss</td>
+                                <td>Most common (aging, noise)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reverse Slope</strong></td>
+                                <td>Greater low-frequency loss</td>
+                                <td>Rare, may suggest Meniere's</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Notched</strong></td>
+                                <td>Dip at specific frequency (often 4000 Hz)</td>
+                                <td>Classic noise-induced pattern</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cookie-Bite</strong></td>
+                                <td>Mid-frequency loss, better highs/lows</td>
+                                <td>Often hereditary</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Red Flag Recognition -->
+        <div class="slide" data-slide="13">
+            <div class="slide-content">
+                <div class="section-indicator section-2">Section 2</div>
+                <h2>Red Flag Recognition</h2>
+                <div class="content-box">
+                    <div class="red-flag-box">
+                        <h3>⚠ Immediate Medical Referral Required</h3>
+                        <ul class="red-flag-list">
+                            <li><strong>Sudden SNHL:</strong> &gt;30 dB loss in 3 consecutive frequencies within 3 days (medical emergency)</li>
+                            <li><strong>Asymmetrical Loss:</strong> &gt;15 dB difference at 2 consecutive frequencies (rule out acoustic neuroma)</li>
+                            <li><strong>Poor WRS vs Thresholds:</strong> Speech scores disproportionately poor (retrocochlear pathology)</li>
+                            <li><strong>Abnormal Acoustic Reflexes:</strong> Absent or decay with normal compliance</li>
+                            <li><strong>Unilateral Tinnitus:</strong> Especially with hearing loss</li>
+                            <li><strong>Conductive Loss:</strong> Without obvious cause or abnormal otoscopy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 14: Speech Score Interpretation -->
+        <div class="slide" data-slide="14">
+            <div class="slide-content">
+                <div class="section-indicator section-2">Section 2</div>
+                <h2>Speech Score Interpretation</h2>
+                <div class="content-box">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>WRS Range</th>
+                                <th>Interpretation</th>
+                                <th>Clinical Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="success-row">
+                                <td><strong>90-100%</strong></td>
+                                <td>Excellent discrimination</td>
+                                <td>Good prognosis for amplification</td>
+                            </tr>
+                            <tr class="good-row">
+                                <td><strong>75-89%</strong></td>
+                                <td>Good discrimination</td>
+                                <td>Should benefit well from hearing aids</td>
+                            </tr>
+                            <tr class="fair-row">
+                                <td><strong>60-74%</strong></td>
+                                <td>Fair discrimination</td>
+                                <td>May need advanced features, aural rehab</td>
+                            </tr>
+                            <tr class="poor-row">
+                                <td><strong>&lt;60%</strong></td>
+                                <td>Poor discrimination</td>
+                                <td>⚠ Consider retrocochlear pathology, refer for additional testing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="highlight-box">
+                        <strong>Key Point:</strong> WRS should be consistent with pure tone thresholds. Disproportionately poor scores warrant medical referral.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 15: Patient Counseling Framework -->
+        <div class="slide" data-slide="15">
+            <div class="slide-content">
+                <div class="section-indicator section-2">Section 2</div>
+                <h2>Patient Counseling Framework</h2>
+                <div class="content-box">
+                    <h3>Effective Counseling Steps</h3>
+                    <ol class="numbered-list">
+                        <li><strong>Present Findings Clearly</strong>
+                            <ul><li>Use plain language, avoid jargon</li>
+                            <li>Show audiogram and explain what it means</li></ul>
+                        </li>
+                        <li><strong>Explain Type and Degree</strong>
+                            <ul><li>"You have a mild-to-moderate sensorineural hearing loss"</li>
+                            <li>Describe what this means functionally</li></ul>
+                        </li>
+                        <li><strong>Discuss Prognosis</strong>
+                            <ul><li>Permanent vs treatable conditions</li>
+                            <li>Expected progression</li></ul>
+                        </li>
+                        <li><strong>Present Treatment Options</strong>
+                            <ul><li>Amplification, medical referral, assistive devices</li>
+                            <li>Pros and cons of each option</li></ul>
+                        </li>
+                        <li><strong>Set Realistic Expectations</strong>
+                            <ul><li>Hearing aids improve but don't restore normal hearing</li>
+                            <li>Adjustment period required</li></ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 16: Documentation Essentials -->
+        <div class="slide" data-slide="16">
+            <div class="slide-content">
+                <div class="section-indicator section-2">Section 2</div>
+                <h2>Documentation Essentials</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>Required Documentation</h3>
+                        <ul>
+                            <li>Complete audiometric data (AC, BC, SRT, WRS)</li>
+                            <li>Otoscopic findings for both ears</li>
+                            <li>Tympanometry results</li>
+                            <li>Case history summary</li>
+                            <li>Red flags identified</li>
+                            <li>Referrals made</li>
+                            <li>Patient education provided</li>
+                            <li>Recommendations discussed</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>HIPAA Compliance</h3>
+                        <ul>
+                            <li>Secure storage of records</li>
+                            <li>Patient authorization for disclosure</li>
+                            <li>Minimum necessary standard</li>
+                            <li>Patient rights to access records</li>
+                            <li>De-identification when appropriate</li>
+                            <li>Proper disposal procedures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 17: Section 3 Overview -->
+        <div class="slide" data-slide="17">
+            <div class="slide-content">
+                <div class="section-header section-3">
+                    <span class="section-number">Section 3</span>
+                    <h2>Select Hearing Devices</h2>
+                </div>
+                <div class="content-box">
+                    <p class="section-description">This section evaluates your knowledge of hearing aid styles, components, technology levels, and your ability to select appropriate devices based on audiometric and patient-specific factors.</p>
+                    <h3>Key Competencies Tested:</h3>
+                    <ul>
+                        <li>Hearing aid styles and their applications</li>
+                        <li>Components and technology features</li>
+                        <li>Device selection based on hearing loss characteristics</li>
+                        <li>Patient-specific selection factors (dexterity, lifestyle, cosmetics)</li>
+                        <li>Earmold types and venting strategies</li>
+                        <li>Ear impression techniques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 18: Hearing Aid Styles Comparison -->
+        <div class="slide" data-slide="18">
+            <div class="slide-content">
+                <div class="section-indicator section-3">Section 3</div>
+                <h2>Hearing Aid Styles Comparison</h2>
+                <div class="content-box">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Style</th>
+                                <th>Best For</th>
+                                <th>Key Advantages</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>BTE</strong><br>(Behind-the-Ear)</td>
+                                <td>Severe/profound loss, poor dexterity</td>
+                                <td>Most powerful, largest battery, easiest handling</td>
+                            </tr>
+                            <tr>
+                                <td><strong>RIC</strong><br>(Receiver-in-Canal)</td>
+                                <td>Mild-severe loss, most patients</td>
+                                <td>Excellent cosmetics, reduced feedback, natural sound</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ITE</strong><br>(In-the-Ear)</td>
+                                <td>Moderate-severe loss</td>
+                                <td>Custom fit, easier handling than smaller styles</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ITC</strong><br>(In-the-Canal)</td>
+                                <td>Mild-moderate loss</td>
+                                <td>Better cosmetics than ITE, easier than CIC</td>
+                            </tr>
+                            <tr>
+                                <td><strong>CIC/IIC</strong><br>(Completely/Invisible)</td>
+                                <td>Mild-moderate loss, cosmetically motivated</td>
+                                <td>Nearly invisible, natural sound quality, excellent dexterity needed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 19: Hearing Aid Components -->
+        <div class="slide" data-slide="19">
+            <div class="slide-content">
+                <div class="section-indicator section-3">Section 3</div>
+                <h2>Hearing Aid Components</h2>
+                <div class="content-box">
+                    <h3>Essential Components</h3>
+                    <div class="component-box">
+                        <h4>1. Microphone</h4>
+                        <ul>
+                            <li><strong>Omnidirectional:</strong> Picks up sound from all directions (basic devices)</li>
+                            <li><strong>Directional:</strong> Focuses on sound from front, reduces background noise (advanced devices)</li>
+                        </ul>
+                    </div>
+                    <div class="component-box">
+                        <h4>2. Amplifier (Processor)</h4>
+                        <ul>
+                            <li><strong>Compression:</strong> Adjusts gain based on input level (soft sounds amplified more than loud)</li>
+                            <li><strong>Multiband Processing:</strong> Independent control across frequency regions</li>
+                        </ul>
+                    </div>
+                    <div class="component-box">
+                        <h4>3. Receiver (Speaker)</h4>
+                        <ul>
+                            <li>Converts electrical signal back to sound</li>
+                            <li>Power level matched to hearing loss degree</li>
+                        </ul>
+                    </div>
+                    <div class="component-box">
+                        <h4>4. Battery/Power Source</h4>
+                        <ul>
+                            <li><strong>Disposable:</strong> Zinc-air batteries (10, 312, 13, 675)</li>
+                            <li><strong>Rechargeable:</strong> Lithium-ion (convenient, environmentally friendly)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 20: Technology Levels -->
+        <div class="slide" data-slide="20">
+            <div class="slide-content">
+                <div class="section-indicator section-3">Section 3</div>
+                <h2>Technology Levels</h2>
+                <div class="content-box">
+                    <div class="tech-level">
+                        <h3>Basic Level</h3>
+                        <ul>
+                            <li>Simple amplification with basic processing</li>
+                            <li>Single microphone (omnidirectional)</li>
+                            <li>Limited channels (2-4)</li>
+                            <li>Minimal noise reduction</li>
+                            <li>Best for: Quiet environments, limited budget</li>
+                        </ul>
+                    </div>
+                    <div class="tech-level">
+                        <h3>Mid-Level (Standard)</h3>
+                        <ul>
+                            <li>Directional microphones</li>
+                            <li>Moderate noise reduction capabilities</li>
+                            <li>3-5 processing channels</li>
+                            <li>Some environmental adaptation</li>
+                            <li>Best for: Varied listening situations, moderate activity</li>
+                        </ul>
+                    </div>
+                    <div class="tech-level">
+                        <h3>Premium (Advanced)</h3>
+                        <ul>
+                            <li>Advanced directional microphones</li>
+                            <li>Sophisticated noise reduction algorithms</li>
+                            <li>6+ channels for precise frequency shaping</li>
+                            <li>Wireless connectivity and streaming</li>
+                            <li>Automatic environmental classification</li>
+                            <li>Best for: Active lifestyle, challenging listening environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 21: Key Features -->
+        <div class="slide" data-slide="21">
+            <div class="slide-content">
+                <div class="section-indicator section-3">Section 3</div>
+                <h2>Key Features</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>Signal Processing Features</h3>
+                        <ul>
+                            <li><strong>Feedback Management:</strong> Reduces whistling/squealing by phase cancellation</li>
+                            <li><strong>Noise Reduction:</strong> Identifies and reduces steady-state noise</li>
+                            <li><strong>Frequency Lowering:</strong> Moves high-frequency sounds to lower frequencies (for severe high-freq loss)</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>User Features</h3>
+                        <ul>
+                            <li><strong>Directional Microphones:</strong> Improves speech understanding in noise</li>
+                            <li><strong>Wireless Connectivity:</strong> Bluetooth streaming from phones/TV</li>
+                            <li><strong>Automatic Mode Switching:</strong> Adapts to environment without user input</li>
+                            <li><strong>Telecoil:</strong> Connects to loop systems and phones</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 22: Device Selection Factors - Audiometric -->
+        <div class="slide" data-slide="22">
+            <div class="slide-content">
+                <div class="section-indicator section-3">Section 3</div>
+                <h2>Device Selection: Audiometric Factors</h2>
+                <div class="content-box">
+                    <h3>Degree of Loss → Power Requirements</h3>
+                    <ul class="large-list">
+                        <li><strong>Mild:</strong> Any style works; IIC/CIC excellent options</li>
+                        <li><strong>Moderate:</strong> Most styles appropriate; RIC/ITE commonly selected</li>
+                        <li><strong>Moderately Severe:</strong> BTE or power RIC preferred</li>
+                        <li><strong>Severe/Profound:</strong> Power BTE required for adequate gain</li>
+                    </ul>
+                    <h3>Configuration → Fitting Approach</h3>
+                    <ul class="large-list">
+                        <li><strong>High-Frequency Loss:</strong> Open-fit/vented (avoid occlusion effect)</li>
+                        <li><strong>Flat/Low-Frequency Loss:</strong> Closed fitting for low-frequency retention</li>
+                        <li><strong>Notched Loss:</strong> Frequency-specific programming essential</li>
+                    </ul>
+                    <h3>Type of Loss</h3>
+                    <ul class="large-list">
+                        <li><strong>Conductive:</strong> Refer for medical treatment first; bone conduction devices may be appropriate</li>
+                        <li><strong>Sensorineural:</strong> Standard air-conduction hearing aids</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 23: Device Selection Factors - Patient-Specific -->
+        <div class="slide" data-slide="23">
+            <div class="slide-content">
+                <div class="section-indicator section-3">Section 3</div>
+                <h2>Device Selection: Patient-Specific Factors</h2>
+                <div class="content-box">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Factor</th>
+                                <th>Consideration</th>
+                                <th>Recommendation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Dexterity</strong></td>
+                                <td>Arthritis, tremor, poor fine motor</td>
+                                <td>Larger devices (BTE/RIC), rechargeable batteries, easy controls</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lifestyle</strong></td>
+                                <td>Active in varied environments</td>
+                                <td>Higher technology level, multiple programs, connectivity</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cosmetic Concerns</strong></td>
+                                <td>Desires invisibility</td>
+                                <td>RIC, ITC, CIC, or IIC if audiometrically appropriate</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cerumen Production</strong></td>
+                                <td>Heavy/wet cerumen</td>
+                                <td>BTE or RIC (receiver out of canal easier to clean)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ear Canal Size</strong></td>
+                                <td>Very small/narrow canals</td>
+                                <td>BTE or RIC; custom devices may not fit</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cognitive Status</strong></td>
+                                <td>Memory issues, confusion</td>
+                                <td>Simple controls, automatic features, rechargeable</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 24: Earmold Types & Venting -->
+        <div class="slide" data-slide="24">
+            <div class="slide-content">
+                <div class="section-indicator section-3">Section 3</div>
+                <h2>Earmold Types &amp; Venting</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>Earmold Styles</h3>
+                        <ul>
+                            <li><strong>Full Shell:</strong> Maximum coupling, best for severe/profound loss, prevents feedback</li>
+                            <li><strong>Skeleton:</strong> Less material, moderate loss, better comfort</li>
+                            <li><strong>Canal:</strong> Less visible, good for moderate loss</li>
+                            <li><strong>Open-Fit:</strong> Minimal occlusion, excellent for high-frequency loss with good low frequencies</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Venting Strategies</h3>
+                        <ul>
+                            <li><strong>No Vent (Closed):</strong> Maximum gain, severe loss, prevents feedback</li>
+                            <li><strong>Small Vent (1-2mm):</strong> Pressure equalization, moderate loss</li>
+                            <li><strong>Large Vent (3mm+):</strong> Reduces occlusion effect, high-freq loss only</li>
+                            <li><strong>Open Fit:</strong> Natural low-freq sound, minimal occlusion</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box">
+                    <strong>Key Principle:</strong> More venting = Less occlusion but also less low-frequency gain and higher feedback risk
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 25: Ear Impression Technique -->
+        <div class="slide" data-slide="25">
+            <div class="slide-content">
+                <div class="section-indicator section-3">Section 3</div>
+                <h2>Ear Impression Technique</h2>
+                <div class="content-box">
+                    <h3>Proper Impression Procedure</h3>
+                    <ol class="numbered-list">
+                        <li><strong>Otoscopic Examination First</strong>
+                            <ul><li>Ensure TM is intact, no contraindications</li></ul>
+                        </li>
+                        <li><strong>Insert Cotton Block/Otoblock</strong>
+                            <ul><li>Protects TM, placed 3-5mm past second bend</li>
+                            <li>String should be visible</li></ul>
+                        </li>
+                        <li><strong>Mix Impression Material</strong>
+                            <ul><li>Follow manufacturer instructions precisely</li>
+                            <li>Two-part silicone or foam material</li></ul>
+                        </li>
+                        <li><strong>Inject Material</strong>
+                            <ul><li>Fill canal completely, avoid air bubbles</li>
+                            <li>Patient should keep mouth slightly open or chew during curing</li></ul>
+                        </li>
+                        <li><strong>Allow Proper Cure Time</strong>
+                            <ul><li>Typically 5-10 minutes depending on material</li></ul>
+                        </li>
+                        <li><strong>Remove and Inspect</strong>
+                            <ul><li>Pull gently while rotating</li>
+                            <li>Check for complete detail (canal, helix, concha)</li>
+                            <li>Mark clearly: R or L, patient name, date</li></ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 26: Section 4 Overview -->
+        <div class="slide" data-slide="26">
+            <div class="slide-content">
+                <div class="section-header section-4">
+                    <span class="section-number">Section 4</span>
+                    <h2>Fit &amp; Dispense Hearing Devices</h2>
+                </div>
+                <div class="content-box">
+                    <p class="section-description">This section tests your practical skills in programming, fitting, verifying, and dispensing hearing aids. It includes prescriptive formulas, real ear measurements, troubleshooting, and patient education.</p>
+                    <h3>Key Competencies Tested:</h3>
+                    <ul>
+                        <li>Prescriptive fitting formulas (NAL-NL2, DSL v5)</li>
+                        <li>Real ear measurement procedures and interpretation</li>
+                        <li>Initial programming and verification</li>
+                        <li>Physical fit assessment and adjustments</li>
+                        <li>Patient orientation and education</li>
+                        <li>Setting realistic expectations</li>
+                        <li>Troubleshooting common fit problems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 27: Prescriptive Formulas -->
+        <div class="slide" data-slide="27">
+            <div class="slide-content">
+                <div class="section-indicator section-4">Section 4</div>
+                <h2>Prescriptive Formulas</h2>
+                <div class="content-box">
+                    <div class="formula-comparison">
+                        <div class="formula-box">
+                            <h3>NAL-NL2 (National Acoustic Laboratories)</h3>
+                            <ul>
+                                <li><strong>Philosophy:</strong> Balanced speech intelligibility and comfort</li>
+                                <li><strong>Approach:</strong> Comfortable loudness across frequencies</li>
+                                <li><strong>Characteristics:</strong> Generally less high-frequency gain than DSL</li>
+                                <li><strong>Best for:</strong> Adults, comfort-sensitive patients</li>
+                                <li><strong>Goal:</strong> Maximize speech intelligibility while maintaining comfort</li>
+                            </ul>
+                        </div>
+                        <div class="formula-box">
+                            <h3>DSL v5 (Desired Sensation Level)</h3>
+                            <ul>
+                                <li><strong>Philosophy:</strong> Maximum audibility approach</li>
+                                <li><strong>Approach:</strong> More aggressive gain prescription</li>
+                                <li><strong>Characteristics:</strong> Higher high-frequency emphasis</li>
+                                <li><strong>Best for:</strong> Children, patients needing maximum audibility</li>
+                                <li><strong>Goal:</strong> Make speech audible across entire frequency range</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="highlight-box">
+                        Both formulas are frequency-specific and account for hearing loss configuration, degree, and ear canal acoustics.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 28: Real Ear Measurement (REM) -->
+        <div class="slide" data-slide="28">
+            <div class="slide-content">
+                <div class="section-indicator section-4">Section 4</div>
+                <h2>Real Ear Measurement (REM)</h2>
+                <div class="content-box">
+                    <h3>Key REM Terms</h3>
+                    <ul class="large-list">
+                        <li><strong>REUR (Real Ear Unaided Response):</strong> Natural ear canal resonance without hearing aid (~2700 Hz peak)</li>
+                        <li><strong>REAR (Real Ear Aided Response):</strong> SPL in ear canal with hearing aid in place and turned on</li>
+                        <li><strong>REIG (Real Ear Insertion Gain):</strong> REAR minus REUR = actual gain provided by hearing aid</li>
+                        <li><strong>Target:</strong> Prescribed gain based on formula (NAL-NL2 or DSL)</li>
+                    </ul>
+                    <h3>Target Matching</h3>
+                    <ul>
+                        <li>Goal: Match prescriptive target within <strong>±5 dB</strong></li>
+                        <li>Verify at soft (50 dB), average (65 dB), and loud (80 dB) input levels</li>
+                        <li>Adjust programming if measured gain doesn't match target</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <strong>Critical Point:</strong> REM is the gold standard for verification. It accounts for individual ear canal acoustics that manufacturer's first-fit cannot predict.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 29: Initial Programming Steps -->
+        <div class="slide" data-slide="29">
+            <div class="slide-content">
+                <div class="section-indicator section-4">Section 4</div>
+                <h2>Initial Programming Steps</h2>
+                <div class="content-box">
+                    <ol class="numbered-list large-list">
+                        <li><strong>Input Audiometric Data</strong>
+                            <ul><li>Enter air and bone conduction thresholds</li>
+                            <li>Include UCL (Uncomfortable Loudness Levels) if available</li></ul>
+                        </li>
+                        <li><strong>Select Prescriptive Formula</strong>
+                            <ul><li>NAL-NL2 (most common for adults)</li>
+                            <li>DSL v5 (children or maximum audibility needs)</li></ul>
+                        </li>
+                        <li><strong>Generate Gain Targets</strong>
+                            <ul><li>Software calculates frequency-specific gain</li>
+                            <li>Review targets before programming</li></ul>
+                        </li>
+                        <li><strong>Program Device</strong>
+                            <ul><li>Connect via programming interface (wired or wireless)</li>
+                            <li>Download settings to hearing aid</li></ul>
+                        </li>
+                        <li><strong>Verify Download</strong>
+                            <ul><li>Check that device received settings correctly</li>
+                            <li>Test basic function before placing in ear</li></ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 30: Insertion & Fit Check -->
+        <div class="slide" data-slide="30">
+            <div class="slide-content">
+                <div class="section-indicator section-4">Section 4</div>
+                <h2>Insertion &amp; Fit Check</h2>
+                <div class="content-box">
+                    <h3>Proper Insertion Technique</h3>
+                    <ol class="numbered-list">
+                        <li>Pull auricle back and up (adults) to straighten canal</li>
+                        <li>Insert custom device or dome angling posteriorly</li>
+                        <li>Rotate anteriorly as it advances into canal</li>
+                        <li>Gentle twisting motion until seated properly</li>
+                        <li>BTE earmold should fit snugly in concha</li>
+                    </ol>
+                    <h3>Physical Fit Assessment</h3>
+                    <ul>
+                        <li><strong>Security:</strong> Device should feel secure, not loose or falling out</li>
+                        <li><strong>Comfort:</strong> No pain, pressure, or excessive tightness</li>
+                        <li><strong>Feedback:</strong> No whistling with normal volume when mouth opens/closes</li>
+                        <li><strong>Occlusion:</strong> Patient's own voice shouldn't sound hollow or boomy</li>
+                        <li><strong>Speech Clarity:</strong> Immediate improvement in speech understanding</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 31: Common Fit Problems & Solutions -->
+        <div class="slide" data-slide="31">
+            <div class="slide-content">
+                <div class="section-indicator section-4">Section 4</div>
+                <h2>Common Fit Problems &amp; Solutions</h2>
+                <div class="content-box">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Problem</th>
+                                <th>Possible Causes</th>
+                                <th>Solutions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Feedback/Whistling</strong></td>
+                                <td>Poor seal, excessive gain, cerumen</td>
+                                <td>Re-insert properly, check seal, reduce gain, increase feedback management, remake earmold</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Loose Device</strong></td>
+                                <td>Improper insertion, wrong size, ear anatomy</td>
+                                <td>Demonstrate proper insertion, try different dome size, consider custom earmold</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Discomfort/Pain</strong></td>
+                                <td>Too tight, wrong angle, rough edges</td>
+                                <td>Check insertion technique, adjust angle, buff/smooth earmold, possible remake</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Occlusion Effect</strong></td>
+                                <td>Closed fit with good low-freq hearing</td>
+                                <td>Increase venting, open-fit option, reduce low-frequency gain</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Inadequate Gain</strong></td>
+                                <td>Under-amplification, poor seal</td>
+                                <td>Increase gain prescription, ensure proper seal, verify with REM</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 32: Patient Orientation Components -->
+        <div class="slide" data-slide="32">
+            <div class="slide-content">
+                <div class="section-indicator section-4">Section 4</div>
+                <h2>Patient Orientation Components</h2>
+                <div class="content-box">
+                    <h3>Essential Education Topics</h3>
+                    <div class="orientation-section">
+                        <h4>1. Device Familiarization</h4>
+                        <ul>
+                            <li>Identify all parts: microphone, battery door, program button, volume control</li>
+                            <li>Left vs right identification (color coding, markings)</li>
+                        </ul>
+                    </div>
+                    <div class="orientation-section">
+                        <h4>2. Insertion &amp; Removal</h4>
+                        <ul>
+                            <li>Demonstrate proper technique</li>
+                            <li>Have patient practice 3-5 times until confident</li>
+                            <li>Use mirror for initial practice</li>
+                        </ul>
+                    </div>
+                    <div class="orientation-section">
+                        <h4>3. Battery Management</h4>
+                        <ul>
+                            <li>Disposable: Remove tab, wait 1 minute before inserting</li>
+                            <li>Rechargeable: Proper charging routine, expected battery life</li>
+                            <li>Battery changing technique and frequency</li>
+                        </ul>
+                    </div>
+                    <div class="orientation-section">
+                        <h4>4. Care &amp; Maintenance</h4>
+                        <ul>
+                            <li><strong>Daily:</strong> Wipe clean with dry cloth, remove cerumen</li>
+                            <li><strong>Weekly:</strong> Brush microphone ports, inspect for damage</li>
+                            <li><strong>Monthly:</strong> Replace wax guards, deep cleaning</li>
+                            <li>Keep away from moisture, heat, and pets</li>
+                        </ul>
+                    </div>
+                    <div class="orientation-section">
+                        <h4>5. Basic Troubleshooting</h4>
+                        <ul>
+                            <li>No sound → Check battery, cerumen blockage</li>
+                            <li>Weak sound → Replace battery, clean receiver</li>
+                            <li>Feedback → Re-insert, check for cerumen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 33: Realistic Expectations -->
+        <div class="slide" data-slide="33">
+            <div class="slide-content">
+                <div class="section-indicator section-4">Section 4</div>
+                <h2>Setting Realistic Expectations</h2>
+                <div class="content-box">
+                    <h3>What Patients Should Understand</h3>
+                    <div class="expectation-box">
+                        <h4>✓ What to Expect</h4>
+                        <ul>
+                            <li><strong>Acclimation Period:</strong> 2-4 weeks to adjust; sounds may seem unusual initially</li>
+                            <li><strong>Improved Communication:</strong> Better speech understanding, especially in quiet</li>
+                            <li><strong>Amplification of All Sounds:</strong> Environmental sounds, not just speech</li>
+                            <li><strong>Gradual Adjustment:</strong> Brain needs time to relearn how to hear</li>
+                            <li><strong>Regular Wear:</strong> Consistent use (8+ hours daily) accelerates adaptation</li>
+                        </ul>
+                    </div>
+                    <div class="expectation-box">
+                        <h4>✗ Common Misconceptions to Address</h4>
+                        <ul>
+                            <li>Hearing aids improve but <strong>don't restore normal hearing</strong></li>
+                            <li>Background noise remains challenging (though improved)</li>
+                            <li>Won't hear perfectly in all situations</li>
+                            <li>Takes time; not an immediate "fix"</li>
+                            <li>Requires ongoing maintenance and adjustments</li>
+                            <li>Won't reverse or stop hearing loss progression</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 34: Programming Adjustments -->
+        <div class="slide" data-slide="34">
+            <div class="slide-content">
+                <div class="section-indicator section-4">Section 4</div>
+                <h2>Programming Adjustments</h2>
+                <div class="content-box">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Patient Complaint</th>
+                                <th>Likely Issue</th>
+                                <th>Adjustment Strategy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>"Too loud overall"</td>
+                                <td>Excessive gain</td>
+                                <td>Reduce overall gain or gain at affected frequencies</td>
+                            </tr>
+                            <tr>
+                                <td>"Background noise too loud"</td>
+                                <td>Low-frequency amplification</td>
+                                <td>Reduce low-frequency gain, increase noise reduction, activate directional mics</td>
+                            </tr>
+                            <tr>
+                                <td>"Whistling/feedback"</td>
+                                <td>Poor seal or excessive gain</td>
+                                <td>Check physical fit, increase feedback management, reduce high-frequency gain</td>
+                            </tr>
+                            <tr>
+                                <td>"Speech not clear"</td>
+                                <td>Insufficient high frequencies</td>
+                                <td>Increase mid-to-high frequency gain (1000-4000 Hz)</td>
+                            </tr>
+                            <tr>
+                                <td>"Own voice sounds hollow"</td>
+                                <td>Occlusion effect</td>
+                                <td>Increase venting, reduce low-frequency gain below 500 Hz</td>
+                            </tr>
+                            <tr>
+                                <td>"Not loud enough"</td>
+                                <td>Under-amplification</td>
+                                <td>Increase gain, verify with REM, check for cerumen blockage</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 35: Section 5 Overview -->
+        <div class="slide" data-slide="35">
+            <div class="slide-content">
+                <div class="section-header section-5">
+                    <span class="section-number">Section 5</span>
+                    <h2>Provide Continuing Care</h2>
+                </div>
+                <div class="content-box">
+                    <p class="section-description">This section evaluates your knowledge of long-term patient management, including maintenance protocols, troubleshooting, outcome measures, aural rehabilitation, and strategies to ensure continued hearing aid use.</p>
+                    <h3>Key Competencies Tested:</h3>
+                    <ul>
+                        <li>Maintenance schedules and procedures</li>
+                        <li>Troubleshooting common hearing aid problems</li>
+                        <li>Outcome measures (APHAB, COSI, aided audiometry)</li>
+                        <li>Follow-up appointment timing and purposes</li>
+                        <li>Communication strategies and aural rehabilitation</li>
+                        <li>Identifying and addressing non-use risk factors</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 36: Maintenance Schedule -->
+        <div class="slide" data-slide="36">
+            <div class="slide-content">
+                <div class="section-indicator section-5">Section 5</div>
+                <h2>Maintenance Schedule</h2>
+                <div class="content-box">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Frequency</th>
+                                <th>Tasks</th>
+                                <th>Who Performs</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Daily</strong></td>
+                                <td>
+                                    <ul>
+                                        <li>Wipe device clean with dry cloth</li>
+                                        <li>Remove visible cerumen from receiver</li>
+                                        <li>Open battery door at night (disposable)</li>
+                                        <li>Place in charging station (rechargeable)</li>
+                                    </ul>
+                                </td>
+                                <td>Patient</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Weekly</strong></td>
+                                <td>
+                                    <ul>
+                                        <li>Brush microphone ports</li>
+                                        <li>Inspect battery contacts</li>
+                                        <li>Check for cracks or damage</li>
+                                        <li>Clean earmold thoroughly</li>
+                                    </ul>
+                                </td>
+                                <td>Patient</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Monthly</strong></td>
+                                <td>
+                                    <ul>
+                                        <li>Replace wax guards/filters</li>
+                                        <li>Professional cleaning</li>
+                                        <li>Check function and performance</li>
+                                    </ul>
+                                </td>
+                                <td>Patient + Professional</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Annual</strong></td>
+                                <td>
+                                    <ul>
+                                        <li>Complete servicing and deep cleaning</li>
+                                        <li>Hearing retest</li>
+                                        <li>Update programming as needed</li>
+                                        <li>Consider technology upgrades</li>
+                                    </ul>
+                                </td>
+                                <td>Professional</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 37: Troubleshooting Common Problems -->
+        <div class="slide" data-slide="37">
+            <div class="slide-content">
+                <div class="section-indicator section-5">Section 5</div>
+                <h2>Troubleshooting Common Problems</h2>
+                <div class="content-box">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Problem</th>
+                                <th>Possible Causes</th>
+                                <th>Solutions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Dead/No Sound</strong></td>
+                                <td>Dead battery, cerumen blockage, switched off</td>
+                                <td>Replace battery, clean receiver, check on/off switch, verify program setting</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Weak/Fading Sound</strong></td>
+                                <td>Dying battery, partial blockage</td>
+                                <td>Replace battery, clean microphone and receiver ports, check for moisture</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Distorted Sound</strong></td>
+                                <td>Cerumen, debris, moisture, damaged receiver</td>
+                                <td>Clean earmold/dome thoroughly, dry out device, replace wax guard, may need repair</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Feedback/Whistling</strong></td>
+                                <td>Poor seal, cerumen, high volume</td>
+                                <td>Re-insert properly, remove cerumen buildup, check seal, reduce volume temporarily</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Intermittent Sound</strong></td>
+                                <td>Poor battery contact, loose connection, moisture</td>
+                                <td>Clean battery contacts, check battery door, dry out device, may need professional service</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Not Charging</strong></td>
+                                <td>Poor contact, dirty pins, outlet issue</td>
+                                <td>Clean charging contacts, check power source, try different outlet, reset charger</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 38: Outcome Measures -->
+        <div class="slide" data-slide="38">
+            <div class="slide-content">
+                <div class="section-indicator section-5">Section 5</div>
+                <h2>Outcome Measures</h2>
+                <div class="content-box">
+                    <div class="outcome-measure">
+                        <h3>APHAB (Abbreviated Profile of Hearing Aid Benefit)</h3>
+                        <ul>
+                            <li>24-item self-assessment questionnaire</li>
+                            <li>Completed for unaided AND aided conditions</li>
+                            <li><strong>4 Subscales:</strong>
+                                <ul>
+                                    <li><strong>EC:</strong> Ease of Communication</li>
+                                    <li><strong>RV:</strong> Reverberation</li>
+                                    <li><strong>BN:</strong> Background Noise</li>
+                                    <li><strong>AV:</strong> Aversiveness to loud sounds</li>
+                                </ul>
+                            </li>
+                            <li>Measures subjective benefit in different listening situations</li>
+                        </ul>
+                    </div>
+                    <div class="outcome-measure">
+                        <h3>COSI (Client Oriented Scale of Improvement)</h3>
+                        <ul>
+                            <li>Patient-specific goals approach</li>
+                            <li>Patient identifies 5 priority listening situations</li>
+                            <li>Rates degree of change and final ability</li>
+                            <li>Individualized, relevant to patient's lifestyle</li>
+                            <li>Excellent for demonstrating benefit in real-world scenarios</li>
+                        </ul>
+                    </div>
+                    <div class="outcome-measure">
+                        <h3>Aided Audiometry</h3>
+                        <ul>
+                            <li>Objective measure of functional gain</li>
+                            <li>Documents improvement in threshold sensitivity</li>
+                            <li>Perform in sound field with hearing aids</li>
+                            <li>Compare to unaided thresholds</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 39: Validation Timing -->
+        <div class="slide" data-slide="39">
+            <div class="slide-content">
+                <div class="section-indicator section-5">Section 5</div>
+                <h2>Follow-Up &amp; Validation Timing</h2>
+                <div class="content-box">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Timepoint</th>
+                                <th>Purpose</th>
+                                <th>Activities</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>2 Weeks</strong></td>
+                                <td>Adaptation check</td>
+                                <td>
+                                    <ul>
+                                        <li>Assess comfort and initial adjustment</li>
+                                        <li>Minor programming adjustments</li>
+                                        <li>Review insertion/removal technique</li>
+                                        <li>Address any immediate concerns</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>4 Weeks</strong></td>
+                                <td>Formal outcome assessment begins</td>
+                                <td>
+                                    <ul>
+                                        <li>Administer outcome measures (APHAB, COSI)</li>
+                                        <li>Fine-tune programming based on experience</li>
+                                        <li>Address any persistent issues</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>8 Weeks</strong></td>
+                                <td>Extended outcomes</td>
+                                <td>
+                                    <ul>
+                                        <li>Aided audiometry</li>
+                                        <li>Comprehensive benefit assessment</li>
+                                        <li>Final programming refinements</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>3 Months</strong></td>
+                                <td>Final benefit verification</td>
+                                <td>
+                                    <ul>
+                                        <li>Complete outcome measure analysis</li>
+                                        <li>Document success and any limitations</li>
+                                        <li>Plan for ongoing care</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Annual</strong></td>
+                                <td>Maintenance &amp; reassessment</td>
+                                <td>
+                                    <ul>
+                                        <li>Repeat hearing evaluation</li>
+                                        <li>Device maintenance and cleaning</li>
+                                        <li>Update programming if hearing changed</li>
+                                        <li>Discuss technology upgrades</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 40: Communication Strategies -->
+        <div class="slide" data-slide="40">
+            <div class="slide-content">
+                <div class="section-indicator section-5">Section 5</div>
+                <h2>Communication Strategies</h2>
+                <div class="two-column">
+                    <div class="column">
+                        <h3>For the Patient</h3>
+                        <ul>
+                            <li><strong>Face the speaker:</strong> Lipreading provides 30-40% additional information</li>
+                            <li><strong>Position strategically:</strong> Back to wall in restaurants, well-lit areas</li>
+                            <li><strong>Reduce background noise:</strong> Turn off TV, move to quieter location</li>
+                            <li><strong>Request clarification:</strong> Ask speaker to rephrase, not just repeat</li>
+                            <li><strong>Use context clues:</strong> Topic knowledge aids understanding</li>
+                            <li><strong>Inform others:</strong> Let people know you have hearing loss</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>For Communication Partners</h3>
+                        <ul>
+                            <li><strong>Get attention first:</strong> Say name before speaking</li>
+                            <li><strong>Face-to-face communication:</strong> Don't talk from another room</li>
+                            <li><strong>Normal volume and rate:</strong> Shouting distorts speech</li>
+                            <li><strong>Reduce competing noise:</strong> Turn down TV/music</li>
+                            <li><strong>Rephrase if needed:</strong> Use different words, not just louder</li>
+                            <li><strong>Be patient:</strong> Allow time for processing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="highlight-box">
+                    <strong>Environmental Modifications:</strong> Carpeting, curtains, and soft furnishings reduce reverberation and improve listening conditions.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 41: Aural Rehabilitation -->
+        <div class="slide" data-slide="41">
+            <div class="slide-content">
+                <div class="section-indicator section-5">Section 5</div>
+                <h2>Aural Rehabilitation</h2>
+                <div class="content-box">
+                    <h3>What is Aural Rehabilitation?</h3>
+                    <p>Structured programs (typically 6-12 weeks) designed to maximize communication abilities and psychosocial adjustment to hearing loss.</p>
+                    <h3>Components of AR Programs</h3>
+                    <div class="ar-component">
+                        <h4>1. Hearing Loss Education</h4>
+                        <ul>
+                            <li>Understanding hearing loss and its impact</li>
+                            <li>How hearing aids work and their limitations</li>
+                            <li>Realistic expectations</li>
+                        </ul>
+                    </div>
+                    <div class="ar-component">
+                        <h4>2. Communication Strategy Training</h4>
+                        <ul>
+                            <li>Environmental modifications</li>
+                            <li>Assertiveness in requesting accommodations</li>
+                            <li>Problem-solving for difficult situations</li>
+                        </ul>
+                    </div>
+                    <div class="ar-component">
+                        <h4>3. Psychosocial Adjustment Counseling</h4>
+                        <ul>
+                            <li>Addressing stigma and denial</li>
+                            <li>Coping with frustration and isolation</li>
+                            <li>Building confidence</li>
+                        </ul>
+                    </div>
+                    <div class="ar-component">
+                        <h4>4. Auditory Training Exercises</h4>
+                        <ul>
+                            <li>Sound discrimination practice</li>
+                            <li>Speech-in-noise training</li>
+                            <li>Computer-based programs available</li>
+                        </ul>
+                    </div>
+                    <div class="ar-component">
+                        <h4>5. Communication Partner Involvement</h4>
+                        <ul>
+                            <li>Educate family members</li>
+                            <li>Strategies for effective communication</li>
+                            <li>Group sessions beneficial</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 42: Recognizing Non-Use Risk Factors -->
+        <div class="slide" data-slide="42">
+            <div class="slide-content">
+                <div class="section-indicator section-5">Section 5</div>
+                <h2>Recognizing Non-Use Risk Factors</h2>
+                <div class="content-box">
+                    <h3>Common Reasons for Hearing Aid Rejection</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Risk Factor</th>
+                                <th>Warning Signs</th>
+                                <th>Intervention</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Unrealistic Expectations</strong></td>
+                                <td>"I should hear perfectly now"</td>
+                                <td>Re-educate on capabilities/limitations, review gradual adjustment process</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Poor Fit/Comfort</strong></td>
+                                <td>Complaints of pain, looseness, feedback</td>
+                                <td>Address physical fit issues immediately, remake earmold if needed</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Inadequate Counseling</strong></td>
+                                <td>Confusion about use, maintenance</td>
+                                <td>Additional orientation sessions, written instructions, family involvement</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Stigma/Denial</strong></td>
+                                <td>"I don't really need these", hiding devices</td>
+                                <td>Counseling on acceptance, support groups, emphasize benefits over appearance</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Dexterity Problems</strong></td>
+                                <td>Difficulty with batteries, insertion</td>
+                                <td>Recommend larger style, rechargeable option, caregiver training</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Insufficient Follow-Up</strong></td>
+                                <td>Patient doesn't return for adjustments</td>
+                                <td>Proactive outreach, convenient scheduling, address barriers to return</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="highlight-box">
+                        <strong>Critical Point:</strong> Early intervention when problems arise significantly improves success rates. Regular follow-up is essential.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 43: Key Terminology -->
+        <div class="slide" data-slide="43">
+            <div class="slide-content">
+                <h2>Key Terminology Review</h2>
+                <div class="content-box">
+                    <div class="terminology-grid">
+                        <div class="term-item">
+                            <strong>Conductive Loss:</strong> Hearing loss due to outer/middle ear pathology, air-bone gap present
+                        </div>
+                        <div class="term-item">
+                            <strong>Sensorineural Loss:</strong> Hearing loss due to inner ear or neural pathology, no air-bone gap
+                        </div>
+                        <div class="term-item">
+                            <strong>Mixed Loss:</strong> Combination of conductive and sensorineural components
+                        </div>
+                        <div class="term-item">
+                            <strong>dB HL:</strong> Decibel Hearing Level - audiometric reference scale
+                        </div>
+                        <div class="term-item">
+                            <strong>SRT:</strong> Speech Reception Threshold - softest level for 50% spondee recognition
+                        </div>
+                        <div class="term-item">
+                            <strong>WRS:</strong> Word Recognition Score - percentage of words correctly identified
+                        </div>
+                        <div class="term-item">
+                            <strong>PTA:</strong> Pure Tone Average - average of 500, 1000, 2000 Hz thresholds
+                        </div>
+                        <div class="term-item">
+                            <strong>REUR:</strong> Real Ear Unaided Response - natural ear canal resonance
+                        </div>
+                        <div class="term-item">
+                            <strong>REAR:</strong> Real Ear Aided Response - SPL in canal with hearing aid
+                        </div>
+                        <div class="term-item">
+                            <strong>REIG:</strong> Real Ear Insertion Gain - actual gain provided (REAR - REUR)
+                        </div>
+                        <div class="term-item">
+                            <strong>Feedback:</strong> Whistling caused by amplified sound re-entering microphone
+                        </div>
+                        <div class="term-item">
+                            <strong>Gain:</strong> Amount of amplification provided by hearing aid
+                        </div>
+                        <div class="term-item">
+                            <strong>Compression:</strong> Automatic gain adjustment based on input level
+                        </div>
+                        <div class="term-item">
+                            <strong>Tympanometry:</strong> Measures middle ear function via compliance and pressure
+                        </div>
+                        <div class="term-item">
+                            <strong>Acoustic Reflex:</strong> Stapedius muscle contraction in response to loud sound
+                        </div>
+                        <div class="term-item">
+                            <strong>NAL-NL2:</strong> Prescriptive formula emphasizing comfort and intelligibility
+                        </div>
+                        <div class="term-item">
+                            <strong>DSL v5:</strong> Prescriptive formula emphasizing maximum audibility
+                        </div>
+                        <div class="term-item">
+                            <strong>Occlusion Effect:</strong> Hollow/boomy sensation of own voice with blocked canal
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 44: Red Flags Summary -->
+        <div class="slide" data-slide="44">
+            <div class="slide-content">
+                <h2>Red Flags Summary</h2>
+                <div class="content-box">
+                    <div class="red-flag-summary">
+                        <h3>⚠ Immediate Medical Referral Required For:</h3>
+                        <div class="red-flag-box">
+                            <ul class="red-flag-list large-list">
+                                <li><strong>Sudden SNHL:</strong> &gt;30 dB loss in 3 consecutive frequencies occurring within 3 days
+                                    <br><em>Medical emergency - refer immediately</em>
+                                </li>
+                                <li><strong>Asymmetrical Hearing Loss:</strong> &gt;15 dB difference between ears at 2 consecutive frequencies
+                                    <br><em>Rule out acoustic neuroma or other retrocochlear pathology</em>
+                                </li>
+                                <li><strong>Unilateral Tinnitus:</strong> Especially when accompanied by hearing loss
+                                    <br><em>May indicate acoustic neuroma or other serious condition</em>
+                                </li>
+                                <li><strong>Poor Speech Discrimination:</strong> WRS disproportionately poor relative to pure tone thresholds
+                                    <br><em>Suggests retrocochlear involvement</em>
+                                </li>
+                                <li><strong>Ear Drainage or Pain:</strong> Otorrhea, otalgia, or visible abnormalities
+                                    <br><em>Active infection or pathology requiring medical treatment</em>
+                                </li>
+                                <li><strong>Abnormal TM Findings:</strong> Perforation, retraction, inflammation, mass
+                                    <br><em>Medical evaluation needed before proceeding</em>
+                                </li>
+                                <li><strong>Conductive Loss Without Clear Cause:</strong> No obvious cerumen or middle ear pathology
+                                    <br><em>May indicate otosclerosis, ossicular discontinuity, or other pathology</em>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 45: Exam Strategies -->
+        <div class="slide" data-slide="45">
+            <div class="slide-content">
+                <h2>Exam Strategies</h2>
+                <div class="content-box">
+                    <h3>During the Exam</h3>
+                    <ul class="large-list">
+                        <li><strong>Read Questions Carefully:</strong> Pay attention to qualifiers like "always," "never," "first," "most likely"</li>
+                        <li><strong>Consider All Options:</strong> Read every choice before selecting your answer</li>
+                        <li><strong>Manage Your Time:</strong> 105 questions - pace yourself to have time for all questions</li>
+                        <li><strong>Flag Uncertain Questions:</strong> Mark difficult questions and return to them after completing others</li>
+                        <li><strong>Don't Leave Blanks:</strong> Make educated guesses on questions you're unsure about</li>
+                        <li><strong>Trust Your Preparation:</strong> Your first instinct is often correct</li>
+                        <li><strong>Look for Key Words:</strong> "Immediate referral," "most common," "first step," "contraindicated"</li>
+                    </ul>
+                    <h3>Question Analysis Tips</h3>
+                    <ul class="large-list">
+                        <li>Numbers are frequently tested (dB levels, frequencies, time periods)</li>
+                        <li>Red flags and medical referral criteria are high-yield topics</li>
+                        <li>Differentiation questions: conductive vs sensorineural, NAL vs DSL, etc.</li>
+                        <li>Practical scenarios testing application of knowledge</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 46: Study Preparation Tips -->
+        <div class="slide" data-slide="46">
+            <div class="slide-content">
+                <h2>Study Preparation Tips</h2>
+                <div class="content-box">
+                    <h3>Effective Study Strategies</h3>
+                    <div class="study-tip">
+                        <h4>Timeline: 8-12 Weeks</h4>
+                        <ul>
+                            <li>Create a systematic study schedule covering all 5 competency areas</li>
+                            <li>Allocate more time to weaker areas</li>
+                            <li>Plan rest days to avoid burnout</li>
+                        </ul>
+                    </div>
+                    <div class="study-tip">
+                        <h4>Active Learning Methods</h4>
+                        <ul>
+                            <li><strong>Spaced Repetition:</strong> Review material at increasing intervals</li>
+                            <li><strong>Active Recall:</strong> Test yourself frequently without looking at notes</li>
+                            <li><strong>Practice Questions:</strong> Complete multiple practice exams under timed conditions</li>
+                            <li><strong>Teach Others:</strong> Explain concepts to colleagues or study partners</li>
+                        </ul>
+                    </div>
+                    <div class="study-tip">
+                        <h4>Resource Utilization</h4>
+                        <ul>
+                            <li>Complete multiple full-length practice exams</li>
+                            <li>Target score: 70%+ on practice tests consistently</li>
+                            <li>Review rationales for incorrect AND correct answers</li>
+                            <li>Create flashcards for numbers, thresholds, and terminology</li>
+                        </ul>
+                    </div>
+                    <div class="study-tip">
+                        <h4>Study Groups</h4>
+                        <ul>
+                            <li>Join or form a study group with other candidates</li>
+                            <li>Discuss challenging concepts and case studies</li>
+                            <li>Quiz each other on key topics</li>
+                            <li>Share mnemonics and memory strategies</li>
+                        </ul>
+                    </div>
+                    <div class="study-tip">
+                        <h4>Exam Day Preparation</h4>
+                        <ul>
+                            <li>Get adequate sleep the night before (7-8 hours)</li>
+                            <li>Eat a nutritious breakfast</li>
+                            <li>Arrive early to testing center</li>
+                            <li>Bring required identification</li>
+                            <li>Stay calm and confident</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 47: Final Checklist -->
+        <div class="slide" data-slide="47">
+            <div class="slide-content">
+                <h2>Final Preparation Checklist</h2>
+                <div class="content-box">
+                    <h3>✓ Key Preparation Milestones</h3>
+                    <div class="checklist">
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check1">
+                            <label for="check1">Reviewed all 5 competency sections thoroughly</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check2">
+                            <label for="check2">Completed multiple full-length practice exams</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check3">
+                            <label for="check3">Consistently scoring 70%+ on practice tests</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check4">
+                            <label for="check4">Can interpret any audiogram configuration</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check5">
+                            <label for="check5">Memorized all hearing loss degree ranges (dB HL)</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check6">
+                            <label for="check6">Know all red flags and medical referral criteria</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check7">
+                            <label for="check7">Understand device selection rationale for different scenarios</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check8">
+                            <label for="check8">Can explain NAL-NL2 vs DSL v5 differences</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check9">
+                            <label for="check9">Know REM procedures and interpretation</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check10">
+                            <label for="check10">Understand troubleshooting protocols</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check11">
+                            <label for="check11">Reviewed all terminology and definitions</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check12">
+                            <label for="check12">Know tympanometry types and interpretations</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check13">
+                            <label for="check13">Understand outcome measures (APHAB, COSI)</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check14">
+                            <label for="check14">Practiced time management for 105 questions</label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="check15">
+                            <label for="check15">Developed strategies for managing test anxiety</label>
+                        </div>
+                    </div>
+                    <div class="highlight-box success-message">
+                        <h3>You're Ready!</h3>
+                        <p>Trust your preparation, stay calm during the exam, and apply the knowledge you've gained. Good luck on the ILE exam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="navigation">
+            <button id="prevBtn" class="nav-btn">← Previous</button>
+            <div class="progress">
+                <span id="slideNumber">1</span> / <span id="totalSlides">47</span>
+            </div>
+            <button id="nextBtn" class="nav-btn">Next →</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

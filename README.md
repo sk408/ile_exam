@@ -20,13 +20,27 @@ Comprehensive study materials for the International Licensing Examination (ILE) 
   - Complete answer key with detailed explanations
   - Aligned with Texas Administrative Code and TDLR requirements
 
-### Interactive Practice Exam Application
-A web-based practice exam system with 300 questions across 5 sections:
-- Random question selection from expanded question bank
-- Full 105-question ILE exam simulation
-- Real-time timer with pacing guidance (120 minutes)
-- Immediate scoring and detailed rationales
-- Works offline once downloaded
+### Interactive Practice Exam Applications
+
+**Two Quiz Modes Available:**
+
+1. **Quick Practice Exam** (`interactive/index.html`)
+   - Random question selection from 300-question bank
+   - Full 105-question ILE exam simulation
+   - Real-time timer with pacing guidance (120 minutes)
+   - Immediate scoring and detailed rationales
+   - Quick and streamlined interface
+
+2. **Section-by-Section Quiz** (`ILE-Exam-Practice-Quiz/index.html`)
+   - Study by individual sections (60 questions each)
+   - Random quiz mode with custom question counts
+   - Flag difficult questions for review
+   - Track completion progress by section
+   - Detailed performance breakdown
+   - **Randomized answer choices to prevent pattern memorization**
+   - Review flagged questions and missed questions
+   
+Both applications work offline once downloaded.
 
 ## 🚀 Quick Start
 
@@ -37,13 +51,21 @@ A web-based practice exam system with 300 questions across 5 sections:
 
 ### Taking Practice Exams
 1. Complete `TX-ILE-Practice-Exam.md` (100 questions, 2.5 hours)
-2. Use the interactive app for randomized practice
+2. Use the interactive apps for randomized practice
 
-### Interactive Application
+### Interactive Applications
+**Option 1: Quick Practice Exam**
 1. Open `interactive/index.html` in any web browser
-2. Navigate through Study Guide, Flashcards, or Practice Exam tabs
+2. Navigate to Practice Exam tab
 3. Select exam length (25, 50, 105, or 200 questions)
 4. Track your time and pacing
+
+**Option 2: Section-by-Section Quiz**
+1. Open `ILE-Exam-Practice-Quiz/index.html` in any web browser
+2. Choose study mode: by section, random quiz, or review flagged
+3. Answer questions with randomized choices
+4. Flag difficult questions for later review
+5. Track your progress across all 5 sections
 
 ## 📊 Question Bank Statistics
 

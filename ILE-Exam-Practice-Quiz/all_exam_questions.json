@@ -1,0 +1,3929 @@
+{
+  "sections": [
+    {
+      "section_number": 1,
+      "questions": [
+        {
+          "id": "S1-Q01",
+          "section": 1,
+          "question": "Which is a red flag requiring medical referral before proceeding with amplification?",
+          "choices": [
+            "Sudden unilateral hearing loss",
+            "Stable bilateral presbycusis",
+            "Intermittent difficulty in noise",
+            "Cerumen partially visible"
+          ],
+          "answerIndex": 0,
+          "rationale": "Sudden unilateral loss is a classic medical red flag that warrants prompt referral."
+        },
+        {
+          "id": "S1-Q02",
+          "section": 1,
+          "question": "Which infection control action is standard between patients?",
+          "choices": [
+            "Hand hygiene and surface disinfection",
+            "Autoclave the audiometer",
+            "No cleaning if using inserts",
+            "Gloves only when taking ear impressions"
+          ],
+          "answerIndex": 0,
+          "rationale": "Hand hygiene and noncritical surface disinfection are standard precautions between patients."
+        },
+        {
+          "id": "S1-Q03",
+          "section": 1,
+          "question": "Normal adult tympanometric peak pressure range is approximately:",
+          "choices": [
+            "\u2212100 to +50 daPa",
+            "\u2212300 to \u2212150 daPa",
+            "+100 to +250 daPa",
+            "0 to +300 daPa"
+          ],
+          "answerIndex": 0,
+          "rationale": "Typical adult peak pressure falls around \u2212100 to +50 daPa."
+        },
+        {
+          "id": "S1-Q04",
+          "section": 1,
+          "question": "You observe a flat (Type B) tympanogram with large ear canal volume. Most likely:",
+          "choices": [
+            "TM perforation or patent tube",
+            "Middle ear effusion with intact TM",
+            "Eustachian tube dysfunction",
+            "Otosclerosis"
+          ],
+          "answerIndex": 0,
+          "rationale": "A flat tracing with large ECV suggests perforation or patent PE tube."
+        },
+        {
+          "id": "S1-Q05",
+          "section": 1,
+          "question": "When using insert earphones, typical interaural attenuation is:",
+          "choices": [
+            "~55 dB",
+            "~40 dB",
+            "~10 dB",
+            "0 dB"
+          ],
+          "answerIndex": 0,
+          "rationale": "Inserts typically provide around 55 dB of IA, better than supra-aural."
+        },
+        {
+          "id": "S1-Q06",
+          "section": 1,
+          "question": "Mask air conduction when:",
+          "choices": [
+            "AC(te) \u2212 IA \u2265 BC(nte)",
+            "AC(te) \u2212 10 \u2265 AC(nte)",
+            "BC(te) \u2212 IA \u2265 AC(nte)",
+            "SRT(te) \u2212 10 \u2265 SRT(nte)"
+          ],
+          "answerIndex": 0,
+          "rationale": "Use the AC masking rule referencing IA and the best BC in the non-test ear."
+        },
+        {
+          "id": "S1-Q07",
+          "section": 1,
+          "question": "Which best describes the plateau method?",
+          "choices": [
+            "Increase masker in 5 dB steps until test ear threshold stabilizes",
+            "Begin with high masker to avoid undermasking",
+            "Increase test tone only",
+            "Alternate ears each step"
+          ],
+          "answerIndex": 0,
+          "rationale": "Plateau method increases masker in small steps until threshold no longer shifts."
+        },
+        {
+          "id": "S1-Q08",
+          "section": 1,
+          "question": "The occlusion effect at 500 Hz is typically about:",
+          "choices": [
+            "~15 dB",
+            "~5 dB",
+            "~25 dB",
+            "0 dB"
+          ],
+          "answerIndex": 0,
+          "rationale": "Approximate OE is 15 dB at 500 Hz (20 at 250; 10 at 1k; ~0 \u22652k)."
+        },
+        {
+          "id": "S1-Q09",
+          "section": 1,
+          "question": "SRT should typically agree with the PTA within:",
+          "choices": [
+            "\u00b15\u201310 dB",
+            "\u00b120\u201330 dB",
+            "Exactly 0 dB",
+            "No relationship"
+          ],
+          "answerIndex": 0,
+          "rationale": "SRT and PTA (0.5/1/2 kHz) normally agree within about \u00b15\u201310 dB."
+        },
+        {
+          "id": "S1-Q10",
+          "section": 1,
+          "question": "For WRS in quiet, a common presentation level is:",
+          "choices": [
+            "30\u201340 dB SL re: SRT",
+            "0 dB HL",
+            "UCL + 10 dB",
+            "20 dB SL re: UCL"
+          ],
+          "answerIndex": 0,
+          "rationale": "WRS is often tested at 30\u201340 dB SL re: SRT or at MCL."
+        },
+        {
+          "id": "S1-Q11",
+          "section": 1,
+          "question": "Which finding is most consistent with otitis media with effusion?",
+          "choices": [
+            "Type B tymp with normal ECV",
+            "Type A with high compliance",
+            "Type Ad with large ECV",
+            "Type C with abnormally high compliance"
+          ],
+          "answerIndex": 0,
+          "rationale": "Type B with normal ECV is classic for middle ear effusion."
+        },
+        {
+          "id": "S1-Q12",
+          "section": 1,
+          "question": "A valid reason to stop ear impression taking and refer is:",
+          "choices": [
+            "Severe pain or dizziness during the impression",
+            "Canal hair observed",
+            "Minimal cerumen",
+            "Narrow canal"
+          ],
+          "answerIndex": 0,
+          "rationale": "Pain or dizziness indicates a potential complication; stop and refer as needed."
+        },
+        {
+          "id": "S1-Q13",
+          "section": 1,
+          "question": "Which is NOT typically a red flag?",
+          "choices": [
+            "Mild symmetric presbycusis",
+            "Sudden unilateral loss",
+            "Unilateral persistent tinnitus",
+            "Persistent otorrhea"
+          ],
+          "answerIndex": 0,
+          "rationale": "Mild symmetric presbycusis is common and not a red flag on its own."
+        },
+        {
+          "id": "S1-Q14",
+          "section": 1,
+          "question": "In pure-tone testing, thresholds are established using:",
+          "choices": [
+            "5 dB down / 10 dB up",
+            "10 dB down / 5 dB up",
+            "2 dB steps only",
+            "Continuous steady tones"
+          ],
+          "answerIndex": 0,
+          "rationale": "Standard bracketing is 5-down/10-up with brief tones."
+        },
+        {
+          "id": "S1-Q15",
+          "section": 1,
+          "question": "Which best helps prevent overmasking?",
+          "choices": [
+            "Use insert earphones",
+            "Use bone conduction only",
+            "Mask both ears simultaneously",
+            "Always use 70 dB EM"
+          ],
+          "answerIndex": 0,
+          "rationale": "Inserts increase IA, making overmasking less likely."
+        },
+        {
+          "id": "S1-Q16",
+          "section": 1,
+          "question": "Acoustic reflexes are typically found around:",
+          "choices": [
+            "70\u2013100 dB HL",
+            "30\u201350 dB HL",
+            "110\u2013130 dB HL",
+            "Always absent"
+          ],
+          "answerIndex": 0,
+          "rationale": "Reflex thresholds commonly occur in the 70\u2013100 dB HL range in normal/near-normal ears."
+        },
+        {
+          "id": "S1-Q17",
+          "section": 1,
+          "question": "Which is the best initial action if SRT and PTA disagree by 20 dB?",
+          "choices": [
+            "Reinstruct and retest",
+            "Proceed to fitting",
+            "Ignore SRT",
+            "Mask immediately"
+          ],
+          "answerIndex": 0,
+          "rationale": "First address test reliability with reinstruction/retest."
+        },
+        {
+          "id": "S1-Q18",
+          "section": 1,
+          "question": "Bone conduction masking start level usually includes:",
+          "choices": [
+            "AC(nte) + OE + 10 dB",
+            "AC(te) + 10 dB",
+            "BC(te) + 20 dB",
+            "SRT(nte) + 5 dB"
+          ],
+          "answerIndex": 0,
+          "rationale": "For BC, include the occlusion effect for low frequencies and add a safety factor (~10 dB)."
+        },
+        {
+          "id": "S1-Q19",
+          "section": 1,
+          "question": "Which patient history item most suggests retrocochlear risk?",
+          "choices": [
+            "Unilateral progressive hearing loss with imbalance",
+            "Seasonal allergies",
+            "Childhood ear infections",
+            "Family history of presbycusis"
+          ],
+          "answerIndex": 0,
+          "rationale": "Asymmetry with imbalance may indicate retrocochlear involvement; refer."
+        },
+        {
+          "id": "S1-Q20",
+          "section": 1,
+          "question": "The best transducer choice to minimize cross-hearing is typically:",
+          "choices": [
+            "Insert earphones",
+            "Supra-aural phones",
+            "Bone vibrator",
+            "Open-field speakers"
+          ],
+          "answerIndex": 0,
+          "rationale": "Inserts offer higher IA than supra-aurals, reducing cross-hearing risk."
+        },
+        {
+          "id": "S1-Q21",
+          "section": 1,
+          "question": "A visible fluid line behind the TM suggests:",
+          "choices": [
+            "Middle ear effusion",
+            "Otosclerosis",
+            "TM perforation",
+            "Exostoses"
+          ],
+          "answerIndex": 0,
+          "rationale": "Air-fluid levels behind the TM are characteristic of effusion."
+        },
+        {
+          "id": "S1-Q22",
+          "section": 1,
+          "question": "Which step comes first when taking an ear impression?",
+          "choices": [
+            "Place otoblock after pre-otoscopy",
+            "Inject impression material then examine",
+            "Skip otoblock for large canals",
+            "Have patient chew gum"
+          ],
+          "answerIndex": 0,
+          "rationale": "Pre-otoscopy then proper otoblock placement is essential before injecting material."
+        },
+        {
+          "id": "S1-Q23",
+          "section": 1,
+          "question": "A Jerger Type As tympanogram most often indicates:",
+          "choices": [
+            "Stiff middle ear system",
+            "Flaccid system",
+            "Perforation",
+            "Sensorineural loss"
+          ],
+          "answerIndex": 0,
+          "rationale": "Type As suggests reduced mobility due to stiffness (e.g., early otosclerosis/scar)."
+        },
+        {
+          "id": "S1-Q24",
+          "section": 1,
+          "question": "A Jerger Type Ad tympanogram most often indicates:",
+          "choices": [
+            "Flaccid or hypermobile system",
+            "Stiff system",
+            "Large effusion",
+            "Occluded canal"
+          ],
+          "answerIndex": 0,
+          "rationale": "Type Ad reflects excessive compliance, often ossicular discontinuity or thin TM."
+        },
+        {
+          "id": "S1-Q25",
+          "section": 1,
+          "question": "Vibrotactile responses are most common at:",
+          "choices": [
+            "Low frequencies with bone conduction",
+            "High frequencies with air conduction",
+            "All frequencies equally",
+            "Not clinically relevant"
+          ],
+          "answerIndex": 0,
+          "rationale": "BC at low frequencies can be felt rather than heard, causing vibrotactile responses."
+        },
+        {
+          "id": "S1-Q26",
+          "section": 1,
+          "question": "Which is the best description of WRS testing?",
+          "choices": [
+            "Phonetically balanced word lists scored as percent correct",
+            "Spondee threshold measure",
+            "Loudness discomfort test",
+            "Speech-in-noise only"
+          ],
+          "answerIndex": 0,
+          "rationale": "WRS uses PB lists in quiet and reports percent correct at a set level."
+        },
+        {
+          "id": "S1-Q27",
+          "section": 1,
+          "question": "Reflex decay testing that is positive suggests:",
+          "choices": [
+            "Possible retrocochlear lesion",
+            "Cerumen impaction",
+            "Normal middle ear function",
+            "Excellent cochlear function"
+          ],
+          "answerIndex": 0,
+          "rationale": "Abnormal decay can indicate retrocochlear involvement."
+        },
+        {
+          "id": "S1-Q28",
+          "section": 1,
+          "question": "Which is most consistent with fungal otitis externa on otoscopy?",
+          "choices": [
+            "Fluffy white/black debris",
+            "Clear canal with cone of light",
+            "Bright red TM only",
+            "Bony outgrowths"
+          ],
+          "answerIndex": 0,
+          "rationale": "Fungal infections may show fluffy debris; refer for medical care."
+        },
+        {
+          "id": "S1-Q29",
+          "section": 1,
+          "question": "Which environment control improves test reliability?",
+          "choices": [
+            "Minimize ambient noise, proper transducer seal",
+            "Open door for ventilation",
+            "Face patient and speak loudly",
+            "Use background music"
+          ],
+          "answerIndex": 0,
+          "rationale": "Low ambient noise and good transducer placement improve reliability."
+        },
+        {
+          "id": "S1-Q30",
+          "section": 1,
+          "question": "Before tympanometry, ensure:",
+          "choices": [
+            "No active ear canal infection or pain",
+            "Loud background noise",
+            "Open vent earmolds in place",
+            "Patient chews gum"
+          ],
+          "answerIndex": 0,
+          "rationale": "Avoid testing when active infection/pain may compromise safety or validity."
+        },
+        {
+          "id": "S1-Q31",
+          "section": 1,
+          "question": "Which symptom pair most strongly supports immediate referral?",
+          "choices": [
+            "Sudden loss with vertigo",
+            "Stable loss with difficulty in noise",
+            "Cerumen and itching",
+            "Intermittent fullness after flights"
+          ],
+          "answerIndex": 0,
+          "rationale": "Sudden loss and vertigo require medical evaluation."
+        },
+        {
+          "id": "S1-Q32",
+          "section": 1,
+          "question": "A 25 dB ABG on BC testing implies:",
+          "choices": [
+            "Masking for BC is indicated",
+            "Overmasking has occurred",
+            "No masking is needed",
+            "Sensorineural loss only"
+          ],
+          "answerIndex": 0,
+          "rationale": "BC masking is indicated when ABG > 10 dB in the test ear."
+        },
+        {
+          "id": "S1-Q33",
+          "section": 1,
+          "question": "Which SRT procedure is correct?",
+          "choices": [
+            "Use spondees; familiarize words",
+            "Use PB lists at fixed level",
+            "Use sentences in noise",
+            "Use any words without familiarization"
+          ],
+          "answerIndex": 0,
+          "rationale": "SRT uses spondees and often includes familiarization to ensure valid threshold."
+        },
+        {
+          "id": "S1-Q34",
+          "section": 1,
+          "question": "Which calibration check is recommended daily?",
+          "choices": [
+            "Biologic (listening) check",
+            "Full electroacoustic ANSI",
+            "No checks needed",
+            "Visual inspection only"
+          ],
+          "answerIndex": 0,
+          "rationale": "A daily biologic check helps catch gross issues before patient testing."
+        },
+        {
+          "id": "S1-Q35",
+          "section": 1,
+          "question": "Which is TRUE of bone conduction placement?",
+          "choices": [
+            "Avoid pinna contact; secure on mastoid",
+            "Place loosely on pinna",
+            "Forehead only is valid",
+            "Hold by hand during test"
+          ],
+          "answerIndex": 0,
+          "rationale": "Proper mastoid placement without pinna contact ensures accurate BC thresholds."
+        },
+        {
+          "id": "S1-Q36",
+          "section": 1,
+          "question": "An air\u2013bone gap indicates:",
+          "choices": [
+            "Conductive component",
+            "Pure SNHL",
+            "Retrocochlear lesion only",
+            "Normal hearing"
+          ],
+          "answerIndex": 0,
+          "rationale": "ABG signifies a conductive component (alone or mixed)."
+        },
+        {
+          "id": "S1-Q37",
+          "section": 1,
+          "question": "A Jerger Type C tympanogram suggests:",
+          "choices": [
+            "Negative middle ear pressure (ET dysfunction)",
+            "Perforated TM",
+            "Normal middle ear",
+            "Hypermobile ossicular chain"
+          ],
+          "answerIndex": 0,
+          "rationale": "Type C reflects negative middle ear pressure consistent with ET dysfunction."
+        },
+        {
+          "id": "S1-Q38",
+          "section": 1,
+          "question": "Unilateral pulsatile tinnitus history suggests:",
+          "choices": [
+            "Vascular etiology\u2014refer",
+            "Benign cerumen only",
+            "Normal aging",
+            "Temporomandibular disorder"
+          ],
+          "answerIndex": 0,
+          "rationale": "Pulsatile tinnitus raises vascular concerns; medical referral indicated."
+        },
+        {
+          "id": "S1-Q39",
+          "section": 1,
+          "question": "WRS is primarily a measure of:",
+          "choices": [
+            "Speech clarity in quiet",
+            "Auditory threshold",
+            "Middle ear pressure",
+            "UCL only"
+          ],
+          "answerIndex": 0,
+          "rationale": "WRS evaluates speech recognition performance at a set level in quiet."
+        },
+        {
+          "id": "S1-Q40",
+          "section": 1,
+          "question": "If undermasking is suspected, you should:",
+          "choices": [
+            "Increase masker level in 5 dB steps",
+            "Decrease test tone only",
+            "Stop masking",
+            "Switch to supra-aurals"
+          ],
+          "answerIndex": 0,
+          "rationale": "Increase masking in small steps until a response plateau is reached."
+        },
+        {
+          "id": "S1-Q41",
+          "section": 1,
+          "question": "A 45-year-old reports gradual bilateral hearing loss over 10 years with excellent WRS. Tympanometry Type A bilaterally. MOST likely diagnosis:",
+          "choices": [
+            "Sensorineural hearing loss (presbycusis pattern)",
+            "Conductive loss requiring surgery",
+            "Malingering",
+            "Acoustic neuroma"
+          ],
+          "answerIndex": 0,
+          "rationale": "Gradual bilateral loss with normal tymps and good WRS is classic SNHL, likely early presbycusis or noise-related."
+        },
+        {
+          "id": "S1-Q42",
+          "section": 1,
+          "question": "Which is NOT an appropriate use of insert earphones?",
+          "choices": [
+            "To reduce test time by eliminating all masking",
+            "To increase interaural attenuation",
+            "To improve hygiene between patients",
+            "To access small or collapsing canals"
+          ],
+          "answerIndex": 0,
+          "rationale": "Inserts increase IA but don't eliminate the need for masking; they reduce masking frequency."
+        },
+        {
+          "id": "S1-Q43",
+          "section": 1,
+          "question": "During BC testing, you observe the patient can feel but not hear the tone at 250 Hz. This suggests:",
+          "choices": [
+            "Vibrotactile response; threshold may be invalid",
+            "Normal bone conduction",
+            "Severe conductive loss",
+            "Retrocochlear pathology"
+          ],
+          "answerIndex": 0,
+          "rationale": "Low-frequency BC can elicit tactile sensation; true auditory threshold may be poorer than recorded."
+        },
+        {
+          "id": "S1-Q44",
+          "section": 1,
+          "question": "A patient with Type B tympanogram and ECV of 1.2 mL most likely has:",
+          "choices": [
+            "Middle ear effusion",
+            "TM perforation",
+            "Otosclerosis",
+            "Normal middle ear"
+          ],
+          "answerIndex": 0,
+          "rationale": "Type B with normal ECV (\u22480.9-2.0) indicates effusion; large ECV would suggest perforation."
+        },
+        {
+          "id": "S1-Q45",
+          "section": 1,
+          "question": "All of the following warrant immediate referral EXCEPT:",
+          "choices": [
+            "Bilateral mild SNHL with 10-year stable history",
+            "Sudden unilateral profound loss 3 days ago",
+            "Persistent bloody otorrhea",
+            "Positive acoustic reflex decay in one ear"
+          ],
+          "answerIndex": 0,
+          "rationale": "Stable bilateral loss is not urgent; sudden loss, bleeding, and decay findings require referral."
+        },
+        {
+          "id": "S1-Q46",
+          "section": 1,
+          "question": "When masking for speech (SRT), initial effective masking level is typically:",
+          "choices": [
+            "SRT(non-test ear) + 10 dB",
+            "AC(test ear) + 10 dB",
+            "Threshold of discomfort",
+            "50 dB HL regardless"
+          ],
+          "answerIndex": 0,
+          "rationale": "Start at SRT of the non-test ear plus 10 dB, then use plateau method."
+        },
+        {
+          "id": "S1-Q47",
+          "section": 1,
+          "question": "During case history, a patient reports episodes of fullness, low-frequency roaring tinnitus, and spinning vertigo lasting hours. This pattern suggests:",
+          "choices": [
+            "Meniere's disease\u2014refer",
+            "Presbycusis",
+            "Noise-induced loss",
+            "Cerumen impaction"
+          ],
+          "answerIndex": 0,
+          "rationale": "Classic Meniere's triad: episodic vertigo, fluctuating hearing loss, tinnitus, and aural fullness."
+        },
+        {
+          "id": "S1-Q48",
+          "section": 1,
+          "question": "A patient's SRT is 40 dB HL and PTA (0.5/1/2 kHz) is 42 dB HL. This indicates:",
+          "choices": [
+            "Good test-retest reliability",
+            "Poor reliability; retest needed",
+            "Conductive component",
+            "Nonorganic hearing loss"
+          ],
+          "answerIndex": 0,
+          "rationale": "Agreement within 2 dB is excellent; indicates reliable testing."
+        },
+        {
+          "id": "S1-Q49",
+          "section": 1,
+          "question": "For infection control, semicritical items (e.g., ear specula, impression syringes) require:",
+          "choices": [
+            "High-level disinfection or sterilization",
+            "Simple soap and water",
+            "No cleaning between patients",
+            "Only alcohol wipe"
+          ],
+          "answerIndex": 0,
+          "rationale": "Semicritical items contact mucous membranes and require high-level disinfection or sterilization."
+        },
+        {
+          "id": "S1-Q50",
+          "section": 1,
+          "question": "Which tympanogram type is associated with ossicular discontinuity?",
+          "choices": [
+            "Type Ad (abnormally high compliance)",
+            "Type As (reduced compliance)",
+            "Type B (flat)",
+            "Type C (negative pressure)"
+          ],
+          "answerIndex": 0,
+          "rationale": "Type Ad shows excessive compliance from ossicular chain interruption or very thin/flaccid TM."
+        },
+        {
+          "id": "S1-Q51",
+          "section": 1,
+          "question": "A 12-year-old with recurrent ear infections presents with Type C tymps bilaterally. Next step:",
+          "choices": [
+            "Refer to physician for ET dysfunction and possible effusion",
+            "Fit hearing aids immediately",
+            "Perform only SRT",
+            "Discharge patient"
+          ],
+          "answerIndex": 0,
+          "rationale": "Type C suggests ET dysfunction; pediatric cases especially warrant medical evaluation."
+        },
+        {
+          "id": "S1-Q52",
+          "section": 1,
+          "question": "Occlusion effect is LEAST at which frequency?",
+          "choices": [
+            "2000 Hz and above",
+            "250 Hz",
+            "500 Hz",
+            "1000 Hz"
+          ],
+          "answerIndex": 0,
+          "rationale": "OE decreases with frequency; minimal (\u22480 dB) at 2 kHz and above."
+        },
+        {
+          "id": "S1-Q53",
+          "section": 1,
+          "question": "A steep high-frequency loss starting at 3 kHz with normal hearing through 2 kHz suggests:",
+          "choices": [
+            "Noise-induced hearing loss",
+            "Meniere's disease",
+            "Otosclerosis",
+            "Normal aging in 30-year-old"
+          ],
+          "answerIndex": 0,
+          "rationale": "Classic noise notch centered around 3-6 kHz with preserved low frequencies."
+        },
+        {
+          "id": "S1-Q54",
+          "section": 1,
+          "question": "Which statement about acoustic reflexes is TRUE?",
+          "choices": [
+            "Absent reflexes can occur in both CHL and significant SNHL",
+            "Reflexes are always present in normal ears",
+            "Reflexes confirm cochlear dead regions",
+            "Reflexes replace the need for WRS testing"
+          ],
+          "answerIndex": 0,
+          "rationale": "Reflexes can be absent or elevated in conductive or significant sensorineural losses."
+        },
+        {
+          "id": "S1-Q55",
+          "section": 1,
+          "question": "You are testing AC at 2 kHz right ear with supra-aural headphones. Threshold appears to be 55 dB HL. Left ear BC at 2 kHz is 15 dB HL. Should you mask?",
+          "choices": [
+            "Yes; 55 \u2212 40 = 15 which equals left BC",
+            "No; difference is too small",
+            "Only if patient reports hearing in left ear",
+            "Masking not needed for supra-aural"
+          ],
+          "answerIndex": 0,
+          "rationale": "AC(right) \u2212 IA \u2265 BC(left): 55 \u2212 40 = 15 \u2265 15. At the threshold of the rule, mask to ensure validity."
+        },
+        {
+          "id": "S1-Q56",
+          "section": 1,
+          "question": "A patient reports hearing the tone in the opposite ear during unmasked testing. This indicates:",
+          "choices": [
+            "Shadow curve (crossover); masking required",
+            "Nonorganic hearing loss",
+            "Normal response",
+            "Binaural summation"
+          ],
+          "answerIndex": 0,
+          "rationale": "Patient reporting sound in non-test ear is classic shadow hearing; masking essential."
+        },
+        {
+          "id": "S1-Q57",
+          "section": 1,
+          "question": "During tympanometry, you obtain an ECV of 4.5 mL in an adult. This most likely indicates:",
+          "choices": [
+            "TM perforation or patent PE tube",
+            "Normal middle ear",
+            "Cerumen occlusion",
+            "Otosclerosis"
+          ],
+          "answerIndex": 0,
+          "rationale": "Abnormally large ECV (normal ~0.9-2.0 mL) suggests perforation or open tube."
+        },
+        {
+          "id": "S1-Q58",
+          "section": 1,
+          "question": "All of the following increase risk of overmasking EXCEPT:",
+          "choices": [
+            "Using insert earphones",
+            "Using very high masking levels",
+            "Poor interaural attenuation",
+            "Bilateral conductive loss"
+          ],
+          "answerIndex": 0,
+          "rationale": "Inserts INCREASE IA, reducing overmasking risk; other options increase risk."
+        },
+        {
+          "id": "S1-Q59",
+          "section": 1,
+          "question": "WRS testing at 40 dB SL re: SRT yields 88% correct in right ear and 44% correct in left ear. Tonal thresholds are symmetric. This asymmetry suggests:",
+          "choices": [
+            "Possible retrocochlear involvement left ear\u2014refer",
+            "Normal variability",
+            "Conductive loss left ear",
+            "Test reliability issue only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Significant WRS asymmetry despite symmetric tones raises retrocochlear concern."
+        },
+        {
+          "id": "S1-Q60",
+          "section": 1,
+          "question": "Before taking an ear impression, you should ALWAYS:",
+          "choices": [
+            "Perform otoscopy to check for contraindications",
+            "Measure the canal length with calipers",
+            "Numb the canal with topical anesthetic",
+            "Insert otoblock without inspection"
+          ],
+          "answerIndex": 0,
+          "rationale": "Pre-otoscopy is essential to identify perforation, infection, or other contraindications."
+        }
+      ]
+    },
+    {
+      "section_number": 2,
+      "questions": [
+        {
+          "id": "S2-Q01",
+          "section": 2,
+          "question": "Adult mild hearing loss range is:",
+          "choices": [
+            "26\u201340 dB HL",
+            "0\u201325 dB HL",
+            "41\u201355 dB HL",
+            "56\u201370 dB HL"
+          ],
+          "answerIndex": 0,
+          "rationale": "Adult mild loss is commonly 26\u201340 dB HL."
+        },
+        {
+          "id": "S2-Q02",
+          "section": 2,
+          "question": "A 35 dB ABG with normal BC indicates:",
+          "choices": [
+            "Conductive loss",
+            "Sensorineural loss",
+            "Mixed loss",
+            "Retrocochlear involvement"
+          ],
+          "answerIndex": 0,
+          "rationale": "An ABG with normal BC fits a conductive loss."
+        },
+        {
+          "id": "S2-Q03",
+          "section": 2,
+          "question": "AC\u2248BC elevated with no ABG indicates:",
+          "choices": [
+            "Sensorineural loss",
+            "Conductive loss",
+            "Mixed loss",
+            "Nonorganic loss"
+          ],
+          "answerIndex": 0,
+          "rationale": "Elevated AC and BC without ABG is sensorineural."
+        },
+        {
+          "id": "S2-Q04",
+          "section": 2,
+          "question": "Elevated AC and BC with an ABG indicates:",
+          "choices": [
+            "Mixed hearing loss",
+            "Normal hearing",
+            "Pure SNHL",
+            "Nonorganic hearing"
+          ],
+          "answerIndex": 0,
+          "rationale": "Both elevated with an ABG is mixed loss."
+        },
+        {
+          "id": "S2-Q05",
+          "section": 2,
+          "question": "A 4 kHz notch is most associated with:",
+          "choices": [
+            "Noise-induced loss",
+            "Meniere\u2019s",
+            "Otosclerosis",
+            "Auditory neuropathy"
+          ],
+          "answerIndex": 0,
+          "rationale": "A 4 kHz notch is classic in noise-induced SNHL."
+        },
+        {
+          "id": "S2-Q06",
+          "section": 2,
+          "question": "Carhart\u2019s notch (~2 kHz) is associated with:",
+          "choices": [
+            "Otosclerosis",
+            "Noise trauma",
+            "Meniere\u2019s",
+            "Cerumen"
+          ],
+          "answerIndex": 0,
+          "rationale": "Carhart\u2019s notch is a BC artifact often seen in otosclerosis."
+        },
+        {
+          "id": "S2-Q07",
+          "section": 2,
+          "question": "Rising low-frequency SNHL with fluctuation and episodic vertigo suggests:",
+          "choices": [
+            "Meniere\u2019s disease",
+            "Presbycusis",
+            "Otosclerosis",
+            "Acoustic neuroma"
+          ],
+          "answerIndex": 0,
+          "rationale": "Meniere\u2019s often shows low-frequency fluctuations and vertigo episodes."
+        },
+        {
+          "id": "S2-Q08",
+          "section": 2,
+          "question": "PTA and SRT should agree within:",
+          "choices": [
+            "\u00b15\u201310 dB",
+            "\u00b120\u201330 dB",
+            "No relationship",
+            "Exactly equal"
+          ],
+          "answerIndex": 0,
+          "rationale": "Agreement within \u00b15\u201310 dB is expected in valid testing."
+        },
+        {
+          "id": "S2-Q09",
+          "section": 2,
+          "question": "Very poor WRS with minimal rollover most likely reflects:",
+          "choices": [
+            "Cochlear clarity limits",
+            "Retrocochlear lesion",
+            "Conductive loss only",
+            "Normal function"
+          ],
+          "answerIndex": 0,
+          "rationale": "Poor WRS without rollover is consistent with cochlear impairment."
+        },
+        {
+          "id": "S2-Q10",
+          "section": 2,
+          "question": "Significant rollover on PI-PB function suggests:",
+          "choices": [
+            "Retrocochlear involvement",
+            "Conductive component",
+            "Normal cochlea",
+            "Test artifact only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Rollover can indicate retrocochlear pathology; refer."
+        },
+        {
+          "id": "S2-Q11",
+          "section": 2,
+          "question": "Which indicates nonorganic loss suspicion?",
+          "choices": [
+            "Inconsistent SRT/PTA relationship",
+            "Type A tymp with good reflexes",
+            "Good WRS at high SLs",
+            "Stable thresholds on retest"
+          ],
+          "answerIndex": 0,
+          "rationale": "Large SRT/PTA discrepancies and inconsistent responses raise nonorganic suspicion."
+        },
+        {
+          "id": "S2-Q12",
+          "section": 2,
+          "question": "Stenger test is used for:",
+          "choices": [
+            "Suspected unilateral nonorganic loss",
+            "Masking determination",
+            "Tympanometry",
+            "Impression safety"
+          ],
+          "answerIndex": 0,
+          "rationale": "The Stenger identifies nonorganic components in unilateral/asymmetric cases."
+        },
+        {
+          "id": "S2-Q13",
+          "section": 2,
+          "question": "Asymmetry plus unilateral tinnitus warrants:",
+          "choices": [
+            "Medical referral",
+            "Routine annual follow-up only",
+            "Immediate binaural fitting",
+            "No action"
+          ],
+          "answerIndex": 0,
+          "rationale": "Asymmetry with unilateral tinnitus is a referral trigger."
+        },
+        {
+          "id": "S2-Q14",
+          "section": 2,
+          "question": "Type B tymp with normal ECV supports:",
+          "choices": [
+            "Middle ear effusion",
+            "Perforation",
+            "Disarticulation",
+            "Normal ear"
+          ],
+          "answerIndex": 0,
+          "rationale": "Type B with normal ECV is typical of effusion."
+        },
+        {
+          "id": "S2-Q15",
+          "section": 2,
+          "question": "Type B tymp with large ECV supports:",
+          "choices": [
+            "Perforation or tube",
+            "Effusion",
+            "Otosclerosis",
+            "ET hyperfunction"
+          ],
+          "answerIndex": 0,
+          "rationale": "Large ECV with flat tracing suggests perforation or patent tube."
+        },
+        {
+          "id": "S2-Q16",
+          "section": 2,
+          "question": "Type As suggests:",
+          "choices": [
+            "Stiff middle ear system",
+            "Hypermobile ossicles",
+            "Normal ear",
+            "Perforation"
+          ],
+          "answerIndex": 0,
+          "rationale": "Type As implies stiffness such as from otosclerosis or scarring."
+        },
+        {
+          "id": "S2-Q17",
+          "section": 2,
+          "question": "Type Ad suggests:",
+          "choices": [
+            "Hypermobile system/ossicular discontinuity",
+            "Stiff system",
+            "Normal",
+            "Effusion"
+          ],
+          "answerIndex": 0,
+          "rationale": "Type Ad indicates excessive compliance, often discontinuity or thin TM."
+        },
+        {
+          "id": "S2-Q18",
+          "section": 2,
+          "question": "Absent acoustic reflexes are expected in:",
+          "choices": [
+            "Significant conductive losses",
+            "All normal ears",
+            "All cochlear losses",
+            "Retrocochlear only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Conductive path often eliminates measurable reflexes."
+        },
+        {
+          "id": "S2-Q19",
+          "section": 2,
+          "question": "Elevated/absent reflexes with significant SNHL can be:",
+          "choices": [
+            "Consistent with cochlear pathology",
+            "Proof of normal hearing",
+            "Proof of conductive component",
+            "Always retrocochlear"
+          ],
+          "answerIndex": 0,
+          "rationale": "SNHL often elevates or eliminates reflexes without implying conductive disease."
+        },
+        {
+          "id": "S2-Q20",
+          "section": 2,
+          "question": "A flat mild loss with excellent WRS and Type A tymps suggests:",
+          "choices": [
+            "Amplification can help",
+            "Conductive disease",
+            "Retrocochlear tumor",
+            "No intervention ever"
+          ],
+          "answerIndex": 0,
+          "rationale": "Typical hearing aid candidate with good speech potential."
+        },
+        {
+          "id": "S2-Q21",
+          "section": 2,
+          "question": "Cookie-bite (mid-frequency) loss may affect:",
+          "choices": [
+            "Speech audibility in mid-band",
+            "Low-frequency only",
+            "High-frequency only",
+            "No functional impact"
+          ],
+          "answerIndex": 0,
+          "rationale": "Mid-band dips affect critical speech bands, impacting clarity."
+        },
+        {
+          "id": "S2-Q22",
+          "section": 2,
+          "question": "A reverse-slope (rising) loss can indicate:",
+          "choices": [
+            "Meniere\u2019s pattern",
+            "Noise exposure",
+            "Presbycusis",
+            "Otosclerosis only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Rising LF losses are seen in Meniere\u2019s among others."
+        },
+        {
+          "id": "S2-Q23",
+          "section": 2,
+          "question": "PTA 50 dB HL; SRT 25 dB HL. First action?",
+          "choices": [
+            "Reinstruct/retest",
+            "Proceed regardless",
+            "Assume malingering and dismiss",
+            "Mask immediately"
+          ],
+          "answerIndex": 0,
+          "rationale": "Poor PTA/SRT agreement first calls for reinstruction and retest to verify reliability."
+        },
+        {
+          "id": "S2-Q24",
+          "section": 2,
+          "question": "Excellent WRS at high SL with conductive loss suggests:",
+          "choices": [
+            "Good cochlear reserve",
+            "Retrocochlear pathology",
+            "Nonorganic loss",
+            "Normal hearing"
+          ],
+          "answerIndex": 0,
+          "rationale": "Conductive losses typically have good speech recognition when loud enough."
+        },
+        {
+          "id": "S2-Q25",
+          "section": 2,
+          "question": "Very asymmetric WRS with similar pure-tones suggests:",
+          "choices": [
+            "Possible retrocochlear issue",
+            "Normal variation",
+            "Conductive disease bilaterally",
+            "Test error only"
+          ],
+          "answerIndex": 0,
+          "rationale": "WRS asymmetry out of proportion suggests retrocochlear concern."
+        },
+        {
+          "id": "S2-Q26",
+          "section": 2,
+          "question": "Cross-check principle means:",
+          "choices": [
+            "Multiple tests support the same conclusion",
+            "Rely on one test only",
+            "Ignore patient report",
+            "Use only tympanometry"
+          ],
+          "answerIndex": 0,
+          "rationale": "Use converging evidence from multiple measures for valid interpretation."
+        },
+        {
+          "id": "S2-Q27",
+          "section": 2,
+          "question": "In suspected nonorganic unilateral loss, which quick screen can help?",
+          "choices": [
+            "Stenger test",
+            "Rinne test",
+            "Weber test",
+            "Acoustic reflexes"
+          ],
+          "answerIndex": 0,
+          "rationale": "Stenger is designed to detect unilateral nonorganic components."
+        },
+        {
+          "id": "S2-Q28",
+          "section": 2,
+          "question": "A sloping high-frequency SNHL with tinnitus and no dizziness most likely:",
+          "choices": [
+            "Presbycusis",
+            "Meniere\u2019s",
+            "Acoustic neuroma",
+            "Conductive otitis media"
+          ],
+          "answerIndex": 0,
+          "rationale": "Common age-related pattern without vestibular symptoms fits presbycusis."
+        },
+        {
+          "id": "S2-Q29",
+          "section": 2,
+          "question": "Which warrants referral?",
+          "choices": [
+            "Asymmetry \u226515 dB at two adjacent frequencies",
+            "Symmetric mild loss",
+            "Good WRS bilaterally",
+            "Stable thresholds"
+          ],
+          "answerIndex": 0,
+          "rationale": "Many jurisdictions consider this asymmetry threshold a referral trigger."
+        },
+        {
+          "id": "S2-Q30",
+          "section": 2,
+          "question": "Poor WRS in only one ear with normal tymps suggests:",
+          "choices": [
+            "Retrocochlear suspicion",
+            "Conductive involvement",
+            "Cerumen only",
+            "Normal aging"
+          ],
+          "answerIndex": 0,
+          "rationale": "Unilateral poor speech suggests neural risk\u2014refer."
+        },
+        {
+          "id": "S2-Q31",
+          "section": 2,
+          "question": "A mixed loss would be suspected when:",
+          "choices": [
+            "Both AC and BC elevated with ABG present",
+            "Only AC elevated",
+            "Only BC elevated",
+            "No ABG is present"
+          ],
+          "answerIndex": 0,
+          "rationale": "Mixed = SNHL plus conductive component (ABG)."
+        },
+        {
+          "id": "S2-Q32",
+          "section": 2,
+          "question": "If tymps are Type A and reflexes robust, a 30 dB ABG is:",
+          "choices": [
+            "Questionable\u2014retest and check masking",
+            "Expected in otosclerosis",
+            "Expected in effusion",
+            "Not clinically relevant"
+          ],
+          "answerIndex": 0,
+          "rationale": "Normal tymps/reflexes with large ABG warrants retest and review of masking/placement."
+        },
+        {
+          "id": "S2-Q33",
+          "section": 2,
+          "question": "Which best explains a cookie-bite loss complaint?",
+          "choices": [
+            "Difficulty understanding speech",
+            "Only loudness issues",
+            "Only tinnitus issues",
+            "Dizziness only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Mid-frequency dips reduce audibility of key speech information."
+        },
+        {
+          "id": "S2-Q34",
+          "section": 2,
+          "question": "A reverse-slope loss often has which fitting implication?",
+          "choices": [
+            "Occlusion concerns with low-frequency amplification",
+            "No impact",
+            "Always CIC style",
+            "Feedback always increases"
+          ],
+          "answerIndex": 0,
+          "rationale": "Amplifying lows can increase occlusion perception; careful venting/counseling needed."
+        },
+        {
+          "id": "S2-Q35",
+          "section": 2,
+          "question": "If reflex decay is positive, you should:",
+          "choices": [
+            "Refer for medical evaluation",
+            "Ignore it",
+            "Fit immediately",
+            "Assume conductive loss"
+          ],
+          "answerIndex": 0,
+          "rationale": "Positive decay suggests retrocochlear risk; refer."
+        },
+        {
+          "id": "S2-Q36",
+          "section": 2,
+          "question": "SRT and PTA match, but thresholds vary widely day to day. Consider:",
+          "choices": [
+            "Fluctuating pathology or reliability issues",
+            "Normal variance",
+            "Always malingering",
+            "Equipment failure only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Fluctuation may be disease-related or reliability; reassess comprehensively."
+        },
+        {
+          "id": "S2-Q37",
+          "section": 2,
+          "question": "A conductive loss effect on WRS typically is:",
+          "choices": [
+            "Good scores at higher presentation levels",
+            "Always poor scores",
+            "No change possible",
+            "Only rollover"
+          ],
+          "answerIndex": 0,
+          "rationale": "Conductive losses generally have good WRS when audibility is restored."
+        },
+        {
+          "id": "S2-Q38",
+          "section": 2,
+          "question": "A severe symmetric SNHL with poor WRS bilaterally suggests:",
+          "choices": [
+            "Cochlear limitations; set expectations",
+            "Retrocochlear tumor",
+            "Conductive disease",
+            "Normal hearing"
+          ],
+          "answerIndex": 0,
+          "rationale": "Poor bilateral WRS in severe SNHL implies limited clarity even with amplification."
+        },
+        {
+          "id": "S2-Q39",
+          "section": 2,
+          "question": "An SRT much better than PTA suggests:",
+          "choices": [
+            "Test reliability issue or nonorganic element",
+            "Excellent cochlear reserve",
+            "Retrocochlear lesion",
+            "Conductive component"
+          ],
+          "answerIndex": 0,
+          "rationale": "Large SRT/PTA mismatch warrants retest; may indicate reliability/nonorganic issues."
+        },
+        {
+          "id": "S2-Q40",
+          "section": 2,
+          "question": "The cross-check principle supports:",
+          "choices": [
+            "Using multiple independent measures",
+            "Trusting only one test",
+            "Relying on WRS only",
+            "Ignoring tympanometry"
+          ],
+          "answerIndex": 0,
+          "rationale": "Corroborate findings across independent tests for valid conclusions."
+        },
+        {
+          "id": "S2-Q41",
+          "section": 2,
+          "question": "A 28-year-old construction worker shows bilateral notching at 4 kHz with thresholds of 45 dB HL, normal hearing through 2 kHz, and partial recovery at 8 kHz. This pattern is MOST consistent with:",
+          "choices": [
+            "Noise-induced hearing loss",
+            "Meniere's disease",
+            "Presbycusis",
+            "Otosclerosis"
+          ],
+          "answerIndex": 0,
+          "rationale": "Classic noise notch with history of occupational noise exposure; 4 kHz most affected."
+        },
+        {
+          "id": "S2-Q42",
+          "section": 2,
+          "question": "An audiogram shows AC thresholds of 60 dB HL, BC thresholds of 25 dB HL, and Type B tympanogram. This represents:",
+          "choices": [
+            "Mixed hearing loss",
+            "Pure conductive loss",
+            "Pure sensorineural loss",
+            "Nonorganic loss"
+          ],
+          "answerIndex": 0,
+          "rationale": "Elevated BC (SNHL component) plus ABG (conductive component) = mixed loss."
+        },
+        {
+          "id": "S2-Q43",
+          "section": 2,
+          "question": "All of the following suggest retrocochlear pathology EXCEPT:",
+          "choices": [
+            "Symmetric bilateral gradual high-frequency loss",
+            "Unilateral poor WRS with good tonal thresholds",
+            "Positive acoustic reflex decay",
+            "Significant rollover on PI-PB function"
+          ],
+          "answerIndex": 0,
+          "rationale": "Symmetric gradual HF loss is typical presbycusis; others suggest retrocochlear involvement."
+        },
+        {
+          "id": "S2-Q44",
+          "section": 2,
+          "question": "A patient's PTA is 35 dB HL bilaterally, but SRT is 10 dB HL bilaterally. The BEST first interpretation is:",
+          "choices": [
+            "Possible nonorganic component; retest",
+            "Excellent cochlear function",
+            "Normal variance",
+            "Conductive loss"
+          ],
+          "answerIndex": 0,
+          "rationale": "SRT much better than PTA (>10 dB discrepancy) raises reliability/nonorganic concerns."
+        },
+        {
+          "id": "S2-Q45",
+          "section": 2,
+          "question": "Which configuration typically has the BEST prognosis for hearing aid benefit?",
+          "choices": [
+            "Mild-moderate sloping SNHL with good WRS",
+            "Profound flat loss with 0% WRS",
+            "Severe cookie-bite with poor WRS",
+            "Fluctuating low-frequency loss"
+          ],
+          "answerIndex": 0,
+          "rationale": "Mild-moderate losses with preserved clarity have excellent amplification outcomes."
+        },
+        {
+          "id": "S2-Q46",
+          "section": 2,
+          "question": "You observe a Carhart notch at 2 kHz on bone conduction with Type As tympanogram. This is classically associated with:",
+          "choices": [
+            "Otosclerosis",
+            "Meniere's disease",
+            "Acoustic neuroma",
+            "Presbycusis"
+          ],
+          "answerIndex": 0,
+          "rationale": "Carhart notch is a BC artifact seen in otosclerosis, with stiff middle ear (Type As)."
+        },
+        {
+          "id": "S2-Q47",
+          "section": 2,
+          "question": "A patient shows thresholds of 15 dB HL at 250-1000 Hz, rising to 55 dB HL at 2-8 kHz. WRS is 92%. Type A tymps. Degree at high frequencies is:",
+          "choices": [
+            "Mild-moderate at HF; mild overall",
+            "Normal",
+            "Severe",
+            "Profound"
+          ],
+          "answerIndex": 0,
+          "rationale": "Classify by frequency region: HF shows mild-moderate loss; overall PTA would be mild."
+        },
+        {
+          "id": "S2-Q48",
+          "section": 2,
+          "question": "A 10-year-old with flat 25 dB HL bilateral loss, Type B tymps with normal ECV, and history of chronic colds. Next step:",
+          "choices": [
+            "Medical referral for likely OME",
+            "Fit pediatric hearing aids immediately",
+            "Reassess in 6 months",
+            "Discharge as normal"
+          ],
+          "answerIndex": 0,
+          "rationale": "Type B with normal ECV + history of colds = likely middle ear effusion; refer."
+        },
+        {
+          "id": "S2-Q49",
+          "section": 2,
+          "question": "Asymmetric hearing loss is generally defined as a difference of:",
+          "choices": [
+            "\u226515 dB at two or more adjacent frequencies",
+            "\u22655 dB at one frequency",
+            "\u226550 dB at 8 kHz only",
+            "Any difference between ears"
+          ],
+          "answerIndex": 0,
+          "rationale": "Common threshold for asymmetry: \u226515 dB at 2+ adjacent frequencies; warrants referral."
+        },
+        {
+          "id": "S2-Q50",
+          "section": 2,
+          "question": "A cookie-bite audiogram (mid-frequency loss) with good low and high frequencies is MOST challenging for hearing aids because:",
+          "choices": [
+            "Critical speech frequencies (1-2 kHz) are affected",
+            "Low frequencies are always lost",
+            "High frequencies don't matter",
+            "It always indicates nonorganic loss"
+          ],
+          "answerIndex": 0,
+          "rationale": "Mid-band (1-2 kHz) contains essential speech energy; loss here impacts clarity significantly."
+        },
+        {
+          "id": "S2-Q51",
+          "section": 2,
+          "question": "WRS of 40% in one ear and 88% in the other, with similar PTAs bilaterally. The poorer ear:",
+          "choices": [
+            "May have retrocochlear pathology\u2014refer",
+            "Is normal variation",
+            "Has conductive component",
+            "Needs no special attention"
+          ],
+          "answerIndex": 0,
+          "rationale": "Disproportionate WRS asymmetry suggests retrocochlear involvement; medical referral indicated."
+        },
+        {
+          "id": "S2-Q52",
+          "section": 2,
+          "question": "Which is the BEST cross-check for conductive hearing loss?",
+          "choices": [
+            "Presence of ABG, abnormal tymp, absent/elevated reflexes",
+            "PTA and SRT agreement only",
+            "Good WRS alone",
+            "Patient self-report"
+          ],
+          "answerIndex": 0,
+          "rationale": "Multiple measures (ABG, tymp, reflexes) converge to confirm conductive pathology."
+        },
+        {
+          "id": "S2-Q53",
+          "section": 2,
+          "question": "A rapidly progressive bilateral hearing loss over 3 months in a 40-year-old warrants:",
+          "choices": [
+            "Urgent medical referral",
+            "Routine annual follow-up",
+            "Immediate bilateral fitting",
+            "No action"
+          ],
+          "answerIndex": 0,
+          "rationale": "Rapid progression is a red flag for autoimmune, infection, or other urgent pathology."
+        },
+        {
+          "id": "S2-Q54",
+          "section": 2,
+          "question": "Presbycusis typically presents as:",
+          "choices": [
+            "Bilateral symmetric gradual high-frequency SNHL",
+            "Unilateral sudden loss",
+            "Low-frequency fluctuating loss",
+            "Conductive flat loss"
+          ],
+          "answerIndex": 0,
+          "rationale": "Age-related hearing loss is characteristically bilateral, symmetric, gradual, and HF sloping."
+        },
+        {
+          "id": "S2-Q55",
+          "section": 2,
+          "question": "A reverse-slope (rising) audiogram shows better hearing at high frequencies than low. This is LEAST commonly associated with:",
+          "choices": [
+            "Noise-induced hearing loss",
+            "Meniere's disease (early)",
+            "Genetic/hereditary patterns",
+            "Congenital factors"
+          ],
+          "answerIndex": 0,
+          "rationale": "Noise loss creates HF notches; reverse slopes are more often genetic, Meniere's, or congenital."
+        },
+        {
+          "id": "S2-Q56",
+          "section": 2,
+          "question": "A patient with Type A tymps, normal reflexes, and 40 dB ABG bilaterally should prompt you to:",
+          "choices": [
+            "Recheck masking and test reliability",
+            "Proceed with conductive loss management",
+            "Immediately fit power BTEs",
+            "Diagnose otosclerosis"
+          ],
+          "answerIndex": 0,
+          "rationale": "Normal tymps/reflexes with large ABG is inconsistent; verify masking and threshold accuracy."
+        },
+        {
+          "id": "S2-Q57",
+          "section": 2,
+          "question": "In nonorganic hearing loss, the Stenger test is useful for:",
+          "choices": [
+            "Identifying unilateral exaggeration",
+            "Measuring tympanometric compliance",
+            "Determining UCL",
+            "Verifying bone conduction"
+          ],
+          "answerIndex": 0,
+          "rationale": "Stenger exploits binaural hearing to detect unilateral nonorganic components."
+        },
+        {
+          "id": "S2-Q58",
+          "section": 2,
+          "question": "An audiogram shows a precipitous drop (>20 dB/octave) beyond 2 kHz. Hearing aid candidacy consideration should include:",
+          "choices": [
+            "Frequency lowering and realistic expectations for HF sounds",
+            "Standard NAL-NL2 with no modifications",
+            "Avoid amplification entirely",
+            "Only amplify low frequencies"
+          ],
+          "answerIndex": 0,
+          "rationale": "Steep losses may benefit from frequency lowering; counsel on limits of HF audibility."
+        },
+        {
+          "id": "S2-Q59",
+          "section": 2,
+          "question": "Which statement about WRS is TRUE?",
+          "choices": [
+            "It can help differentiate cochlear from retrocochlear pathology",
+            "It replaces pure-tone testing",
+            "It is unaffected by degree of loss",
+            "It's only tested at threshold"
+          ],
+          "answerIndex": 0,
+          "rationale": "Poor WRS disproportionate to loss or asymmetry can suggest retrocochlear issues."
+        },
+        {
+          "id": "S2-Q60",
+          "section": 2,
+          "question": "A patient with bilateral moderate SNHL reports excellent hearing in quiet but severe difficulty in noise. This suggests:",
+          "choices": [
+            "Reduced audibility and likely reduced SNR tolerance\u2014counsel and consider technology",
+            "Malingering",
+            "Normal hearing",
+            "Conductive component"
+          ],
+          "answerIndex": 0,
+          "rationale": "SNHL often affects SNR processing; realistic expectations and advanced features may help."
+        }
+      ]
+    },
+    {
+      "section_number": 3,
+      "questions": [
+        {
+          "id": "S3-Q01",
+          "section": 3,
+          "question": "A primary advantage of RIC over custom CIC is:",
+          "choices": [
+            "Greater feature set and serviceability",
+            "Always better cosmetics",
+            "Never needs maintenance",
+            "Guaranteed better WRS"
+          ],
+          "answerIndex": 0,
+          "rationale": "RICs often offer more features, power options, and easier service."
+        },
+        {
+          "id": "S3-Q02",
+          "section": 3,
+          "question": "Open dome coupling tends to:",
+          "choices": [
+            "Reduce occlusion but limit LF gain",
+            "Increase occlusion and LF gain",
+            "Always prevent feedback",
+            "Eliminate need for verification"
+          ],
+          "answerIndex": 0,
+          "rationale": "Open fits reduce occlusion perception but limit low-frequency amplification and increase feedback risk."
+        },
+        {
+          "id": "S3-Q03",
+          "section": 3,
+          "question": "A patient with SSD (one normal ear, one unaidable) is best served by:",
+          "choices": [
+            "CROS system",
+            "Binaural power BTEs",
+            "Custom CIC both ears",
+            "No device"
+          ],
+          "answerIndex": 0,
+          "rationale": "CROS routes sound from the poor ear side to the better ear."
+        },
+        {
+          "id": "S3-Q04",
+          "section": 3,
+          "question": "BiCROS is used when:",
+          "choices": [
+            "Poor ear unaidable and better ear has aidable loss",
+            "Both ears normal",
+            "Both ears severe CHL",
+            "Only tinnitus is present"
+          ],
+          "answerIndex": 0,
+          "rationale": "BiCROS routes from worse to better ear while also amplifying the better ear."
+        },
+        {
+          "id": "S3-Q05",
+          "section": 3,
+          "question": "Which feature improves SNR by focusing on front speech?",
+          "choices": [
+            "Directional microphones",
+            "Noise reduction only",
+            "Feedback cancellation only",
+            "Frequency lowering"
+          ],
+          "answerIndex": 0,
+          "rationale": "Directional mics improve SNR in specific spatial conditions."
+        },
+        {
+          "id": "S3-Q06",
+          "section": 3,
+          "question": "Frequency lowering is primarily intended to:",
+          "choices": [
+            "Provide access to high-frequency cues",
+            "Increase battery life",
+            "Reduce occlusion",
+            "Replace directionality"
+          ],
+          "answerIndex": 0,
+          "rationale": "Frequency lowering maps high-frequency information into audible ranges."
+        },
+        {
+          "id": "S3-Q07",
+          "section": 3,
+          "question": "For severe\u2013profound SNHL, prefer:",
+          "choices": [
+            "Power BTE with custom mold",
+            "Open dome RIC",
+            "CIC with small vent",
+            "No vent power CIC"
+          ],
+          "answerIndex": 0,
+          "rationale": "High power with robust coupling is needed for severe\u2013profound losses."
+        },
+        {
+          "id": "S3-Q08",
+          "section": 3,
+          "question": "Pediatric fittings typically use which prescription?",
+          "choices": [
+            "DSL v5",
+            "NAL-NL2",
+            "Flat gain",
+            "User preference only"
+          ],
+          "answerIndex": 0,
+          "rationale": "DSL v5 emphasizes audibility across the speech spectrum for children."
+        },
+        {
+          "id": "S3-Q09",
+          "section": 3,
+          "question": "Which vent size effect is TRUE?",
+          "choices": [
+            "Larger vent reduces occlusion but also reduces LF gain",
+            "Larger vent increases LF gain",
+            "Vent size has no acoustic effect",
+            "Smaller vent always prevents feedback"
+          ],
+          "answerIndex": 0,
+          "rationale": "Bigger vents alleviate occlusion but reduce LF gain and elevate feedback risk."
+        },
+        {
+          "id": "S3-Q10",
+          "section": 3,
+          "question": "Telecoil benefits include:",
+          "choices": [
+            "Loop system compatibility",
+            "Always better than Bluetooth",
+            "Only cosmetic advantages",
+            "Battery-free streaming over Bluetooth"
+          ],
+          "answerIndex": 0,
+          "rationale": "Telecoils interface with induction loop systems for clearer audio."
+        },
+        {
+          "id": "S3-Q11",
+          "section": 3,
+          "question": "A patient prioritizes cosmetics and sleeps on one ear. Likely style?",
+          "choices": [
+            "Custom IIC/CIC",
+            "Power BTE",
+            "RIC with custom mold",
+            "Body-worn aid"
+          ],
+          "answerIndex": 0,
+          "rationale": "IIC/CIC maximize cosmetics and can be comfortable for side sleepers if anatomy permits."
+        },
+        {
+          "id": "S3-Q12",
+          "section": 3,
+          "question": "Tinnitus features in hearing aids primarily aim to:",
+          "choices": [
+            "Provide masking/soothing sounds",
+            "Cure tinnitus",
+            "Increase MPO",
+            "Eliminate noise completely"
+          ],
+          "answerIndex": 0,
+          "rationale": "Sound therapy features can reduce tinnitus perception; they do not cure it."
+        },
+        {
+          "id": "S3-Q13",
+          "section": 3,
+          "question": "Which battery corresponds to color brown?",
+          "choices": [
+            "312",
+            "10",
+            "13",
+            "675"
+          ],
+          "answerIndex": 0,
+          "rationale": "Size 312 is coded brown (10 yellow, 13 orange, 675 blue)."
+        },
+        {
+          "id": "S3-Q14",
+          "section": 3,
+          "question": "For frequent cerumen and moisture exposure, prioritize:",
+          "choices": [
+            "Serviceable RIC/BTE with replaceable receivers",
+            "CIC with no vents",
+            "Open domes only",
+            "Remove all filters"
+          ],
+          "answerIndex": 0,
+          "rationale": "Serviceable receivers and access to maintenance are practical for debris/moisture."
+        },
+        {
+          "id": "S3-Q15",
+          "section": 3,
+          "question": "A patient with poor dexterity benefits from:",
+          "choices": [
+            "Larger controls and rechargeable options",
+            "Tiny CIC with nail grip only",
+            "Battery size 10 only",
+            "No connectivity"
+          ],
+          "answerIndex": 0,
+          "rationale": "Rechargeables and larger controls improve usability for dexterity issues."
+        },
+        {
+          "id": "S3-Q16",
+          "section": 3,
+          "question": "Remote microphones are most helpful for:",
+          "choices": [
+            "Improving SNR in talker-focused situations",
+            "Preventing all noise",
+            "Testing tympanometry",
+            "Ear impression safety"
+          ],
+          "answerIndex": 0,
+          "rationale": "Remote mics place the mic near the talker, improving SNR in noise/distance."
+        },
+        {
+          "id": "S3-Q17",
+          "section": 3,
+          "question": "For profound high-frequency dead regions, consider:",
+          "choices": [
+            "Frequency lowering strategies",
+            "Pure linear amplification",
+            "More venting",
+            "Disable all processing"
+          ],
+          "answerIndex": 0,
+          "rationale": "Lowering can improve access to cues when HF cochlear regions are non-functional."
+        },
+        {
+          "id": "S3-Q18",
+          "section": 3,
+          "question": "Primary goal of compression (WDRC) is to:",
+          "choices": [
+            "Fit wide input levels into reduced DR",
+            "Increase maximum output only",
+            "Eliminate all noise",
+            "Emulate linear amplification"
+          ],
+          "answerIndex": 0,
+          "rationale": "WDRC maps a broad range of inputs into a smaller listener dynamic range."
+        },
+        {
+          "id": "S3-Q19",
+          "section": 3,
+          "question": "Which style often best supports very high MPO needs?",
+          "choices": [
+            "Power BTE",
+            "IIC",
+            "Open dome RIC",
+            "Slim ITC"
+          ],
+          "answerIndex": 0,
+          "rationale": "Power BTEs provide the highest MPO potential with robust coupling."
+        },
+        {
+          "id": "S3-Q20",
+          "section": 3,
+          "question": "Bluetooth/LE Audio enables:",
+          "choices": [
+            "Direct streaming and control via apps",
+            "T-coil only loop access",
+            "Automatic medical referral",
+            "Cerumen removal alerts"
+          ],
+          "answerIndex": 0,
+          "rationale": "Modern devices support streaming/control; T-coil and BT address different use-cases."
+        },
+        {
+          "id": "S3-Q21",
+          "section": 3,
+          "question": "Pediatric earmold material preference:",
+          "choices": [
+            "Soft silicone for comfort/retention",
+            "Hard acrylic always",
+            "Metallic shells",
+            "No molds needed"
+          ],
+          "answerIndex": 0,
+          "rationale": "Soft silicone is standard for pediatric comfort and retention."
+        },
+        {
+          "id": "S3-Q22",
+          "section": 3,
+          "question": "A musician with mild HF SNHL values fidelity most. Likely approach:",
+          "choices": [
+            "Low compression ratios and natural response",
+            "Max noise reduction and strong directionality",
+            "Ultra-narrow bandwidth",
+            "Disable microphones"
+          ],
+          "answerIndex": 0,
+          "rationale": "Favor fidelity: gentle processing, appropriate bandwidth, careful directionality/NR settings."
+        },
+        {
+          "id": "S3-Q23",
+          "section": 3,
+          "question": "Telecoil vs Bluetooth\u2014best guidance:",
+          "choices": [
+            "Telecoil excels with loops; Bluetooth excels with personal devices",
+            "Telecoil replaces Bluetooth",
+            "Bluetooth replaces telecoil everywhere",
+            "Neither is useful clinically"
+          ],
+          "answerIndex": 0,
+          "rationale": "Each has strengths; many users benefit from both options."
+        },
+        {
+          "id": "S3-Q24",
+          "section": 3,
+          "question": "A large vent is likely to:",
+          "choices": [
+            "Increase feedback risk",
+            "Eliminate feedback",
+            "Increase LF gain",
+            "Increase occlusion"
+          ],
+          "answerIndex": 0,
+          "rationale": "Large vents can leak sound and increase feedback risk."
+        },
+        {
+          "id": "S3-Q25",
+          "section": 3,
+          "question": "For sloping SNHL with occlusion complaint, start with:",
+          "choices": [
+            "Open/vented RIC dome",
+            "Power custom mold",
+            "Body-worn aid",
+            "Closed dome only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Open/vented domes reduce occlusion perception for sloping losses."
+        },
+        {
+          "id": "S3-Q26",
+          "section": 3,
+          "question": "Tinnitus programs should be combined with:",
+          "choices": [
+            "Counseling on expectations and coping",
+            "High MPO",
+            "Cerumen removal only",
+            "No counseling"
+          ],
+          "answerIndex": 0,
+          "rationale": "Counseling supports effective tinnitus management with sound therapy."
+        },
+        {
+          "id": "S3-Q27",
+          "section": 3,
+          "question": "Which best helps telephone use without smartphone?",
+          "choices": [
+            "Telecoil (MT/T) with phone's magnetic field",
+            "Bluetooth only",
+            "Directional mics only",
+            "No solution"
+          ],
+          "answerIndex": 0,
+          "rationale": "Telecoil can couple to phone handsets with adequate magnetic fields (MT/T)."
+        },
+        {
+          "id": "S3-Q28",
+          "section": 3,
+          "question": "High feedback risk management includes:",
+          "choices": [
+            "Better seal/vent control and feedback cancellation",
+            "Increase MPO only",
+            "Open fit for all",
+            "Disable all DSP"
+          ],
+          "answerIndex": 0,
+          "rationale": "Combine physical fit with digital feedback management for best results."
+        },
+        {
+          "id": "S3-Q29",
+          "section": 3,
+          "question": "For fluctuating low-frequency SNHL, consider:",
+          "choices": [
+            "Adjustable programs and counseling",
+            "Fixed linear program only",
+            "Maximum venting always",
+            "Disabling compression"
+          ],
+          "answerIndex": 0,
+          "rationale": "Provide flexibility with programs and counsel about fluctuations."
+        },
+        {
+          "id": "S3-Q30",
+          "section": 3,
+          "question": "Streaming TV clearly in group settings: recommend:",
+          "choices": [
+            "TV streamer accessory",
+            "Telecoil only",
+            "Body-worn aid",
+            "No accessory"
+          ],
+          "answerIndex": 0,
+          "rationale": "TV streamers deliver clearer audio directly to devices."
+        },
+        {
+          "id": "S3-Q31",
+          "section": 3,
+          "question": "Which user would most benefit from custom ITE?",
+          "choices": [
+            "Needing retention, limited dexterity, moderate loss",
+            "Severe-profound loss needing maximum MPO",
+            "Prefers frequent receiver swaps",
+            "Needs open-ear acoustics"
+          ],
+          "answerIndex": 0,
+          "rationale": "Custom ITE can aid handling and retention for certain users and losses."
+        },
+        {
+          "id": "S3-Q32",
+          "section": 3,
+          "question": "For excessive occlusion complaints, you might:",
+          "choices": [
+            "Increase vent size or use more open fit",
+            "Decrease vent size",
+            "Disable all features",
+            "Increase MPO"
+          ],
+          "answerIndex": 0,
+          "rationale": "More open vents reduce occlusion but trade LF gain/feedback."
+        },
+        {
+          "id": "S3-Q33",
+          "section": 3,
+          "question": "For frequent phone/meeting use, prioritize:",
+          "choices": [
+            "Reliable connectivity and remote mics",
+            "Body-worn aids",
+            "No directionality",
+            "Narrow bandwidth"
+          ],
+          "answerIndex": 0,
+          "rationale": "Connectivity and remote mic accessories improve communication in these scenarios."
+        },
+        {
+          "id": "S3-Q34",
+          "section": 3,
+          "question": "For narrow/curvy canals with retention issues, consider:",
+          "choices": [
+            "RIC with custom canal mold",
+            "Large CIC regardless",
+            "No retention features",
+            "Only open domes"
+          ],
+          "answerIndex": 0,
+          "rationale": "Custom canal molds improve retention and seal in challenging anatomy."
+        },
+        {
+          "id": "S3-Q35",
+          "section": 3,
+          "question": "Primary effect of noise reduction is:",
+          "choices": [
+            "Improved listening comfort",
+            "Guaranteed speech understanding improvement",
+            "Higher MPO",
+            "Better tympanogram"
+          ],
+          "answerIndex": 0,
+          "rationale": "NR mainly reduces annoyance and listening effort; SNR benefits vary."
+        },
+        {
+          "id": "S3-Q36",
+          "section": 3,
+          "question": "Which combination often maximizes power and stability?",
+          "choices": [
+            "Power BTE + thick tubing + full shell mold",
+            "Open dome RIC",
+            "IIC with large vent",
+            "Slim tube CIC"
+          ],
+          "answerIndex": 0,
+          "rationale": "Robust coupling reduces leakage and feedback in power fittings."
+        },
+        {
+          "id": "S3-Q37",
+          "section": 3,
+          "question": "Battery color 13 indicates:",
+          "choices": [
+            "Orange",
+            "Yellow",
+            "Brown",
+            "Blue"
+          ],
+          "answerIndex": 0,
+          "rationale": "Size 13 is orange (312 brown, 10 yellow, 675 blue)."
+        },
+        {
+          "id": "S3-Q38",
+          "section": 3,
+          "question": "For basic budget with mild loss and noise concerns, prioritize:",
+          "choices": [
+            "Directionality and remote mic",
+            "Power BTE",
+            "BiCROS",
+            "No features"
+          ],
+          "answerIndex": 0,
+          "rationale": "Directionality + remote mic often provide best cost-effective help in noise."
+        },
+        {
+          "id": "S3-Q39",
+          "section": 3,
+          "question": "An unaidable ear with very poor WRS affects selection by:",
+          "choices": [
+            "CROS/BiCROS consideration",
+            "Power binaural amplification",
+            "Custom CIC for both",
+            "No counseling"
+          ],
+          "answerIndex": 0,
+          "rationale": "If one ear is unaidable, route to the better ear (CROS/BiCROS)."
+        },
+        {
+          "id": "S3-Q40",
+          "section": 3,
+          "question": "For pediatric fittings, critical measurement is:",
+          "choices": [
+            "RECD",
+            "MPO only",
+            "No verification needed",
+            "WRS only"
+          ],
+          "answerIndex": 0,
+          "rationale": "RECD personalizes coupler-to-ear conversions in children."
+        },
+        {
+          "id": "S3-Q41",
+          "section": 3,
+          "question": "A patient with mild sloping SNHL complains of severe occlusion. The BEST initial coupling choice is:",
+          "choices": [
+            "Open dome or large vent",
+            "Closed custom mold with no vent",
+            "Power dome",
+            "Solid acrylic shell"
+          ],
+          "answerIndex": 0,
+          "rationale": "Open domes and large vents minimize occlusion for mild losses where LF gain can be sacrificed."
+        },
+        {
+          "id": "S3-Q42",
+          "section": 3,
+          "question": "All of the following favor custom ITE/ITC over RIC EXCEPT:",
+          "choices": [
+            "Severe-profound hearing loss",
+            "Cosmetic preferences",
+            "Better retention for active lifestyles",
+            "Smaller canal anatomy issues"
+          ],
+          "answerIndex": 0,
+          "rationale": "Severe-profound losses typically require power BTE; customs have output limitations."
+        },
+        {
+          "id": "S3-Q43",
+          "section": 3,
+          "question": "For a patient with single-sided deafness (right ear) and normal left ear, recommend:",
+          "choices": [
+            "CROS (mic on right, receiver on left)",
+            "Binaural BTEs",
+            "Unilateral aid in right ear only",
+            "No amplification"
+          ],
+          "answerIndex": 0,
+          "rationale": "CROS routes sound from poor ear to better ear, providing awareness from the deaf side."
+        },
+        {
+          "id": "S3-Q44",
+          "section": 3,
+          "question": "BiCROS differs from CROS in that BiCROS:",
+          "choices": [
+            "Also amplifies the better ear",
+            "Uses no microphone on poor side",
+            "Is only for pediatrics",
+            "Requires cochlear implant"
+          ],
+          "answerIndex": 0,
+          "rationale": "BiCROS adds amplification to the better ear while routing from the unaidable side."
+        },
+        {
+          "id": "S3-Q45",
+          "section": 3,
+          "question": "Which hearing aid feature is MOST directly intended to improve speech understanding in background noise?",
+          "choices": [
+            "Directional microphones",
+            "Feedback cancellation",
+            "Wide dynamic range compression",
+            "Frequency lowering"
+          ],
+          "answerIndex": 0,
+          "rationale": "Directional mics focus on sounds from the front, improving SNR in noise."
+        },
+        {
+          "id": "S3-Q46",
+          "section": 3,
+          "question": "Frequency lowering (e.g., frequency compression) is primarily beneficial for:",
+          "choices": [
+            "Severe high-frequency loss with dead regions",
+            "Mild flat loss",
+            "Conductive loss",
+            "Low-frequency loss only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Frequency lowering maps HF information into audible mid-frequency regions when HF is unaidable."
+        },
+        {
+          "id": "S3-Q47",
+          "section": 3,
+          "question": "A patient with arthritis and tremor would benefit MOST from:",
+          "choices": [
+            "Rechargeable RIC/BTE with large controls",
+            "Tiny CIC with size 10 battery",
+            "IIC with manual volume wheel",
+            "No modifications needed"
+          ],
+          "answerIndex": 0,
+          "rationale": "Dexterity issues require larger, easier-to-handle devices and rechargeable options."
+        },
+        {
+          "id": "S3-Q48",
+          "section": 3,
+          "question": "Telecoil (T-coil) is particularly useful for:",
+          "choices": [
+            "Looped venues and compatible telephones",
+            "Direct Bluetooth streaming only",
+            "Eliminating all background noise",
+            "Cerumen detection"
+          ],
+          "answerIndex": 0,
+          "rationale": "T-coils couple with induction loop systems and certain phone handsets for clearer audio."
+        },
+        {
+          "id": "S3-Q49",
+          "section": 3,
+          "question": "A larger vent in a custom earmold will:",
+          "choices": [
+            "Reduce occlusion but increase feedback risk and reduce LF gain",
+            "Increase low-frequency gain",
+            "Eliminate feedback",
+            "Improve retention"
+          ],
+          "answerIndex": 0,
+          "rationale": "Larger vents alleviate occlusion at the cost of LF gain and increased feedback risk."
+        },
+        {
+          "id": "S3-Q50",
+          "section": 3,
+          "question": "For a 3-year-old with moderate SNHL, prioritize:",
+          "choices": [
+            "DSL v5 targets, RECD, soft silicone molds, tamperproof features",
+            "NAL-NL2, hard acrylic, open domes",
+            "No amplification until school age",
+            "Adult-style CICs"
+          ],
+          "answerIndex": 0,
+          "rationale": "Pediatric fittings require DSL, personalized RECD, safe materials, and secure features."
+        },
+        {
+          "id": "S3-Q51",
+          "section": 3,
+          "question": "Which battery size is color-coded BLUE?",
+          "choices": [
+            "675",
+            "312",
+            "13",
+            "10"
+          ],
+          "answerIndex": 0,
+          "rationale": "675 = blue; 10 = yellow; 312 = brown; 13 = orange."
+        },
+        {
+          "id": "S3-Q52",
+          "section": 3,
+          "question": "A patient who works in very dusty/humid conditions and has frequent cerumen buildup should use:",
+          "choices": [
+            "RIC/BTE with replaceable receivers and robust maintenance plan",
+            "Unvented CIC with no protection",
+            "Open dome only",
+            "No hearing aid"
+          ],
+          "answerIndex": 0,
+          "rationale": "Serviceable receivers and diligent maintenance manage moisture and debris exposure."
+        },
+        {
+          "id": "S3-Q53",
+          "section": 3,
+          "question": "Remote microphone systems are MOST effective for:",
+          "choices": [
+            "Improving SNR when talker is distant or in noise",
+            "Replacing all hearing aid features",
+            "Testing hearing thresholds",
+            "Cerumen removal"
+          ],
+          "answerIndex": 0,
+          "rationale": "Remote mics place the mic near the talker, dramatically improving SNR in challenging environments."
+        },
+        {
+          "id": "S3-Q54",
+          "section": 3,
+          "question": "For severe to profound hearing loss, the BEST style is typically:",
+          "choices": [
+            "Power BTE with custom earmold",
+            "Open-fit RIC",
+            "IIC with large vent",
+            "CIC with standard dome"
+          ],
+          "answerIndex": 0,
+          "rationale": "Power BTEs provide maximum output and robust coupling for severe-profound losses."
+        },
+        {
+          "id": "S3-Q55",
+          "section": 3,
+          "question": "Compression (WDRC) is primarily designed to:",
+          "choices": [
+            "Fit wide input range into reduced dynamic range",
+            "Eliminate feedback",
+            "Increase battery life",
+            "Test tympanometry"
+          ],
+          "answerIndex": 0,
+          "rationale": "WDRC compresses a wide range of inputs to fit the listener's narrower dynamic range."
+        },
+        {
+          "id": "S3-Q56",
+          "section": 3,
+          "question": "A musician with mild HF loss prioritizes sound quality and natural timbre. Recommend:",
+          "choices": [
+            "Wide bandwidth, minimal compression, music programs",
+            "Maximum noise reduction at all times",
+            "Narrow bandwidth to save battery",
+            "Disable all microphones"
+          ],
+          "answerIndex": 0,
+          "rationale": "Musicians benefit from wide bandwidth, gentle processing, and dedicated music settings."
+        },
+        {
+          "id": "S3-Q57",
+          "section": 3,
+          "question": "Bluetooth Low Energy (LE) Audio in hearing aids enables:",
+          "choices": [
+            "Direct streaming from compatible devices and improved battery efficiency",
+            "Only phone calls",
+            "Automatic medical diagnosis",
+            "Elimination of all background noise"
+          ],
+          "answerIndex": 0,
+          "rationale": "BT LE Audio allows direct streaming with better power efficiency than classic Bluetooth."
+        },
+        {
+          "id": "S3-Q58",
+          "section": 3,
+          "question": "Which is TRUE about venting in earmolds?",
+          "choices": [
+            "Larger vents reduce occlusion but also reduce LF amplification",
+            "Vents have no acoustic effect",
+            "Smaller vents always improve gain at all frequencies",
+            "Vents eliminate the need for compression"
+          ],
+          "answerIndex": 0,
+          "rationale": "Vents are acoustic trade-offs: reduce occlusion/own-voice issues but limit LF gain and increase feedback risk."
+        },
+        {
+          "id": "S3-Q59",
+          "section": 3,
+          "question": "For fluctuating hearing loss (e.g., Meniere's), recommend:",
+          "choices": [
+            "Multiple programs and regular monitoring",
+            "Fixed linear amplification only",
+            "Maximum venting always",
+            "No amplification"
+          ],
+          "answerIndex": 0,
+          "rationale": "Fluctuating losses benefit from flexible programming and frequent adjustments."
+        },
+        {
+          "id": "S3-Q60",
+          "section": 3,
+          "question": "Tinnitus masking features in hearing aids typically provide:",
+          "choices": [
+            "White noise, ocean sounds, or other soothing sounds",
+            "Cure for tinnitus",
+            "Elimination of all environmental sound",
+            "Automatic volume control only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Tinnitus features offer sound therapy (masking/habituation) but do not cure tinnitus."
+        }
+      ]
+    },
+    {
+      "section_number": 4,
+      "questions": [
+        {
+          "id": "S4-Q01",
+          "section": 4,
+          "question": "Default adult prescription commonly used is:",
+          "choices": [
+            "NAL-NL2",
+            "DSL v5",
+            "Flat gain",
+            "MPO only"
+          ],
+          "answerIndex": 0,
+          "rationale": "NAL-NL2 is widely used for adult fittings."
+        },
+        {
+          "id": "S4-Q02",
+          "section": 4,
+          "question": "Probe tube placement target relative to TM is about:",
+          "choices": [
+            "~5 mm from TM",
+            "At the entrance of canal",
+            "Touching TM",
+            "In concha"
+          ],
+          "answerIndex": 0,
+          "rationale": "Place within ~5 mm of the TM for accurate RE measurements."
+        },
+        {
+          "id": "S4-Q03",
+          "section": 4,
+          "question": "REIG equals:",
+          "choices": [
+            "REAR \u2212 REUG",
+            "REUG \u2212 REAR",
+            "REAR + REUG",
+            "RECD \u2212 REAR"
+          ],
+          "answerIndex": 0,
+          "rationale": "Real-ear insertion gain is aided minus unaided gain."
+        },
+        {
+          "id": "S4-Q04",
+          "section": 4,
+          "question": "Pediatric prescription most used:",
+          "choices": [
+            "DSL v5",
+            "NAL-NL2",
+            "Linear",
+            "Flat gain"
+          ],
+          "answerIndex": 0,
+          "rationale": "DSL v5 is commonly used for pediatric fittings."
+        },
+        {
+          "id": "S4-Q05",
+          "section": 4,
+          "question": "Which inputs are commonly used in verification?",
+          "choices": [
+            "Soft/medium/loud speech-like inputs",
+            "Only 65 dB tone",
+            "Only 90 dB tone",
+            "Silence"
+          ],
+          "answerIndex": 0,
+          "rationale": "Verify against prescriptive targets for multiple input levels."
+        },
+        {
+          "id": "S4-Q06",
+          "section": 4,
+          "question": "MPO should be set:",
+          "choices": [
+            "Below UCL with safety margin",
+            "At or above UCL",
+            "Irrelevant to comfort",
+            "Only for children"
+          ],
+          "answerIndex": 0,
+          "rationale": "Ensure loud sounds are comfortable and safe below UCL."
+        },
+        {
+          "id": "S4-Q07",
+          "section": 4,
+          "question": "Test box OSPL90 measures:",
+          "choices": [
+            "Maximum output at 90 dB input",
+            "Noise reduction strength",
+            "Directionality pattern",
+            "Battery life"
+          ],
+          "answerIndex": 0,
+          "rationale": "OSPL90 is the 90 dB SPL input maximum output curve."
+        },
+        {
+          "id": "S4-Q08",
+          "section": 4,
+          "question": "Full-On Gain (FOG) is measured:",
+          "choices": [
+            "With gain set to maximum",
+            "With all features off and minimum gain",
+            "With MPO off",
+            "With battery removed"
+          ],
+          "answerIndex": 0,
+          "rationale": "FOG is measured at maximum gain settings per ANSI."
+        },
+        {
+          "id": "S4-Q09",
+          "section": 4,
+          "question": "Equivalent Input Noise (EIN) indicates:",
+          "choices": [
+            "Internal circuit noise level",
+            "Environmental noise",
+            "User perception only",
+            "RECD magnitude"
+          ],
+          "answerIndex": 0,
+          "rationale": "EIN quantifies the device\u2019s internal noise floor."
+        },
+        {
+          "id": "S4-Q10",
+          "section": 4,
+          "question": "After first-fit, soft speech under target on REM. You should:",
+          "choices": [
+            "Increase soft-level gain in affected bands",
+            "Increase MPO only",
+            "Do nothing",
+            "Switch to linear"
+          ],
+          "answerIndex": 0,
+          "rationale": "Adjust gain at soft levels to meet targets and restore audibility."
+        },
+        {
+          "id": "S4-Q11",
+          "section": 4,
+          "question": "The purpose of validation tools (e.g., COSI, APHAB) is to:",
+          "choices": [
+            "Measure real-world benefit",
+            "Replace verification",
+            "Calibrate devices",
+            "Set MPO"
+          ],
+          "answerIndex": 0,
+          "rationale": "Validation gauges patient outcomes in daily life."
+        },
+        {
+          "id": "S4-Q12",
+          "section": 4,
+          "question": "A patient reports loudness discomfort at everyday sounds. First action:",
+          "choices": [
+            "Reduce MPO and high-level gain",
+            "Increase low-level gain",
+            "Disable feedback cancellation",
+            "Tighten vent"
+          ],
+          "answerIndex": 0,
+          "rationale": "Adjust MPO/high-level gain for loudness comfort; then re-verify."
+        },
+        {
+          "id": "S4-Q13",
+          "section": 4,
+          "question": "For pediatric verification, a critical step is:",
+          "choices": [
+            "Measure RECD",
+            "Skip REM",
+            "Use adult targets",
+            "Increase MPO"
+          ],
+          "answerIndex": 0,
+          "rationale": "RECD customizes coupler-to-ear conversions for accurate pediatric targets."
+        },
+        {
+          "id": "S4-Q14",
+          "section": 4,
+          "question": "A key sign to remake an earmold is:",
+          "choices": [
+            "Persistent feedback/leakage",
+            "No occlusion",
+            "Perfect comfort",
+            "Excellent seal"
+          ],
+          "answerIndex": 0,
+          "rationale": "Leakage causing feedback indicates the mold may need remaking or modification."
+        },
+        {
+          "id": "S4-Q15",
+          "section": 4,
+          "question": "Orientation should cover:",
+          "choices": [
+            "Insertion/removal, controls/app, cleaning, charging, expectations",
+            "Only warranties",
+            "Only streaming",
+            "Only tympanometry"
+          ],
+          "answerIndex": 0,
+          "rationale": "Comprehensive orientation improves success and reduces callbacks."
+        },
+        {
+          "id": "S4-Q16",
+          "section": 4,
+          "question": "To verify directionality you might:",
+          "choices": [
+            "Use a test box or clinic verification with front/back inputs",
+            "Use tympanometry",
+            "Measure reflexes",
+            "Use only questionnaires"
+          ],
+          "answerIndex": 0,
+          "rationale": "Acoustic verification can demonstrate directional mic benefit."
+        },
+        {
+          "id": "S4-Q17",
+          "section": 4,
+          "question": "If soft sounds are audible but loud sounds too loud:",
+          "choices": [
+            "Adjust compression kneepoints/ratios and MPO",
+            "Increase all gains equally",
+            "Disable compression",
+            "Use open domes"
+          ],
+          "answerIndex": 0,
+          "rationale": "Refine compression and MPO to shape loudness growth appropriately."
+        },
+        {
+          "id": "S4-Q18",
+          "section": 4,
+          "question": "A dramatic rise in EIN vs spec suggests:",
+          "choices": [
+            "Possible device fault",
+            "Better fidelity",
+            "Improved battery life",
+            "Normal variance"
+          ],
+          "answerIndex": 0,
+          "rationale": "High EIN indicates internal noise problems\u2014service likely needed."
+        },
+        {
+          "id": "S4-Q19",
+          "section": 4,
+          "question": "If REM probe is too shallow, expected effect:",
+          "choices": [
+            "Inaccurate high-frequency measures",
+            "No effect",
+            "Higher MPO",
+            "Better LF response"
+          ],
+          "answerIndex": 0,
+          "rationale": "Shallow probes underestimate HF SPL near the TM."
+        },
+        {
+          "id": "S4-Q20",
+          "section": 4,
+          "question": "Verification confirms:",
+          "choices": [
+            "Device output matches targets in the ear",
+            "Patient satisfaction only",
+            "Manufacturer specs only",
+            "Insurance coverage"
+          ],
+          "answerIndex": 0,
+          "rationale": "Verification objectively measures in-ear performance vs targets."
+        },
+        {
+          "id": "S4-Q21",
+          "section": 4,
+          "question": "Validation confirms:",
+          "choices": [
+            "Patient-perceived benefit aligns with goals",
+            "Exact SPL in ear",
+            "Coupler response only",
+            "Tympanometric compliance"
+          ],
+          "answerIndex": 0,
+          "rationale": "Validation uses outcomes tools to assess real-world benefit."
+        },
+        {
+          "id": "S4-Q22",
+          "section": 4,
+          "question": "For first-time users, adaptation managers can:",
+          "choices": [
+            "Ease into full gain over time",
+            "Increase MPO beyond UCL",
+            "Disable feedback control",
+            "Replace verification"
+          ],
+          "answerIndex": 0,
+          "rationale": "Adaptation gradually increases gain for comfort and acceptance."
+        },
+        {
+          "id": "S4-Q23",
+          "section": 4,
+          "question": "Adult soft/med/loud verification inputs approximate:",
+          "choices": [
+            "55/65/75 dB SPL",
+            "35/45/55 dB SPL",
+            "65/75/85 dB SPL",
+            "75/85/95 dB SPL"
+          ],
+          "answerIndex": 0,
+          "rationale": "Commonly ~55, 65, and 75 dB SPL speech-like signals are used."
+        },
+        {
+          "id": "S4-Q24",
+          "section": 4,
+          "question": "If test box THD is far above spec:",
+          "choices": [
+            "Possible receiver/signal distortion\u2014service",
+            "Normal behavior",
+            "Battery low noise only",
+            "Firmware bug only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Excessive distortion warrants service after setup rechecks."
+        },
+        {
+          "id": "S4-Q25",
+          "section": 4,
+          "question": "Feedback persists despite manager. First step:",
+          "choices": [
+            "Improve physical seal/vent before DSP",
+            "Disable compression",
+            "Increase MPO",
+            "Ignore and counsel"
+          ],
+          "answerIndex": 0,
+          "rationale": "Address physical fit/coupling to reduce leakage, then re-run manager."
+        },
+        {
+          "id": "S4-Q26",
+          "section": 4,
+          "question": "If UCL/LDL not measured, what risk increases?",
+          "choices": [
+            "Over-amplification and discomfort",
+            "Under-amplification always",
+            "No change",
+            "Better outcomes"
+          ],
+          "answerIndex": 0,
+          "rationale": "Without UCL, MPO settings may be unsafe or uncomfortable."
+        },
+        {
+          "id": "S4-Q27",
+          "section": 4,
+          "question": "An important counseling point at delivery:",
+          "choices": [
+            "Realistic expectations and consistent wear",
+            "No need for follow-ups",
+            "HAs fix speech in noise fully",
+            "Never clean devices"
+          ],
+          "answerIndex": 0,
+          "rationale": "Setting expectations and consistent use are critical for success."
+        },
+        {
+          "id": "S4-Q28",
+          "section": 4,
+          "question": "Pediatric safety includes:",
+          "choices": [
+            "Tamperproof battery doors and secure retention",
+            "Open batteries",
+            "Very high MPO",
+            "Inadequate seal"
+          ],
+          "answerIndex": 0,
+          "rationale": "Safety features and retention are important for children."
+        },
+        {
+          "id": "S4-Q29",
+          "section": 4,
+          "question": "Ear impression contraindication:",
+          "choices": [
+            "Suspected TM perforation or tubes",
+            "Mild cerumen",
+            "Curvy canal",
+            "New battery"
+          ],
+          "answerIndex": 0,
+          "rationale": "Avoid impressions when perforation/tubes suspected unless permitted with training."
+        },
+        {
+          "id": "S4-Q30",
+          "section": 4,
+          "question": "Verification of MPO typically uses inputs around:",
+          "choices": [
+            "85\u201390 dB SPL",
+            "55 dB SPL",
+            "45 dB SPL",
+            "30 dB SPL"
+          ],
+          "answerIndex": 0,
+          "rationale": "High-level input checks confirm MPO below UCL."
+        },
+        {
+          "id": "S4-Q31",
+          "section": 4,
+          "question": "If loud sounds are comfortable but soft speech is inaudible:",
+          "choices": [
+            "Increase low-level gain",
+            "Decrease MPO",
+            "Switch to linear",
+            "Increase vent size"
+          ],
+          "answerIndex": 0,
+          "rationale": "Boost soft-level gain in relevant bands and re-verify audibility."
+        },
+        {
+          "id": "S4-Q32",
+          "section": 4,
+          "question": "Test box HFA OSPL90 refers to:",
+          "choices": [
+            "Average OSPL90 at mid frequencies",
+            "High-frequency average of THD",
+            "Low-frequency average of EIN",
+            "Maximum feedback margin"
+          ],
+          "answerIndex": 0,
+          "rationale": "HFA OSPL90 averages OSPL90 at specified midband frequencies."
+        },
+        {
+          "id": "S4-Q33",
+          "section": 4,
+          "question": "When verifying features like NR, consider:",
+          "choices": [
+            "Measure with and without feature active",
+            "Skip verification",
+            "Only questionnaires",
+            "Tympanometry"
+          ],
+          "answerIndex": 0,
+          "rationale": "Compare aided responses with features toggled to confirm effect."
+        },
+        {
+          "id": "S4-Q34",
+          "section": 4,
+          "question": "A user with small canal and power needs: choose:",
+          "choices": [
+            "Power BTE + custom mold",
+            "IIC with large vent",
+            "Open dome RIC",
+            "Slim tube"
+          ],
+          "answerIndex": 0,
+          "rationale": "Power BTE with custom mold provides needed output and stability."
+        },
+        {
+          "id": "S4-Q35",
+          "section": 4,
+          "question": "Validation tool matching goals is:",
+          "choices": [
+            "COSI",
+            "OTC label",
+            "ANSI S3.22",
+            "OSHA log"
+          ],
+          "answerIndex": 0,
+          "rationale": "COSI tracks patient\u2019s priority listening goals and outcomes."
+        },
+        {
+          "id": "S4-Q36",
+          "section": 4,
+          "question": "If real-ear shows excessive HF output vs target:",
+          "choices": [
+            "Reduce HF gain/MPO and re-verify",
+            "Increase LF gain",
+            "Ignore and validate only",
+            "Disable directionality"
+          ],
+          "answerIndex": 0,
+          "rationale": "Match targets by adjusting band-specific gain and MPO as needed."
+        },
+        {
+          "id": "S4-Q37",
+          "section": 4,
+          "question": "A receiver replacement is indicated when:",
+          "choices": [
+            "No output and blockage ruled out",
+            "Patient requests new color",
+            "Battery is new",
+            "App is updated"
+          ],
+          "answerIndex": 0,
+          "rationale": "If cleaning doesn\u2019t restore output, replace receiver before RMA."
+        },
+        {
+          "id": "S4-Q38",
+          "section": 4,
+          "question": "Primary benefit of REM over simulated fit:",
+          "choices": [
+            "Accounts for individual ear acoustics",
+            "Faster always",
+            "Eliminates counseling",
+            "Replaces validation"
+          ],
+          "answerIndex": 0,
+          "rationale": "REM captures personal ear acoustics for precise fitting."
+        },
+        {
+          "id": "S4-Q39",
+          "section": 4,
+          "question": "Unexpected feedback after delivery first check:",
+          "choices": [
+            "Wax/receiver and fit/seal",
+            "Increase MPO",
+            "Disable compression",
+            "Replace battery door"
+          ],
+          "answerIndex": 0,
+          "rationale": "Check for wax and physical fit issues before DSP changes."
+        },
+        {
+          "id": "S4-Q40",
+          "section": 4,
+          "question": "If the patient struggles only in restaurants, best add-on is:",
+          "choices": [
+            "Remote microphone and counsel on positioning",
+            "Power BTE",
+            "Open fit",
+            "New earmold color"
+          ],
+          "answerIndex": 0,
+          "rationale": "Remote mics substantially improve SNR in challenging environments."
+        },
+        {
+          "id": "S4-Q41",
+          "section": 4,
+          "question": "RECD (Real-Ear-to-Coupler Difference) is MOST critical for:",
+          "choices": [
+            "Pediatric fittings to personalize targets",
+            "Adult power BTEs only",
+            "Eliminating need for REM",
+            "Battery selection"
+          ],
+          "answerIndex": 0,
+          "rationale": "RECD converts coupler measurements to individual ear SPL, essential for accurate pediatric verification."
+        },
+        {
+          "id": "S4-Q42",
+          "section": 4,
+          "question": "During REM, the probe tube should be positioned approximately:",
+          "choices": [
+            "5 mm from the tympanic membrane",
+            "Touching the TM",
+            "At the canal entrance",
+            "In the concha bowl"
+          ],
+          "answerIndex": 0,
+          "rationale": "Within ~5 mm of TM for accurate SPL measurement without contact."
+        },
+        {
+          "id": "S4-Q43",
+          "section": 4,
+          "question": "If REM shows soft speech is below target at 1-2 kHz, you should:",
+          "choices": [
+            "Increase gain for soft inputs in those bands",
+            "Increase MPO only",
+            "Reduce high-frequency gain",
+            "Do nothing"
+          ],
+          "answerIndex": 0,
+          "rationale": "Adjust soft-level gain to match prescriptive targets for audibility."
+        },
+        {
+          "id": "S4-Q44",
+          "section": 4,
+          "question": "Test box measurement of OSPL90 represents:",
+          "choices": [
+            "Maximum output with 90 dB SPL input",
+            "Noise reduction effectiveness",
+            "Battery life",
+            "Real-ear gain"
+          ],
+          "answerIndex": 0,
+          "rationale": "OSPL90 is the output saturation curve measured in a 2cc coupler with 90 dB input."
+        },
+        {
+          "id": "S4-Q45",
+          "section": 4,
+          "question": "HFA (High-Frequency Average) OSPL90 is typically the average of OSPL90 at:",
+          "choices": [
+            "1000, 1600, 2500 Hz",
+            "250, 500, 1000 Hz",
+            "4000, 6000, 8000 Hz",
+            "All frequencies"
+          ],
+          "answerIndex": 0,
+          "rationale": "HFA OSPL90 averages mid-high frequencies per ANSI standards (1, 1.6, 2.5 kHz common)."
+        },
+        {
+          "id": "S4-Q46",
+          "section": 4,
+          "question": "Equivalent Input Noise (EIN) in a test box indicates:",
+          "choices": [
+            "Internal circuit noise level of the device",
+            "Environmental noise in the room",
+            "Patient's hearing threshold",
+            "Speech clarity"
+          ],
+          "answerIndex": 0,
+          "rationale": "EIN measures the hearing aid's internal noise floor."
+        },
+        {
+          "id": "S4-Q47",
+          "section": 4,
+          "question": "A patient reports that loud sounds are uncomfortable. First action:",
+          "choices": [
+            "Reduce MPO and verify with high-level input",
+            "Increase soft-level gain",
+            "Disable compression",
+            "Increase vent size only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Adjust MPO to ensure comfort; verify with 85-90 dB inputs that output stays below UCL."
+        },
+        {
+          "id": "S4-Q48",
+          "section": 4,
+          "question": "COSI (Client Oriented Scale of Improvement) is used for:",
+          "choices": [
+            "Patient-specific outcome measurement",
+            "Coupler testing",
+            "Tympanometry",
+            "Bone conduction masking"
+          ],
+          "answerIndex": 0,
+          "rationale": "COSI tracks patient-defined listening goals and perceived outcomes."
+        },
+        {
+          "id": "S4-Q49",
+          "section": 4,
+          "question": "For first-time users, an adaptation manager typically:",
+          "choices": [
+            "Gradually increases gain over weeks to aid acceptance",
+            "Immediately provides full targets day one",
+            "Disables all features",
+            "Only adjusts MPO"
+          ],
+          "answerIndex": 0,
+          "rationale": "Adaptation eases new users into full amplification, improving acceptance."
+        },
+        {
+          "id": "S4-Q50",
+          "section": 4,
+          "question": "During orientation, which is MOST important to demonstrate?",
+          "choices": [
+            "Insertion/removal, on/off, battery/charging, cleaning",
+            "Only streaming features",
+            "Color options",
+            "Warranty fine print"
+          ],
+          "answerIndex": 0,
+          "rationale": "Basic handling and maintenance are foundational for successful use."
+        },
+        {
+          "id": "S4-Q51",
+          "section": 4,
+          "question": "If test box THD (Total Harmonic Distortion) is much higher than manufacturer spec, this suggests:",
+          "choices": [
+            "Device fault; needs service",
+            "Excellent sound quality",
+            "Normal variance",
+            "Low battery only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Excessive distortion indicates receiver or amplifier malfunction; service required."
+        },
+        {
+          "id": "S4-Q52",
+          "section": 4,
+          "question": "Before making an ear impression, you should:",
+          "choices": [
+            "Perform pre-otoscopy to rule out contraindications",
+            "Inject material immediately",
+            "Rely on patient self-report only",
+            "Skip otoblock for adults"
+          ],
+          "answerIndex": 0,
+          "rationale": "Pre-otoscopy identifies perforation, infection, or other contraindications."
+        },
+        {
+          "id": "S4-Q53",
+          "section": 4,
+          "question": "A contraindication for ear impressions includes:",
+          "choices": [
+            "Suspected TM perforation or recent ear surgery",
+            "Mild cerumen",
+            "Normal TM",
+            "Slightly curved canal"
+          ],
+          "answerIndex": 0,
+          "rationale": "Perforation or recent surgery contraindicates impression unless cleared and within scope."
+        },
+        {
+          "id": "S4-Q54",
+          "section": 4,
+          "question": "Which verification input level approximates soft speech?",
+          "choices": [
+            "~55 dB SPL",
+            "~35 dB SPL",
+            "~75 dB SPL",
+            "~90 dB SPL"
+          ],
+          "answerIndex": 0,
+          "rationale": "Soft speech is typically around 55 dB SPL; medium ~65, loud ~75."
+        },
+        {
+          "id": "S4-Q55",
+          "section": 4,
+          "question": "If the probe tube is placed too shallow during REM, the likely error is:",
+          "choices": [
+            "Underestimating high-frequency SPL near TM",
+            "Overestimating all frequencies",
+            "No effect",
+            "Better accuracy"
+          ],
+          "answerIndex": 0,
+          "rationale": "Shallow placement misses HF resonance near TM, underestimating true output."
+        },
+        {
+          "id": "S4-Q56",
+          "section": 4,
+          "question": "DSL v5 prescription is typically used for:",
+          "choices": [
+            "Pediatric fittings",
+            "Adult-only fittings exclusively",
+            "Conductive losses only",
+            "No clinical use"
+          ],
+          "answerIndex": 0,
+          "rationale": "DSL v5 emphasizes audibility for speech development, commonly used for children."
+        },
+        {
+          "id": "S4-Q57",
+          "section": 4,
+          "question": "NAL-NL2 prescription is commonly used for:",
+          "choices": [
+            "Adult fittings",
+            "Pediatrics exclusively",
+            "Test box only",
+            "Tympanometry"
+          ],
+          "answerIndex": 0,
+          "rationale": "NAL-NL2 aims for loudness normalization and intelligibility, standard for adults."
+        },
+        {
+          "id": "S4-Q58",
+          "section": 4,
+          "question": "APHAB (Abbreviated Profile of Hearing Aid Benefit) measures:",
+          "choices": [
+            "Self-reported benefit in various listening situations",
+            "Coupler gain only",
+            "Tympanometric compliance",
+            "Otoscopy findings"
+          ],
+          "answerIndex": 0,
+          "rationale": "APHAB is a validated questionnaire assessing perceived benefit across environments."
+        },
+        {
+          "id": "S4-Q59",
+          "section": 4,
+          "question": "When verifying MPO, use input levels around:",
+          "choices": [
+            "85\u201390 dB SPL",
+            "55 dB SPL",
+            "30 dB SPL",
+            "0 dB SPL"
+          ],
+          "answerIndex": 0,
+          "rationale": "High-level inputs (85-90 dB SPL) verify that MPO stays below UCL."
+        },
+        {
+          "id": "S4-Q60",
+          "section": 4,
+          "question": "If real-ear measures show excessive output at high frequencies, you should:",
+          "choices": [
+            "Reduce HF gain/MPO and re-verify",
+            "Increase low-frequency gain",
+            "Disable directionality",
+            "Ignore it"
+          ],
+          "answerIndex": 0,
+          "rationale": "Adjust band-specific gain and MPO to match targets and ensure comfort."
+        }
+      ]
+    },
+    {
+      "section_number": 5,
+      "questions": [
+        {
+          "id": "S5-Q01",
+          "section": 5,
+          "question": "Typical first follow-up after fitting is around:",
+          "choices": [
+            "1\u20132 weeks",
+            "1 day",
+            "3 months",
+            "1 year"
+          ],
+          "answerIndex": 0,
+          "rationale": "Early follow-up allows fine-tuning and counseling reinforcement."
+        },
+        {
+          "id": "S5-Q02",
+          "section": 5,
+          "question": "Annual practice often includes:",
+          "choices": [
+            "Hearing recheck and device service",
+            "Only battery replacement",
+            "MRI referral for all",
+            "Receiver replacement for all"
+          ],
+          "answerIndex": 0,
+          "rationale": "Annual hearing checks and service maintain outcomes and device function."
+        },
+        {
+          "id": "S5-Q03",
+          "section": 5,
+          "question": "Persistent feedback should first be addressed by:",
+          "choices": [
+            "Improving physical fit/seal",
+            "Increasing MPO",
+            "Disabling compression",
+            "Ignoring it"
+          ],
+          "answerIndex": 0,
+          "rationale": "Address the acoustic feedback path physically before DSP adjustments."
+        },
+        {
+          "id": "S5-Q04",
+          "section": 5,
+          "question": "A boomy own-voice complaint suggests:",
+          "choices": [
+            "Occlusion\u2014adjust vent/coupling",
+            "Need for higher MPO",
+            "Cerumen always",
+            "Retrocochlear lesion"
+          ],
+          "answerIndex": 0,
+          "rationale": "Occlusion increases own-voice low-frequency amplification."
+        },
+        {
+          "id": "S5-Q05",
+          "section": 5,
+          "question": "No output from a RIC device first checks:",
+          "choices": [
+            "Wax guard/receiver and battery/charge",
+            "Change microphone type",
+            "Replace shell",
+            "Order new app"
+          ],
+          "answerIndex": 0,
+          "rationale": "Check simple causes like wax blockages and power first."
+        },
+        {
+          "id": "S5-Q06",
+          "section": 5,
+          "question": "Which counseling point aids realistic expectations?",
+          "choices": [
+            "HAs improve access to sound, not perfect hearing",
+            "HAs restore normal hearing",
+            "HAs remove all background noise",
+            "HAs fix all phone calls"
+          ],
+          "answerIndex": 0,
+          "rationale": "Setting realistic expectations is critical for satisfaction and adherence."
+        },
+        {
+          "id": "S5-Q07",
+          "section": 5,
+          "question": "Which tool documents patient-defined goals and outcomes?",
+          "choices": [
+            "COSI",
+            "Threshold list",
+            "Battery log",
+            "Tympanogram"
+          ],
+          "answerIndex": 0,
+          "rationale": "COSI tracks prioritized listening goals and outcomes."
+        },
+        {
+          "id": "S5-Q08",
+          "section": 5,
+          "question": "Aural rehab strategies include:",
+          "choices": [
+            "Communication strategies and family involvement",
+            "MRI for all",
+            "No counseling",
+            "Less wear time"
+          ],
+          "answerIndex": 0,
+          "rationale": "Counseling, strategies, and family support improve outcomes."
+        },
+        {
+          "id": "S5-Q09",
+          "section": 5,
+          "question": "If a patient reports gradual decline after a year:",
+          "choices": [
+            "Reassess thresholds and reprogram",
+            "Ignore and extend warranty",
+            "Replace mold color",
+            "Assume malingering"
+          ],
+          "answerIndex": 0,
+          "rationale": "Reevaluate hearing and adjust programming accordingly."
+        },
+        {
+          "id": "S5-Q10",
+          "section": 5,
+          "question": "For moisture-prone users, maintenance includes:",
+          "choices": [
+            "Drying systems and frequent receiver checks",
+            "No maintenance",
+            "Open battery door underwater",
+            "Use alcohol daily"
+          ],
+          "answerIndex": 0,
+          "rationale": "Drying and inspections prevent moisture-related failures."
+        },
+        {
+          "id": "S5-Q11",
+          "section": 5,
+          "question": "If patient struggles in restaurants despite fit:",
+          "choices": [
+            "Recommend remote mic and seating strategies",
+            "Say nothing can be done",
+            "Increase MPO only",
+            "Close all vents"
+          ],
+          "answerIndex": 0,
+          "rationale": "Remote mics and strategies often help most in noise."
+        },
+        {
+          "id": "S5-Q12",
+          "section": 5,
+          "question": "Appropriate documentation includes:",
+          "choices": [
+            "SOAP notes, serials, settings, outcomes",
+            "Only invoices",
+            "Only warranties",
+            "No records"
+          ],
+          "answerIndex": 0,
+          "rationale": "Comprehensive records support continuity of care and quality."
+        },
+        {
+          "id": "S5-Q13",
+          "section": 5,
+          "question": "If discomfort persists with new earmold:",
+          "choices": [
+            "Stop wear, reassess fit, remake/adjust, refer if needed",
+            "Ignore it",
+            "Increase MPO",
+            "Reduce all gain"
+          ],
+          "answerIndex": 0,
+          "rationale": "Address physical comfort first and assess for pathology."
+        },
+        {
+          "id": "S5-Q14",
+          "section": 5,
+          "question": "Device maintenance education should cover:",
+          "choices": [
+            "Cleaning, wax guards, charging/batteries",
+            "Only streaming apps",
+            "Only volume control",
+            "No user maintenance"
+          ],
+          "answerIndex": 0,
+          "rationale": "User maintenance prevents many issues and improves longevity."
+        },
+        {
+          "id": "S5-Q15",
+          "section": 5,
+          "question": "A first follow-up visit should include:",
+          "choices": [
+            "Fine-tuning, REM as needed, counseling",
+            "Surgery scheduling",
+            "Insurance sales",
+            "MRI"
+          ],
+          "answerIndex": 0,
+          "rationale": "Fine-tune settings, verify if needed, and reinforce counseling."
+        },
+        {
+          "id": "S5-Q16",
+          "section": 5,
+          "question": "A patient with feedback only when hugging may need:",
+          "choices": [
+            "Minor HF gain reduction/feature tweak",
+            "New CI evaluation",
+            "Remove microphone",
+            "Bilateral occlusion"
+          ],
+          "answerIndex": 0,
+          "rationale": "Address specific scenarios with small adjustments and counseling."
+        },
+        {
+          "id": "S5-Q17",
+          "section": 5,
+          "question": "An alerting device recommendation is appropriate for:",
+          "choices": [
+            "Doorbells/smoke alarms need",
+            "No home needs",
+            "MRI scheduling",
+            "Cerumen removal"
+          ],
+          "answerIndex": 0,
+          "rationale": "Alerting devices enhance safety for those with hearing loss."
+        },
+        {
+          "id": "S5-Q18",
+          "section": 5,
+          "question": "When to schedule next routine follow-up after the 4\u20136 week visit?",
+          "choices": [
+            "6\u201312 months or as needed",
+            "Next day",
+            "Every week",
+            "Never"
+          ],
+          "answerIndex": 0,
+          "rationale": "Periodic follow-ups ensure sustained benefit and maintenance."
+        },
+        {
+          "id": "S5-Q19",
+          "section": 5,
+          "question": "Which is an effective communication strategy?",
+          "choices": [
+            "Face the talker and reduce background noise",
+            "Look away while speaking",
+            "Speak faster",
+            "Increase distance"
+          ],
+          "answerIndex": 0,
+          "rationale": "Visual cues and environment control improve understanding."
+        },
+        {
+          "id": "S5-Q20",
+          "section": 5,
+          "question": "If the user reports intermittent distortion:",
+          "choices": [
+            "Check for moisture and receiver health",
+            "Ignore",
+            "Increase MPO",
+            "Decrease vent size only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Moisture and failing receivers often cause intermittent distortion."
+        },
+        {
+          "id": "S5-Q21",
+          "section": 5,
+          "question": "A cerumen management plan includes:",
+          "choices": [
+            "Education, safe removal if within scope, refer when indicated",
+            "Always remove deeply with sharp tools",
+            "Ignore",
+            "Alcohol daily"
+          ],
+          "answerIndex": 0,
+          "rationale": "Follow scope/training; refer medically as appropriate."
+        },
+        {
+          "id": "S5-Q22",
+          "section": 5,
+          "question": "Counseling on streaming phone calls should include:",
+          "choices": [
+            "How to pair/connect and manage mic placement",
+            "Only turn off streaming",
+            "WRS scores",
+            "Tympanometry"
+          ],
+          "answerIndex": 0,
+          "rationale": "Teach pairing and proper mic/talker placement for best results."
+        },
+        {
+          "id": "S5-Q23",
+          "section": 5,
+          "question": "If real-ear is unavailable at follow-up, you should:",
+          "choices": [
+            "Use best alternative measures and schedule REM later",
+            "Skip any checks",
+            "Increase all gains",
+            "Replace devices"
+          ],
+          "answerIndex": 0,
+          "rationale": "Do what\u2019s feasible (simulated, in-situ) and plan verification when possible."
+        },
+        {
+          "id": "S5-Q24",
+          "section": 5,
+          "question": "If the patient\u2019s listening goals change:",
+          "choices": [
+            "Update COSI/goals and adjust fitting",
+            "Ignore and keep settings",
+            "Discontinue devices",
+            "Send to ENT only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Care should remain goal-based; update plans and fittings accordingly."
+        },
+        {
+          "id": "S5-Q25",
+          "section": 5,
+          "question": "A noisy workplace requires counseling on:",
+          "choices": [
+            "Hearing protection and safe listening",
+            "Disabling all features",
+            "Only increasing MPO",
+            "No changes"
+          ],
+          "answerIndex": 0,
+          "rationale": "Protect hearing and discuss limits of amplification in noise."
+        },
+        {
+          "id": "S5-Q26",
+          "section": 5,
+          "question": "If the app shows very low daily use time:",
+          "choices": [
+            "Discuss barriers and adjust comfort/fit",
+            "Ignore",
+            "Disable logs",
+            "Increase MPO"
+          ],
+          "answerIndex": 0,
+          "rationale": "Low wear time may indicate comfort or expectation issues to address."
+        },
+        {
+          "id": "S5-Q27",
+          "section": 5,
+          "question": "For rapid battery drain complaints:",
+          "choices": [
+            "Check settings, streaming time, battery health",
+            "Ignore",
+            "Replace molds only",
+            "Increase MPO"
+          ],
+          "answerIndex": 0,
+          "rationale": "Streaming and features affect consumption; check usage and batteries."
+        },
+        {
+          "id": "S5-Q28",
+          "section": 5,
+          "question": "A broken receiver wire is suspected when:",
+          "choices": [
+            "Intermittent/no sound with certain head positions",
+            "Only low WRS",
+            "Only occlusion",
+            "Perfect function"
+          ],
+          "answerIndex": 0,
+          "rationale": "Physical wire faults often cause position-dependent audio issues."
+        },
+        {
+          "id": "S5-Q29",
+          "section": 5,
+          "question": "A practical tip for restaurants is:",
+          "choices": [
+            "Sit with back to wall; face talkers; reduce distance",
+            "Sit near speakers",
+            "Choose open kitchens",
+            "Use only one aid"
+          ],
+          "answerIndex": 0,
+          "rationale": "Positioning reduces noise and improves SNR."
+        },
+        {
+          "id": "S5-Q30",
+          "section": 5,
+          "question": "An appropriate response to persistent pain under earmold is:",
+          "choices": [
+            "Stop use, reassess, remake/relieve pressure",
+            "Increase MPO",
+            "Tape mold in place",
+            "Wait months"
+          ],
+          "answerIndex": 0,
+          "rationale": "Prevent injury by stopping use and addressing the fit promptly."
+        },
+        {
+          "id": "S5-Q31",
+          "section": 5,
+          "question": "Which is a good indicator to schedule earlier follow-up?",
+          "choices": [
+            "Low satisfaction or poor outcomes",
+            "Perfect outcomes",
+            "No concerns",
+            "High wear time and benefit"
+          ],
+          "answerIndex": 0,
+          "rationale": "Address problems sooner to avoid drop-out and dissatisfaction."
+        },
+        {
+          "id": "S5-Q32",
+          "section": 5,
+          "question": "Routine maintenance often includes:",
+          "choices": [
+            "Cleaning, wax guard changes, desiccation",
+            "MRI",
+            "Annual surgery",
+            "App uninstall"
+          ],
+          "answerIndex": 0,
+          "rationale": "Basic maintenance prevents common failures."
+        },
+        {
+          "id": "S5-Q33",
+          "section": 5,
+          "question": "An earhook/tubing crack on BTE causes:",
+          "choices": [
+            "Leakage and feedback/weak output",
+            "Better output",
+            "No effect",
+            "Improved clarity"
+          ],
+          "answerIndex": 0,
+          "rationale": "Leaks reduce output and increase feedback risk."
+        },
+        {
+          "id": "S5-Q34",
+          "section": 5,
+          "question": "A family counseling point is:",
+          "choices": [
+            "Partner strategies and patience during acclimatization",
+            "Speak from other rooms",
+            "Noisy TV always",
+            "Cover mouth"
+          ],
+          "answerIndex": 0,
+          "rationale": "Family behaviors affect outcomes; involve them in strategies."
+        },
+        {
+          "id": "S5-Q35",
+          "section": 5,
+          "question": "If firmware updates are available:",
+          "choices": [
+            "Apply when stable to improve functions/bugs",
+            "Never update",
+            "Update daily",
+            "Requires earmold remake"
+          ],
+          "answerIndex": 0,
+          "rationale": "Updates can fix bugs and improve features; apply judiciously."
+        },
+        {
+          "id": "S5-Q36",
+          "section": 5,
+          "question": "For persistent difficulty on phone calls:",
+          "choices": [
+            "Check streaming/telecoil setup and mic placement",
+            "Increase MPO",
+            "Disable all features",
+            "No solutions exist"
+          ],
+          "answerIndex": 0,
+          "rationale": "Proper connectivity and talker mic placement are essential for call quality."
+        },
+        {
+          "id": "S5-Q37",
+          "section": 5,
+          "question": "Users with tremor may benefit from:",
+          "choices": [
+            "Larger controls, auto-features, rechargeables",
+            "Tiny CIC only",
+            "Manual volume only",
+            "No counseling"
+          ],
+          "answerIndex": 0,
+          "rationale": "Adapt devices to motor abilities and simplify handling."
+        },
+        {
+          "id": "S5-Q38",
+          "section": 5,
+          "question": "A key role of documentation is to:",
+          "choices": [
+            "Enable continuity and quality of care",
+            "Meet fashion goals",
+            "Increase noise",
+            "Reduce candidacy"
+          ],
+          "answerIndex": 0,
+          "rationale": "Good records support consistent, safe, and effective care."
+        },
+        {
+          "id": "S5-Q39",
+          "section": 5,
+          "question": "A proactive follow-up schedule helps to:",
+          "choices": [
+            "Catch problems early and maintain benefit",
+            "Increase returns only",
+            "Reduce counseling",
+            "Eliminate verification"
+          ],
+          "answerIndex": 0,
+          "rationale": "Follow-ups sustain outcomes and address issues promptly."
+        },
+        {
+          "id": "S5-Q40",
+          "section": 5,
+          "question": "One safe listening concept to share is:",
+          "choices": [
+            "Long exposures to ~85 dBA increase risk",
+            "Loudness never harms",
+            "Only bass harms hearing",
+            "Noise limits don't matter"
+          ],
+          "answerIndex": 0,
+          "rationale": "Extended exposure to high levels increases risk; promote protection."
+        },
+        {
+          "id": "S5-Q41",
+          "section": 5,
+          "question": "A patient returns 2 weeks post-fitting complaining of boomy own voice. BEST first action:",
+          "choices": [
+            "Assess and increase vent size or adjust LF gain",
+            "Increase MPO",
+            "Disable all features",
+            "Replace devices"
+          ],
+          "answerIndex": 0,
+          "rationale": "Occlusion causes boomy own voice; address with venting or LF gain reduction."
+        },
+        {
+          "id": "S5-Q42",
+          "section": 5,
+          "question": "Persistent feedback despite running feedback manager suggests:",
+          "choices": [
+            "Poor physical seal\u2014check fit and remake mold if needed",
+            "Increase MPO",
+            "Disable compression",
+            "Decrease all gain equally"
+          ],
+          "answerIndex": 0,
+          "rationale": "Digital feedback cancellation has limits; physical fit must be adequate first."
+        },
+        {
+          "id": "S5-Q43",
+          "section": 5,
+          "question": "A hearing aid produces intermittent sound. MOST likely causes include:",
+          "choices": [
+            "Corroded battery contacts or loose receiver wire",
+            "Perfect function",
+            "High WRS",
+            "Normal behavior"
+          ],
+          "answerIndex": 0,
+          "rationale": "Intermittent audio often results from power/connection issues; clean contacts or check wiring."
+        },
+        {
+          "id": "S5-Q44",
+          "section": 5,
+          "question": "Annual follow-up should typically include:",
+          "choices": [
+            "Hearing recheck, device cleaning/inspection, update settings as needed",
+            "Only battery sales",
+            "No hearing test",
+            "MRI for everyone"
+          ],
+          "answerIndex": 0,
+          "rationale": "Comprehensive annual care includes audiometric reassessment and device service."
+        },
+        {
+          "id": "S5-Q45",
+          "section": 5,
+          "question": "Which communication strategy is MOST effective?",
+          "choices": [
+            "Face the speaker, reduce distance, control background noise",
+            "Look away and increase distance",
+            "Speak very rapidly",
+            "Increase background noise"
+          ],
+          "answerIndex": 0,
+          "rationale": "Visual cues, proximity, and noise control significantly improve understanding."
+        },
+        {
+          "id": "S5-Q46",
+          "section": 5,
+          "question": "A patient reports gradual worsening of hearing after 18 months of stable use. Next step:",
+          "choices": [
+            "Reassess hearing and reprogram if thresholds changed",
+            "Ignore it",
+            "Assume device fault only",
+            "Discharge patient"
+          ],
+          "answerIndex": 0,
+          "rationale": "Progressive loss requires updated audiogram and reprogramming to match current hearing."
+        },
+        {
+          "id": "S5-Q47",
+          "section": 5,
+          "question": "When counseling about realistic expectations, emphasize that hearing aids:",
+          "choices": [
+            "Improve access to sound but don't restore normal hearing",
+            "Restore perfect hearing",
+            "Eliminate all background noise",
+            "Cure hearing loss"
+          ],
+          "answerIndex": 0,
+          "rationale": "Setting realistic expectations improves satisfaction and reduces returns."
+        },
+        {
+          "id": "S5-Q48",
+          "section": 5,
+          "question": "Daily hearing aid logs show very low usage (<2 hours/day). BEST approach:",
+          "choices": [
+            "Discuss barriers, comfort, benefit, and adjust fit/settings",
+            "Ignore data",
+            "Discharge immediately",
+            "Increase MPO"
+          ],
+          "answerIndex": 0,
+          "rationale": "Low wear time indicates problems; address comfort, expectations, or functional issues."
+        },
+        {
+          "id": "S5-Q49",
+          "section": 5,
+          "question": "For a patient with persistent discomfort from earmold pressure, you should:",
+          "choices": [
+            "Stop use, reassess fit, relieve or remake mold",
+            "Increase MPO",
+            "Tape mold in place",
+            "Advise continued use despite pain"
+          ],
+          "answerIndex": 0,
+          "rationale": "Discomfort risks injury and noncompliance; address fit immediately."
+        },
+        {
+          "id": "S5-Q50",
+          "section": 5,
+          "question": "Documentation best practices include:",
+          "choices": [
+            "SOAP notes, device settings, outcomes, serial numbers",
+            "Only invoices",
+            "No records needed",
+            "Verbal notes only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Comprehensive documentation supports continuity, quality, and compliance."
+        },
+        {
+          "id": "S5-Q51",
+          "section": 5,
+          "question": "A BTE earhook is cracked. Expected consequence:",
+          "choices": [
+            "Sound leakage and feedback",
+            "Better output",
+            "Improved clarity",
+            "No effect"
+          ],
+          "answerIndex": 0,
+          "rationale": "Cracks cause acoustic leaks, reducing output and increasing feedback."
+        },
+        {
+          "id": "S5-Q52",
+          "section": 5,
+          "question": "Aural rehabilitation strategies include all EXCEPT:",
+          "choices": [
+            "Surgical cochlear removal",
+            "Communication strategies and family education",
+            "Assistive listening devices",
+            "Support groups and counseling"
+          ],
+          "answerIndex": 0,
+          "rationale": "Aural rehab is non-surgical; focuses on strategies, technology, and support."
+        },
+        {
+          "id": "S5-Q53",
+          "section": 5,
+          "question": "A patient struggles with phone calls. FIRST troubleshooting step:",
+          "choices": [
+            "Verify Bluetooth pairing or telecoil function",
+            "Replace hearing aids",
+            "Increase MPO",
+            "Disable all features"
+          ],
+          "answerIndex": 0,
+          "rationale": "Check connectivity (BT or T-coil) and ensure proper pairing/settings."
+        },
+        {
+          "id": "S5-Q54",
+          "section": 5,
+          "question": "For moisture-prone users, recommend:",
+          "choices": [
+            "Nightly drying/dehumidifying and regular inspection",
+            "Store in water overnight",
+            "Never dry devices",
+            "Use only in showers"
+          ],
+          "answerIndex": 0,
+          "rationale": "Consistent drying prevents moisture damage and extends device life."
+        },
+        {
+          "id": "S5-Q55",
+          "section": 5,
+          "question": "If a receiver wire breaks on a RIC device:",
+          "choices": [
+            "Replace the receiver/wire assembly",
+            "Ignore it",
+            "Only adjust software",
+            "Increase gain"
+          ],
+          "answerIndex": 0,
+          "rationale": "Broken wires require physical replacement; software cannot fix hardware failures."
+        },
+        {
+          "id": "S5-Q56",
+          "section": 5,
+          "question": "A patient reports hearing aid 'cuts out' in wind. This suggests:",
+          "choices": [
+            "Wind noise activating noise reduction\u2014adjust settings or use wind program",
+            "Device is broken",
+            "Normal and unavoidable",
+            "User error only"
+          ],
+          "answerIndex": 0,
+          "rationale": "Wind can trigger NR algorithms; adjust sensitivity or use dedicated wind program."
+        },
+        {
+          "id": "S5-Q57",
+          "section": 5,
+          "question": "Texas hearing aid dispensers must maintain patient records for a minimum of:",
+          "choices": [
+            "5 years from date of last visit",
+            "1 year",
+            "7 years",
+            "No requirement"
+          ],
+          "answerIndex": 0,
+          "rationale": "Texas law requires 5-year record retention per 16 TAC \u00a7 112.140(d). Violation is a Class A penalty."
+        },
+        {
+          "id": "S5-Q58",
+          "section": 5,
+          "question": "When should you schedule the FIRST follow-up after initial fitting?",
+          "choices": [
+            "1\u20132 weeks",
+            "6 months",
+            "Immediately next day",
+            "1 year"
+          ],
+          "answerIndex": 0,
+          "rationale": "Early follow-up (1-2 weeks) allows fine-tuning and addresses initial concerns."
+        },
+        {
+          "id": "S5-Q59",
+          "section": 5,
+          "question": "Firmware updates for hearing aids should:",
+          "choices": [
+            "Be applied when stable to fix bugs and add features",
+            "Never be done",
+            "Be done hourly",
+            "Require earmold remakes"
+          ],
+          "answerIndex": 0,
+          "rationale": "Firmware updates can improve performance and fix issues; apply judiciously per manufacturer guidance."
+        },
+        {
+          "id": "S5-Q60",
+          "section": 5,
+          "question": "A key factor in long-term hearing aid success is:",
+          "choices": [
+            "Consistent use, realistic expectations, and regular follow-up",
+            "Ignoring all problems",
+            "No maintenance",
+            "Avoiding all adjustments"
+          ],
+          "answerIndex": 0,
+          "rationale": "Adherence, appropriate expectations, and ongoing care drive long-term outcomes."
+        }
+      ]
+    }
+  ]
+}
