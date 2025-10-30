@@ -168,10 +168,10 @@ function displayQuestion() {
   const flagIcon = document.getElementById('flagIcon');
   const flagBtn = document.getElementById('flagBtn');
   if (state.flaggedQuestions.has(question.id)) {
-    flagIcon.textContent = '🚩';
+    flagIcon.textContent = 'Flagged';
     flagBtn.classList.add('flagged');
   } else {
-    flagIcon.textContent = '🏴';
+    flagIcon.textContent = 'Flag';
     flagBtn.classList.remove('flagged');
   }
   
@@ -265,11 +265,10 @@ function submitAnswer() {
   feedbackDiv.className = `feedback ${isCorrect ? 'correct' : 'incorrect'}`;
   feedbackDiv.innerHTML = `
     <div class="feedback-header">
-      <span class="feedback-icon">${isCorrect ? '✅' : '❌'}</span>
-      <span>${isCorrect ? 'Correct!' : 'Incorrect'}</span>
+      <span class="feedback-status ${isCorrect ? 'status-correct' : 'status-incorrect'}">${isCorrect ? 'Correct' : 'Incorrect'}</span>
     </div>
     <div class="feedback-rationale">
-      <strong>Correct Answer: ${correctAnswerText}</strong><br><br>
+      <strong>Correct Answer:</strong> ${correctAnswerText}<br><br>
       ${question.rationale}
     </div>
   `;
