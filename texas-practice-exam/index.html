@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas ILE Practice Exam - 100 Questions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div class="screen active" id="welcomeScreen">
+            <div class="welcome-content">
+                <h1>Texas Hearing Instrument Fitter & Dispenser Practice Exam</h1>
+                <p class="subtitle">Comprehensive 100-question practice examination covering ILE content, Texas Practical Exam, and Texas Jurisprudence</p>
+                
+                <div class="exam-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">100</div>
+                        <div class="stat-label">Questions</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">150</div>
+                        <div class="stat-label">Minutes</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">70%</div>
+                        <div class="stat-label">Passing Score</div>
+                    </div>
+                </div>
+
+                <div class="exam-info">
+                    <h3>Examination Coverage</h3>
+                    <ul>
+                        <li>Section 1: Patient/Client Assessment (Questions 1-20)</li>
+                        <li>Section 2: Interpret & Apply Assessment Results (Questions 21-35)</li>
+                        <li>Section 3: Select Hearing Devices (Questions 36-50)</li>
+                        <li>Section 4: Fit & Dispense Hearing Devices (Questions 51-70)</li>
+                        <li>Section 5: Texas Jurisprudence & Continuing Care (Questions 71-100)</li>
+                    </ul>
+                </div>
+
+                <button class="start-btn" onclick="startExam()">Begin Practice Exam</button>
+                <button class="back-btn" onclick="window.location.href='../index.html'">Back to Home</button>
+            </div>
+        </div>
+
+        <!-- Question Screen -->
+        <div class="screen" id="questionScreen">
+            <div class="question-container">
+                <div class="question-header">
+                    <div class="question-meta">
+                        <span id="sectionLabel">Section 1</span>
+                        <span id="questionProgress">Question 1 of 100</span>
+                    </div>
+                    <div class="question-controls">
+                        <button class="icon-btn" id="flagBtn" onclick="toggleFlag()" title="Flag this question">
+                            <span id="flagText">Flag</span>
+                        </button>
+                        <button class="icon-btn" onclick="showWelcome()">Menu</button>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+
+                <div id="scoreDisplay" class="score-display"></div>
+
+                <div id="questionText" class="question-text"></div>
+
+                <div id="choices" class="choices"></div>
+
+                <div id="feedback" class="feedback" style="display: none;"></div>
+
+                <div class="nav-controls">
+                    <button class="nav-btn" id="prevBtn" onclick="previousQuestion()">Previous</button>
+                    <button class="nav-btn" id="submitAnswerBtn" onclick="submitAnswer()" disabled>Submit Answer</button>
+                    <button class="nav-btn" id="nextBtn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+                </div>
+
+                <button class="finish-btn" id="finishBtn" onclick="finishExam()" style="display: none;">Finish Exam</button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div class="screen" id="resultsScreen">
+            <div class="results-container">
+                <div class="results-header">
+                    <h2>Exam Complete</h2>
+                    <div id="finalScore" class="final-score"></div>
+                    <div id="performanceLabel" class="performance-label"></div>
+                </div>
+
+                <div id="resultsBreakdown" class="results-breakdown"></div>
+
+                <div id="reviewSection" class="review-section"></div>
+
+                <div class="results-actions">
+                    <button onclick="retakeExam()">Retake Exam</button>
+                    <button id="reviewMissedBtn" onclick="reviewMissed()" style="display: none;">Review Missed Questions</button>
+                    <button onclick="window.location.href='../index.html'">Return to Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
