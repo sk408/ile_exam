@@ -10,12 +10,31 @@ let hasSubmittedAnswer = false;
 async function loadQuestions() {
     try {
         const response = await fetch('questions.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const data = await response.json();
         questions = data.questions;
+        
+        if (!questions || questions.length === 0) {
+            throw new Error('No questions found in JSON file');
+        }
+        
         console.log(`Loaded ${questions.length} questions`);
     } catch (error) {
         console.error('Error loading questions:', error);
-        alert('Failed to load questions. Please refresh the page.');
+        
+        // Check if it's a CORS/file protocol issue
+        if (window.location.protocol === 'file:') {
+            alert('⚠️ Cannot load questions when opening HTML file directly.\n\n' +
+                  'To test locally, you need to use a web server:\n\n' +
+                  '1. Using Python: python -m http.server 8000\n' +
+                  '2. Using Node.js: npx http-server\n' +
+                  '3. Using VS Code: Install "Live Server" extension\n\n' +
+                  'Or visit the live version at:\nhttps://sk408.github.io/ile_exam/texas-practice-exam/');
+        } else {
+            alert('Failed to load questions. Please refresh the page.\n\nError: ' + error.message);
+        }
     }
 }
 
