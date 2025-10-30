@@ -183,11 +183,25 @@
       return;
     }
     
+    // Randomize choices for this question (if not already shuffled)
+    if (!q.shuffledChoices) {
+      const choicesWithIndex = q.choices.map((choice, idx) => ({ choice, originalIdx: idx }));
+      
+      // Fisher-Yates shuffle
+      for (let i = choicesWithIndex.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [choicesWithIndex[i], choicesWithIndex[j]] = [choicesWithIndex[j], choicesWithIndex[i]];
+      }
+      
+      q.shuffledChoices = choicesWithIndex.map(item => item.choice);
+      q.shuffledAnswerIndex = choicesWithIndex.findIndex(item => item.originalIdx === q.answerIndex);
+    }
+    
     examStatus.textContent = `Question ${i + 1} of ${exam.length}`;
     examQ.textContent = q.question;
     examChoices.innerHTML = '';
     
-    q.choices.forEach((c, idxChoice) => {
+    q.shuffledChoices.forEach((c, idxChoice) => {
       const b = document.createElement('button');
       b.textContent = c;
       if (responses.get(q.id) === idxChoice) b.classList.add('selected');
@@ -202,7 +216,8 @@
   function computeScore() {
     let correct = 0;
     exam.forEach((q) => {
-      if (responses.get(q.id) === q.answerIndex) correct++;
+      const correctIdx = q.shuffledAnswerIndex !== undefined ? q.shuffledAnswerIndex : q.answerIndex;
+      if (responses.get(q.id) === correctIdx) correct++;
     });
     return { correct, total: exam.length };
   }
@@ -226,10 +241,11 @@
       const user = responses.get(q.id);
       const item = document.createElement('div');
       item.className = 'result-item';
-      const statusClass = user === q.answerIndex ? 'correct' : 'incorrect';
-      const statusText = user === q.answerIndex ? 'Correct' : 'Incorrect';
-      const userTxt = user != null ? q.choices[user] : 'No answer';
-      const correctTxt = q.choices[q.answerIndex];
+      const correctIdx = q.shuffledAnswerIndex !== undefined ? q.shuffledAnswerIndex : q.answerIndex;
+      const statusClass = user === correctIdx ? 'correct' : 'incorrect';
+      const statusText = user === correctIdx ? 'Correct' : 'Incorrect';
+      const userTxt = user != null ? (q.shuffledChoices ? q.shuffledChoices[user] : q.choices[user]) : 'No answer';
+      const correctTxt = q.choices[q.answerIndex]; // Always show original correct answer text
       item.innerHTML = `
         <div class="${statusClass}"><strong>${statusText}</strong></div>
         <div><strong>Q${i + 1}.</strong> ${q.question}</div>
