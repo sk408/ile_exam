@@ -18,7 +18,7 @@
 - [x] Q5 - New gloves each patient (B)
 - [x] Q6 - SRT/PTA correlation ±6 dB (B)
 - [x] Q7 - Type B tympanogram (C)
-- [x] Q8 - BC masking rule (B)
+- [x] Q8 - BC masking rule ≥10-15 dB ABG (B) *CORRECTED*
 - [x] Q9 - WRS 40% retrocochlear (B)
 - [x] Q10 - Acoustic reflex 85-100 dB (C)
 - [x] Q11 - Asymmetric loss >15 dB (B)

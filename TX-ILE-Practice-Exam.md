@@ -60,7 +60,7 @@ Mark your answers and check them against the answer key at the end. Review expla
 
 **8. When should masking be applied during bone conduction audiometry?**
    - A) Always for every patient
-   - B) When the air-bone gap in the test ear exceeds 40 dB
+   - B) When the air-bone gap in the test ear is ≥10-15 dB
    - C) Never during bone conduction testing
    - D) Only if the patient reports tinnitus
 
@@ -773,8 +773,8 @@ SRT should correlate with PTA (average of 500, 1000, 2000 Hz) within approximate
 **7. C - Fluid in middle ear or tympanic membrane perforation**
 Type B (flat) tympanogram with no peak indicates either middle ear effusion, perforation, or complete cerumen blockage.
 
-**8. B - When air-bone gap exceeds 40 dB**
-Masking is required when there's risk of cross-hearing, such as when the air-bone gap in the test ear exceeds 40 dB.
+**8. B - When the air-bone gap in the test ear is ≥10-15 dB**
+Bone conduction masking is required when there's an air-bone gap of ≥10-15 dB in the test ear, indicating a conductive component. Since bone conduction has minimal interaural attenuation (0-10 dB), the signal can easily cross to the non-test ear.
 
 **9. B - Possible retrocochlear pathology requiring medical referral**
 Disproportionately poor word recognition relative to pure tone thresholds suggests retrocochlear involvement (acoustic neuroma, neural pathology).
