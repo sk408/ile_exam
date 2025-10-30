@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILE Study Guide & Practice Exams</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: #2d3748;
+            background: #f5f6f8;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5f7d 100%);
+            color: white;
+            padding: 48px 24px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #4a5568;
+            max-width: 700px;
+            margin: 0 auto 32px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto 64px;
+        }
+
+        .stat-card {
+            background: white;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        .stat-number {
+            font-size: 40px;
+            font-weight: 700;
+            color: #1e3a5f;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: #718096;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-bottom: 64px;
+        }
+
+        .app-card {
+            background: white;
+            border: 2px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 32px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .app-card:hover {
+            border-color: #2c5f7d;
+            box-shadow: 0 8px 16px rgba(30, 58, 95, 0.1);
+            transform: translateY(-4px);
+        }
+
+        .app-card h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 12px;
+        }
+
+        .app-tag {
+            display: inline-block;
+            background: #e6f1f7;
+            color: #2c5f7d;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .app-card p {
+            color: #4a5568;
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+
+        .app-card ul {
+            list-style: none;
+            margin-bottom: 24px;
+        }
+
+        .app-card ul li {
+            color: #4a5568;
+            padding: 6px 0 6px 20px;
+            position: relative;
+            font-size: 14px;
+        }
+
+        .app-card ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2c5f7d;
+            font-weight: bold;
+        }
+
+        .app-button {
+            display: inline-block;
+            background: #2c5f7d;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .app-button:hover {
+            background: #1e3a5f;
+            box-shadow: 0 4px 8px rgba(30, 58, 95, 0.2);
+        }
+
+        .resources {
+            background: white;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 32px;
+            margin-bottom: 64px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        .resources h3 {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1e3a5f;
+            margin-bottom: 24px;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .resource-item h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2c5f7d;
+            margin-bottom: 12px;
+        }
+
+        .resource-item ul {
+            list-style: none;
+        }
+
+        .resource-item ul li {
+            margin: 8px 0;
+        }
+
+        .resource-item a {
+            color: #2c5f7d;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .resource-item a:hover {
+            color: #1e3a5f;
+            text-decoration: underline;
+        }
+
+        .exam-info {
+            background: #fef3c7;
+            border: 1px solid #fbbf24;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 64px;
+        }
+
+        .exam-info h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #78350f;
+            margin-bottom: 16px;
+        }
+
+        .exam-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .exam-detail {
+            background: white;
+            padding: 16px;
+            border-radius: 6px;
+        }
+
+        .exam-detail strong {
+            display: block;
+            color: #78350f;
+            font-size: 14px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .exam-detail p {
+            color: #4a5568;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 24px;
+            color: #718096;
+            font-size: 14px;
+            border-top: 1px solid #e1e4e8;
+        }
+
+        footer p {
+            margin: 8px 0;
+        }
+
+        footer a {
+            color: #2c5f7d;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+
+            .apps-grid,
+            .resources-grid,
+            .exam-details {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-number {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ILE Study Guide & Practice Exams</h1>
+        <p>Comprehensive preparation for the International Licensing Examination for Hearing Aid Dispensers</p>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>Two Complete Practice Applications</h2>
+            <p>Choose the study mode that works best for you. Both applications feature randomized answer choices, detailed explanations, and comprehensive coverage of all 5 ILE competency domains.</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">300</div>
+                <div class="stat-label">Total Questions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Competency Sections</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">105</div>
+                <div class="stat-label">Full ILE Simulation</div>
+            </div>
+        </div>
+
+        <div class="apps-grid">
+            <a href="interactive/index.html" class="app-card">
+                <div class="app-tag">Quick Start</div>
+                <h3>Quick Practice Exam</h3>
+                <p>Streamlined exam simulation with timer and immediate feedback. Perfect for timed practice and pacing development.</p>
+                <ul>
+                    <li>Random question selection from 300-question bank</li>
+                    <li>Full 105-question ILE exam simulation</li>
+                    <li>Real-time timer with pacing guidance</li>
+                    <li>Immediate scoring and rationales</li>
+                    <li>Custom exam lengths (25, 50, 105, 200 questions)</li>
+                </ul>
+                <span class="app-button">Launch Quick Exam</span>
+            </a>
+
+            <a href="ILE-Exam-Practice-Quiz/index.html" class="app-card">
+                <div class="app-tag">Comprehensive</div>
+                <h3>Section-by-Section Study Mode</h3>
+                <p>In-depth study tool with progress tracking and flexible practice options. Ideal for mastering individual competency areas.</p>
+                <ul>
+                    <li>Study by individual sections (60 questions each)</li>
+                    <li>Random quiz mode with custom question counts</li>
+                    <li>Flag difficult questions for review</li>
+                    <li>Track completion progress by section</li>
+                    <li>Detailed performance breakdown by domain</li>
+                    <li>Review missed questions</li>
+                </ul>
+                <span class="app-button">Launch Section Study</span>
+            </a>
+        </div>
+
+        <div class="exam-info">
+            <h3>ILE Exam Information</h3>
+            <div class="exam-details">
+                <div class="exam-detail">
+                    <strong>Format</strong>
+                    <p>105 multiple-choice questions covering 5 competency domains</p>
+                </div>
+                <div class="exam-detail">
+                    <strong>Time Limit</strong>
+                    <p>120 minutes (2 hours) - approximately 68 seconds per question</p>
+                </div>
+                <div class="exam-detail">
+                    <strong>Passing Score</strong>
+                    <p>Varies by jurisdiction, typically 70-75% (check your state requirements)</p>
+                </div>
+                <div class="exam-detail">
+                    <strong>Content Areas</strong>
+                    <p>Assessment, Interpretation, Device Selection, Fitting & Dispensing, Continuing Care</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="resources">
+            <h3>Additional Study Materials</h3>
+            <div class="resources-grid">
+                <div class="resource-item">
+                    <h4>Study Guides</h4>
+                    <ul>
+                        <li><a href="ILE_Study_Guide.md">ILE Study Guide (Complete)</a></li>
+                        <li><a href="TX-ILE-Practice-Exam.md">Texas Practice Exam (100 Questions)</a></li>
+                    </ul>
+                </div>
+                <div class="resource-item">
+                    <h4>Official Resources</h4>
+                    <ul>
+                        <li><a href="https://www.ihsinfo.org" target="_blank">IHS Official Website</a></li>
+                        <li><a href="https://www.tdlr.texas.gov" target="_blank">Texas TDLR</a></li>
+                    </ul>
+                </div>
+                <div class="resource-item">
+                    <h4>Question Bank Details</h4>
+                    <ul>
+                        <li>Section 1: Assessment (60 questions)</li>
+                        <li>Section 2: Interpretation (60 questions)</li>
+                        <li>Section 3: Device Selection (60 questions)</li>
+                        <li>Section 4: Fitting (60 questions)</li>
+                        <li>Section 5: Continuing Care (60 questions)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Disclaimer:</strong> This study guide is for educational purposes only and is not affiliated with IHS, TDLR, or any testing agency.</p>
+        <p>Always verify current requirements with official licensing authorities. Content current as of October 2025.</p>
+        <p><a href="https://github.com/sk408/ile_exam" target="_blank">View on GitHub</a></p>
+    </footer>
+</body>
+</html>
+
