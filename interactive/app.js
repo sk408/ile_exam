@@ -96,12 +96,26 @@
       'exam_section5.json',
     ];
     const all = [];
-    for (const f of files) {
-      const resp = await fetch(f);
-      const data = await resp.json();
-      all.push(...data.items);
+    try {
+      for (const f of files) {
+        const resp = await fetch(f);
+        if (!resp.ok) {
+          console.error(`Failed to load ${f}:`, resp.status);
+          continue;
+        }
+        const data = await resp.json();
+        if (data && data.items && Array.isArray(data.items)) {
+          all.push(...data.items);
+        } else {
+          console.error(`Invalid data format in ${f}`);
+        }
+      }
+      bank = all;
+      console.log(`Loaded ${bank.length} questions from ${files.length} files`);
+    } catch (error) {
+      console.error('Error loading exam bank:', error);
+      alert('Failed to load exam questions. Please refresh the page.');
     }
-    bank = all;
   }
 
   function formatTime(seconds) {
@@ -155,11 +169,18 @@
   }
 
   function renderQuestion(i) {
+    if (!exam || !exam.length || i < 0 || i >= exam.length) return;
+    
     const q = exam[i];
-    if (!q) return;
+    if (!q || !q.question || !q.choices || !Array.isArray(q.choices)) {
+      console.error('Invalid question data at index', i, q);
+      return;
+    }
+    
     examStatus.textContent = `Question ${i + 1} of ${exam.length}`;
     examQ.textContent = q.question;
     examChoices.innerHTML = '';
+    
     q.choices.forEach((c, idxChoice) => {
       const b = document.createElement('button');
       b.textContent = c;
