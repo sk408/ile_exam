@@ -16,7 +16,7 @@
 - [x] Q3 - Air-bone gap 20 dB (C)
 - [x] Q4 - Modified Hughson-Westlake 50% (C)
 - [x] Q5 - New gloves each patient (B)
-- [x] Q6 - SRT/PTA correlation ±6 dB (B)
+- [x] Q6 - SRT/PTA correlation ±10 dB (B) *CORRECTED*
 - [x] Q7 - Type B tympanogram (C)
 - [x] Q8 - BC masking rule ≥10-15 dB ABG (B) *CORRECTED*
 - [x] Q9 - WRS 40% retrocochlear (B)
@@ -42,7 +42,7 @@
 - [x] Q27 - Documentation NOT SSN (B)
 - [x] Q28 - Cookie-bite audiogram (C)
 - [x] Q29 - Medical clearance needed (B)
-- [x] Q30 - PTA/SRT discrepancy (B)
+- [x] Q30 - PTA/SRT discrepancy ±10 dB (B) *CORRECTED*
 - [x] Q31 - 75 dB severe (C)
 - [x] Q32 - Sudden loss urgent (B)
 - [x] Q33 - Realistic expectations (B)

@@ -48,7 +48,7 @@ Mark your answers and check them against the answer key at the end. Review expla
 
 **6. Speech Reception Threshold (SRT) should correlate with the Pure Tone Average (PTA) within approximately:**
    - A) ±2 dB
-   - B) ±6 dB
+   - B) ±10 dB
    - C) ±15 dB
    - D) ±25 dB
 
@@ -767,8 +767,8 @@ The modified Hughson-Westlake procedure defines threshold as the lowest intensit
 **5. B - Don new gloves for each patient**
 Proper infection control requires fresh gloves for each patient encounter to prevent cross-contamination.
 
-**6. B - ±6 dB**
-SRT should correlate with PTA (average of 500, 1000, 2000 Hz) within approximately ±6 dB. Larger discrepancies suggest test validity concerns.
+**6. B - ±10 dB**
+SRT should correlate with PTA (average of 500, 1000, 2000 Hz) within approximately ±10 dB. Larger discrepancies suggest test validity concerns or the need to reinstruct and retest.
 
 **7. C - Fluid in middle ear or tympanic membrane perforation**
 Type B (flat) tympanogram with no peak indicates either middle ear effusion, perforation, or complete cerumen blockage.
@@ -842,7 +842,7 @@ While comprehensive documentation is essential, social security numbers are not 
 Unilateral conductive loss is a red flag requiring medical evaluation to rule out treatable pathology before hearing aid fitting.
 
 **30. B - Possible test validity concerns**
-A 20 dB discrepancy between PTA and SRT (should be ±6 dB) suggests test validity issues, possible non-organic hearing loss, or testing errors.
+A 20 dB discrepancy between PTA and SRT (should be within ±10 dB) suggests test validity issues, possible non-organic hearing loss, or testing errors. The patient should be reinstructed and retested.
 
 **31. C - Severe**
 Hearing loss of 71-90 dB HL is classified as severe. 75 dB falls in this range.
