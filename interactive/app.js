@@ -13,16 +13,22 @@
 
   // Load study content
   const guideContainer = document.getElementById('guide-sections');
-  fetch('content.json')
-    .then((r) => r.json())
-    .then((data) => {
-      renderGuide(data.sections);
-    })
-    .catch(() => {
-      guideContainer.innerHTML = '<p>Failed to load study content.</p>';
-    });
+  
+  if (guideContainer) {
+    fetch('content.json')
+      .then((r) => r.json())
+      .then((data) => {
+        renderGuide(data.sections);
+      })
+      .catch((err) => {
+        console.error('Failed to load study content:', err);
+        guideContainer.innerHTML = '<p>Failed to load study content.</p>';
+      });
+  }
 
   function renderGuide(sections) {
+    if (!guideContainer) return;
+    
     guideContainer.innerHTML = '';
     sections.forEach((sec) => {
       const el = document.createElement('div');
@@ -235,55 +241,76 @@
     });
   }
 
-  startExamBtn.addEventListener('click', async () => {
-    if (!bank.length) await loadExamBank();
-    const n = parseInt(examLenSel.value, 10);
-    exam = sample(bank, Math.min(n, bank.length));
-    responses = new Map();
-    idx = 0;
-    submitted = false;
+  // Only add event listeners if all required elements exist
+  if (startExamBtn && examLenSel && examPanel && examResults && reviewExamBtn && 
+      prevQBtn && nextQBtn && submitBtn && resetExamBtn) {
     
-    // Set time limit: 105 questions = 120 minutes (7200 seconds), scale proportionally
-    examTimeLimit = n === 105 ? 7200 : Math.ceil((7200 / 105) * n);
-    
-    examPanel.classList.remove('hidden');
-    examResults.classList.add('hidden');
-    reviewExamBtn.disabled = true;
-    renderQuestion(idx);
-    startTimer();
-  });
+    startExamBtn.addEventListener('click', async () => {
+      if (!bank.length) await loadExamBank();
+      const n = parseInt(examLenSel.value, 10);
+      exam = sample(bank, Math.min(n, bank.length));
+      responses = new Map();
+      idx = 0;
+      submitted = false;
+      
+      // Set time limit: 105 questions = 120 minutes (7200 seconds), scale proportionally
+      examTimeLimit = n === 105 ? 7200 : Math.ceil((7200 / 105) * n);
+      
+      examPanel.classList.remove('hidden');
+      examResults.classList.add('hidden');
+      reviewExamBtn.disabled = true;
+      renderQuestion(idx);
+      startTimer();
+    });
 
-  prevQBtn.addEventListener('click', () => {
-    if (!exam.length) return;
-    idx = Math.max(0, idx - 1);
-    renderQuestion(idx);
-  });
-  nextQBtn.addEventListener('click', () => {
-    if (!exam.length) return;
-    idx = Math.min(exam.length - 1, idx + 1);
-    renderQuestion(idx);
-  });
-  submitBtn.addEventListener('click', () => {
-    if (!exam.length || submitted) return;
-    submitted = true;
-    reviewExamBtn.disabled = false;
-    showResults();
-  });
-  reviewExamBtn.addEventListener('click', () => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-  });
-  resetExamBtn.addEventListener('click', () => {
-    stopTimer();
-    exam = [];
-    responses = new Map();
-    idx = 0;
-    submitted = false;
-    startTime = null;
-    examPanel.classList.add('hidden');
-    examResults.classList.add('hidden');
-    reviewExamBtn.disabled = true;
-    if (timerDisplay) timerDisplay.textContent = '';
-  });
+    prevQBtn.addEventListener('click', () => {
+      if (!exam.length) return;
+      idx = Math.max(0, idx - 1);
+      renderQuestion(idx);
+    });
+    
+    nextQBtn.addEventListener('click', () => {
+      if (!exam.length) return;
+      idx = Math.min(exam.length - 1, idx + 1);
+      renderQuestion(idx);
+    });
+    
+    submitBtn.addEventListener('click', () => {
+      if (!exam.length || submitted) return;
+      submitted = true;
+      reviewExamBtn.disabled = false;
+      showResults();
+    });
+    
+    reviewExamBtn.addEventListener('click', () => {
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    });
+    
+    resetExamBtn.addEventListener('click', () => {
+      stopTimer();
+      exam = [];
+      responses = new Map();
+      idx = 0;
+      submitted = false;
+      startTime = null;
+      examPanel.classList.add('hidden');
+      examResults.classList.add('hidden');
+      reviewExamBtn.disabled = true;
+      if (timerDisplay) timerDisplay.textContent = '';
+    });
+  } else {
+    console.error('Exam elements not found. Missing:', {
+      startExamBtn: !!startExamBtn,
+      examLenSel: !!examLenSel,
+      examPanel: !!examPanel,
+      examResults: !!examResults,
+      reviewExamBtn: !!reviewExamBtn,
+      prevQBtn: !!prevQBtn,
+      nextQBtn: !!nextQBtn,
+      submitBtn: !!submitBtn,
+      resetExamBtn: !!resetExamBtn
+    });
+  }
 })();
 
 
