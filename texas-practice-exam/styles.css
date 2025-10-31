@@ -108,18 +108,27 @@ body {
 }
 
 .stat-card {
-    background: white;
+    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
     border: 1px solid #e1e4e8;
     border-radius: 8px;
     padding: 24px;
     text-align: center;
     box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+    box-shadow: 0 4px 8px rgba(30, 58, 95, 0.08);
+    transform: translateY(-2px);
 }
 
 .stat-number {
     font-size: 36px;
     font-weight: 700;
-    color: #1e3a5f;
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c5f7d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 8px;
 }
 
@@ -132,8 +141,8 @@ body {
 }
 
 .exam-info {
-    background: white;
-    border: 1px solid #e1e4e8;
+    background: linear-gradient(135deg, #f0f4f8 0%, #e6eef5 100%);
+    border: 1px solid #cbd5e0;
     border-radius: 8px;
     padding: 24px;
     margin-bottom: 32px;
@@ -173,7 +182,7 @@ body {
 }
 
 .start-btn {
-    background: #2c5f7d;
+    background: linear-gradient(135deg, #2c5f7d 0%, #1e3a5f 100%);
     color: white;
     border: none;
     padding: 16px 48px;
@@ -184,11 +193,12 @@ body {
     width: 100%;
     margin-bottom: 12px;
     transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(30, 58, 95, 0.15);
 }
 
 .start-btn:hover {
-    background: #1e3a5f;
-    box-shadow: 0 4px 8px rgba(30, 58, 95, 0.2);
+    box-shadow: 0 4px 8px rgba(30, 58, 95, 0.25);
+    transform: translateY(-1px);
 }
 
 .back-btn {
@@ -650,7 +660,7 @@ body {
 }
 
 .results-actions button {
-    background: #2c5f7d;
+    background: linear-gradient(135deg, #2c5f7d 0%, #1e3a5f 100%);
     color: white;
     border: none;
     padding: 14px 28px;
@@ -659,19 +669,20 @@ body {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(30, 58, 95, 0.15);
 }
 
 .results-actions button:hover {
-    background: #1e3a5f;
-    box-shadow: 0 4px 8px rgba(30, 58, 95, 0.2);
+    box-shadow: 0 4px 8px rgba(30, 58, 95, 0.25);
+    transform: translateY(-1px);
 }
 
 #reviewMissedBtn {
-    background: #7d3f3f;
+    background: linear-gradient(135deg, #7d3f3f 0%, #5c2e2e 100%);
 }
 
 #reviewMissedBtn:hover {
-    background: #5f2f2f;
+    box-shadow: 0 4px 8px rgba(125, 63, 63, 0.25);
 }
 
 /* Responsive */

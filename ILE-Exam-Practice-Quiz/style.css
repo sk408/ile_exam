@@ -127,7 +127,7 @@ body {
 }
 
 .stat-card {
-    background: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #f9fafb 100%);
     border: 1px solid #e1e4e8;
     border-radius: 8px;
     padding: 24px;
@@ -165,7 +165,7 @@ body {
 }
 
 .mode-card {
-    background: #ffffff;
+    background: linear-gradient(135deg, #fafbfc 0%, #f0f4f8 100%);
     border: 2px solid #e1e4e8;
     border-radius: 8px;
     padding: 24px;
@@ -247,7 +247,7 @@ body {
 
 .section-num {
   display: inline-block;
-    background: #2c5f7d;
+    background: linear-gradient(135deg, #2c5f7d 0%, #1e3a5f 100%);
     color: white;
   padding: 4px 12px;
   border-radius: 4px;
@@ -325,7 +325,7 @@ body {
 }
 
 .start-btn {
-    background: #2c5f7d;
+    background: linear-gradient(135deg, #2c5f7d 0%, #1e3a5f 100%);
     color: white;
     border: none;
     padding: 14px 32px;
@@ -336,11 +336,12 @@ body {
     width: 100%;
     margin-top: 24px;
     transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(30, 58, 95, 0.15);
 }
 
 .start-btn:hover {
-    background: #1e3a5f;
-    box-shadow: 0 4px 8px rgba(30, 58, 95, 0.2);
+    box-shadow: 0 4px 8px rgba(30, 58, 95, 0.25);
+    transform: translateY(-1px);
 }
 
 /* Question Screen */
@@ -722,7 +723,7 @@ body {
 }
 
 .results-actions button {
-    background: #2c5f7d;
+    background: linear-gradient(135deg, #2c5f7d 0%, #1e3a5f 100%);
     color: white;
     border: none;
     padding: 14px 28px;
@@ -731,15 +732,16 @@ body {
     font-weight: 500;
   cursor: pointer;
     transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(30, 58, 95, 0.15);
 }
 
 .results-actions button:hover {
-    background: #1e3a5f;
-    box-shadow: 0 4px 8px rgba(30, 58, 95, 0.2);
+    box-shadow: 0 4px 8px rgba(30, 58, 95, 0.25);
+    transform: translateY(-1px);
 }
 
 #reviewMissedBtn {
-    background: #7d3f3f;
+    background: linear-gradient(135deg, #7d3f3f 0%, #5c2e2e 100%);
   }
 
 #reviewMissedBtn:hover {
