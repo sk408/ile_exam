@@ -17,6 +17,51 @@ header {
   box-shadow: 0 2px 4px rgba(0,0,0,0.08);
 }
 
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.home-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.1);
+  transition: background 0.2s ease;
+}
+
+.home-link:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.other-quizzes {
+  display: flex;
+  gap: 8px;
+}
+
+.quiz-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.2s ease;
+}
+
+.quiz-link:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.3);
+}
+
 header h1 { 
   margin: 0 0 16px 0;
   font-size: 28px;

@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="quiz-header">
+        <div class="header-nav">
+            <a href="../index.html" class="home-link">← Home</a>
+            <div class="quiz-links">
+                <a href="../interactive/index.html" class="quiz-link">Quick Exam</a>
+                <a href="../ILE-Exam-Practice-Quiz/index.html" class="quiz-link">Section Study</a>
+            </div>
+        </div>
+    </header>
     <div class="container">
         <!-- Welcome Screen -->
         <div class="screen active" id="welcomeScreen">
@@ -41,7 +50,6 @@
                 </div>
 
                 <button class="start-btn" onclick="startExam()">Begin Practice Exam</button>
-                <button class="back-btn" onclick="window.location.href='../index.html'">Back to Home</button>
             </div>
         </div>
 
@@ -99,7 +107,6 @@
                 <div class="results-actions">
                     <button onclick="retakeExam()">Retake Exam</button>
                     <button id="reviewMissedBtn" onclick="reviewMissed()" style="display: none;">Review Missed Questions</button>
-                    <button onclick="window.location.href='../index.html'">Return to Home</button>
                 </div>
             </div>
         </div>
